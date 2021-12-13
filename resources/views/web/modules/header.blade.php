@@ -15,7 +15,8 @@
         <nav class="navbar-nav-wrap">
             <!-- Default Logo -->
             <a class="navbar-brand" href="./index.html" aria-label="Front">
-                <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
+                
+                <span class="font-weight-900 " style="font-size: 30px"> UNIT <i class="bi bi-box text-success" style="font-size: 30px"></i> BOX </span>
             </a>
             <!-- End Default Logo -->
 
