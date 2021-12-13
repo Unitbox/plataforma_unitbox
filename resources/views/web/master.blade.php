@@ -106,7 +106,7 @@
                     <!-- Logo -->
                     <div class="mb-5">
                         <a class="navbar-brand" href="./index.html" aria-label="Space">
-                            <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Image Description">
+                            <span class="font-weight-900 text-white" style="font-size: 30px"> UNIT <i class="bi bi-box text-success" style="font-size: 30px"></i> BOX </span>
                         </a>
                     </div>
                     <!-- End Logo -->
