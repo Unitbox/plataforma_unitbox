@@ -377,7 +377,7 @@
     </div>
     <!--fim Features -->
 
-    <div class="container content-space-1 content-space-lg-1 content-space-md-1 content-space-b-2">
+    <div class="container content-space-1 content-space-lg-1 mb-5 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h1 class="display-4 mb-3 text-white font-weight-900">Tire suas dúvidas
             </h1>
@@ -484,88 +484,5 @@
 
     </div>
     <!--fim Features -->
-
-    <!-- Clients -->
-    <div class="container content-space-1 content-space-lg-1 content-space-md-1 content-space-b-2">
-        <!-- Swiper Slider -->
-        <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
-            <h4 class="mb-3 text-white display-6 font-weight-900">Alguns dos nossos parceiros
-            </h4>
-        </div>
-
-        <!-- End Heading -->
-
-        <div class="row justify-content-center text-center bg-white">
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/amazon-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/kaplan-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/google-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/airbnb-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/shopify-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/vidados-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/capsule-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/forbes-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered"
-                    src="./assets/svg/brands/business-insider-dark.svg" alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/hubspot-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-4 col-sm-3 col-md-2 py-3">
-                <img class="avatar avatar-lg avatar-4x3 avatar-centered" src="./assets/svg/brands/layar-dark.svg"
-                    alt="Logo">
-            </div>
-            <!-- End Col -->
-        </div>
-        <!-- End Row -->
-
-        <!-- End Swiper Slider -->
-    </div>
-    <!-- End Clients -->
 
 @endsection
