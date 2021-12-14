@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
     <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
         .btn-theme-purple {
             color: #fff;
             background-color: #6f42c1;
@@ -80,6 +84,8 @@
         a:hover .text-inherit-green {
             color: #09e2deba !important
         }
+
+        
 
     </style>
 
@@ -282,11 +288,8 @@
 
     <!-- JS Implementing Plugins -->
     <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
-
-    <script src="./assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
     <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
     <script src="./assets/vendor/aos/dist/aos.js"></script>
-    <script src="./assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
     <script src="./assets/vendor/fslightbox/index.js"></script>
 
     <!-- JS Front -->
@@ -299,19 +302,9 @@
             // =======================================================
             new HSHeader('#header').init()
 
-
-            // // INITIALIZATION OF MEGA MENU
-            // // =======================================================
-            // new HSMegaMenu('.js-mega-menu', {
-            //     desktop: {
-            //         position: 'left'
-            //     }
-            // })
-
-
-            // INITIALIZATION OF SHOW ANIMATIONS
+            // INITIALIZATION OF BOOTSTRAP DROPDOWN
             // =======================================================
-            new HSShowAnimation('.js-animation-link')
+            HSBsDropdown.init()
 
             // INITIALIZATION OF GO TO
             // =======================================================
@@ -324,63 +317,6 @@
                 duration: 650,
                 once: true
             });
-
-
-            // // INITIALIZATION OF TEXT ANIMATION (TYPING)
-            // // =======================================================
-            // HSCore.components.HSTyped.init('.js-typedjs')
-
-
-            // INITIALIZATION OF SCROLLSPY
-            // =======================================================
-            new bootstrap.ScrollSpy(document.body, {
-                target: '#navbarNavDropdownNav'
-            })
-
-            new HSScrollspy('#navbarNavDropdown', {
-                breakpoint: 'lg',
-                scrollOffset: -10
-            })
-
-
-
-            // // INITIALIZATION OF SWIPER
-            // // =======================================================
-            // var sliderThumbs = new Swiper('.js-swiper-thumbs', {
-            //     watchSlidesVisibility: true,
-            //     watchSlidesProgress: true,
-            //     history: false,
-            //     breakpoints: {
-            //         480: {
-            //             slidesPerView: 2,
-            //             spaceBetween: 15,
-            //         },
-            //         768: {
-            //             slidesPerView: 3,
-            //             spaceBetween: 15,
-            //         },
-            //         1024: {
-            //             slidesPerView: 3,
-            //             spaceBetween: 15,
-            //         },
-            //     },
-            //     on: {
-            //         'afterInit': function(swiper) {
-            //             swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
-            //                 .forEach($progress => $progress.style.transitionDuration =
-            //                     `${swiper.params.autoplay.delay}ms`)
-            //         }
-            //     }
-            // });
-
-            // var sliderMain = new Swiper('.js-swiper-main', {
-            //     effect: 'fade',
-            //     autoplay: true,
-            //     loop: true,
-            //     thumbs: {
-            //         swiper: sliderThumbs
-            //     }
-            // })
         })()
     </script>
 </body>

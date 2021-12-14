@@ -4,7 +4,8 @@
 @section('content')
 
     <!-- ABERTURA -->
-    <div id="homeSection" class="container content-space-2 content-space-lg-4 content-space-md-4 content-space-b-1" data-aos="fade-right" >
+    <div id="homeSection" class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1"
+        data-aos="fade-right">
         <div class="row">
             <div class="col-md-6 col-lg-6 mb-7 mb-md-0 text-lg-start text-md-start text-center">
                 <!-- TEXT ABERTURA -->
@@ -26,8 +27,8 @@
                         <a class="video-player btn btn-white btn-transition"
                             href="https://www.youtube.com/watch?v=d4eDWc8g0e0" role="button"
                             data-fslightbox="youtube-video">
-                            <i class="bi-play-circle-fill me-1"></i> <span
-                                class="d-none d-md-inline-block">SAIBA MAIS</span>
+                            <i class="bi-play-circle-fill me-1"></i> <span class="d-none d-md-inline-block">SAIBA
+                                MAIS</span>
                         </a>
                     </div>
                 </div>
@@ -35,18 +36,21 @@
             </div>
             <!-- End Col -->
             <!-- IMAGEM ABERTURA -->
-            <div class="col-md-6" >
+            <div class="col-md-6 ">
                 <div class="position-relative p-0">
-                    <img class="img-fluid rounded-2" src="https://lzctrl.com/_next/static/images/lzHero-806d116c1e687af68dca75834b30dbef.png"  alt="Image Description">
+                    <img class="img-fluid rounded-2"
+                        src="https://lzctrl.com/_next/static/images/lzHero-806d116c1e687af68dca75834b30dbef.png"
+                        alt="Image Description">
                 </div>
             </div>
             <!-- END IMAGEM ABERTURA -->
             <!-- End Col -->
         </div>
-        <!-- End Row -->
+  
     </div>
     <!-- End ABERTURA -->
-    
+
+
     {{-- <!-- O QUE FAZEMOS -->
     <div class="container content-space-1 content-space-lg-1 content-space-md-1 content-space-b-2" data-aos="fade-up">
         <div class="w-md-90 w-lg-80 mx-md-auto mb-5 mb-md-9">
@@ -177,7 +181,7 @@
                 pessoas..</p>
         </div>
 
-        
+
 
         <div class="text-center mb-10">
             <!-- List Checked -->
@@ -244,7 +248,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img1.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                            object-position: top;">
+                                                                                                                                    object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -273,7 +277,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img13.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                            object-position: top;">
+                                                                                                                                    object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -297,8 +301,8 @@
             <!-- End Col -->
         </div>
         <div class="col-lg-12 text-center mt-5">
-            <a class="btn btn-theme-purple btn-transition rounded-pill font-weight-900" href="" target="_blank">CONFIRA TODOS OS NOSSOS PROJETOS <span
-                    class="bi-chevron-right small ms-1"></span></a>
+            <a class="btn btn-theme-purple btn-transition rounded-pill font-weight-900" href="" target="_blank">CONFIRA
+                TODOS OS NOSSOS PROJETOS <span class="bi-chevron-right small ms-1"></span></a>
         </div>
         <!-- Card Info -->
 

@@ -14,10 +14,12 @@
     <div class="container my-2">
         <nav class="navbar-nav-wrap">
             <!-- Default Logo -->
-            <a class="navbar-brand" href="{{ route('web.home') }}" aria-label="Unitibox">
-                <span class="font-weight-900 " style="font-size: 30px"> UNIT 
-                    <i class="bi bi-box text-success" style="font-size: 30px"></i> 
-                    <span class="text-green"></span> BOX </span>
+            <a class="navbar-brand " href="{{ route('web.home') }}" aria-label="Unitibox">
+                <span class="font-weight-900 " style="font-size: 30px">
+                    <span class="d-none d-md-inline-block">UNIT</span>
+                    <i class="bi bi-box text-success ms-1" style="font-size: 40px"></i>
+                    <span class="d-none d-md-inline-block">BOX</span>
+                </span>
             </a>
             <!-- End Default Logo -->
 
@@ -66,7 +68,7 @@
                         <li class="nav-item ps-lg-4 ps-md-4">
                             <a class="btn btn-theme-purple btn-transition rounded-pill" href="" target="_blank"
                                 style="font-weight:900">FALE CONOSCO<span
-                                class="bi-chevron-right small ms-1"></span></a>
+                                    class="bi-chevron-right small ms-1"></span></a>
                         </li>
                         <!-- End Button -->
                     </ul>
