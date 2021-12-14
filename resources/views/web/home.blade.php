@@ -397,7 +397,7 @@
                                     <div class="mb-3">
                                         <label class="form-label" for="name">Nome *</label>
                                         <input type="text" class="form-control form-control-lg" name="name" id="name"
-                                            placeholder="Digite seu nome" aria-label="Digite seu nome" value="Leonarrod"
+                                            placeholder="Digite seu nome" aria-label="Digite seu nome" value=""
                                             required>
                                     </div>
                                     <!-- End Form -->
@@ -409,7 +409,7 @@
                                 <label class="form-label" for="email">E-mail *</label>
                                 <input type="email" class="form-control form-control-lg" name="email" id="email"
                                     placeholder="ex. email@site.com" aria-label="email@site.com"
-                                    value="leonardo.silva@sconline.com.br" required>
+                                    value="" required>
                             </div>
                             <!-- End Form -->
 
@@ -419,7 +419,7 @@
                                         class="form-label-secondary"> (Opcional)</span></label>
                                 <input type="text" class="form-control form-control-lg" name="companyname" id="companyname"
                                     placeholder="Digite o nome da empresa" aria-label="Digite o nome da empresa"
-                                    value="Teste" required>
+                                    value="" required>
                             </div>
                             <!-- End Form -->
 
@@ -428,8 +428,8 @@
                                 <label class="form-label" for="subject">Seu Interesse *</label>
                                 <select id="subject" class="form-select form-select-lg" name="subject"
                                     aria-label="Seu Interesse" required>
-                                    <option>Selecione..</option>
-                                    <option value="duvida" selected>Dúvidas</option>
+                                    <option value="" selected>Selecione..</option>
+                                    <option value="duvida" >Dúvidas</option>
                                     <option value="parceria">Parceria</option>
                                     <option value="orcamento">Orçamento</option>
                                     <option value="outros">Outros</option>
@@ -441,27 +441,21 @@
                             <div class="mb-4">
                                 <label class="form-label" for="message">Mensagem *</label>
                                 <textarea class="form-control form-control-lg" name="message" id="message"
-                                    placeholder="Digite sua mensagem" aria-label="Digite sua mensagem"
-                                    rows="4">dasdasdasdsa</textarea>
+                                    placeholder="Digite sua mensagem" aria-label="Digite sua mensagem" required
+                                    rows="4"></textarea>
                             </div>
                             <!-- End Form -->
-
-                            <!-- Check -->
                             <div class="form-check mb-4">
                                 <input type="checkbox" class="form-check-input" id="aceite" name="aceite"
-                                    data-msg="Campo obrigatório.">
+                                    data-msg="Campo obrigatório." required>
                                 <label class="form-check-label" for="aceite"> Aceito compartilhar
                                     minhas informações com a <b>Unitbox</b> e estou ciente da
                                     <a href=./page-privacy.html>Política de Privacidade.</a></label>
                             </div>
-                            <!-- End Check -->
-
                             <div class="d-grid mb-2">
                                 <button type="submit"
-                                    class="btn btn-theme-purple btn-lg btn-faleconosco font-weight-900">Enviar
-                                    Mensagem</button>
+                                    class="btn btn-theme-purple btn-lg btn-faleconosco font-weight-900">ENVIAR MENSAGEM</button>
                             </div>
-
                             <div class="text-center">
                                 <span class="form-text"> <small>Fica tranquilo, também odeio SPAM!
                                         Seu e-mail está seguro comigo. ❤️</small></span>
@@ -507,13 +501,13 @@
                 $.post(action, form_data, 'json')
                     .done(function(response) {
 
+                        short.message(response.status, response.subject, response.message);
+
                         $(button).removeClass('disabled').html(button.text());
                     })
                     .fail(function(xhr, status, error) {
                         if (xhr.status === 401 || xhr.status === 419) {
-                            getapp.message(
-                                "Whoops, sua sessão expirou, você será redirecionado! Por favor aguarde.",
-                                "warning");
+                            short.message('warning', "Whoops, sua sessão expirou, você será redirecionado! Por favor aguarde.","");
                             setTimeout(function() {
                                 window.location.reload();
                             }, 2000);

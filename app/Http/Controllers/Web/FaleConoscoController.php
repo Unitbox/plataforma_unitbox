@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
+use App\Models\Web\FaleConosco;
 use Illuminate\Http\Request;
 
 class FaleConoscoController extends Controller
 {
     public function store(Request $request)
     {  
-
-        $validatedData = $request->validate([
+        $request->validate([
             'name' => 'required|max:191',
             'email' => 'email|required|max:191',
             'companyname' => 'nullable|max:191',
@@ -19,9 +19,11 @@ class FaleConoscoController extends Controller
             'aceite' => 'required|max:191',
         ]);
 
-        
+        FaleConosco::create($request->all());
 
-        dd("Entrou aqui");
-
+        return response()->json([
+            'status' => 'success', 
+            'subject' => 'Mensagem enviada com sucesso!', 
+            'message' => 'Nós respondemos a quase todos dentro de um dia útil e estamos animados com seu contato.'], 200);
     }
 }

@@ -305,9 +305,22 @@
         @yield('js')
     @endif
 
+    @if (session()->exists('message'))
+        <script>
+            $(function() {
+                var subject = "{{ session()->get('message') }}";
+                var tipo = "{{ session()->get('status') }}";
+
+                getapp.message(tipo, subject, '');
+            });
+        </script>
+    @endif
+
     <!-- JS Plugins Init. -->
     <script>
         (function() {
+
+            short.init();
             // INITIALIZATION OF HEADER
             // =======================================================
             new HSHeader('#header').init()
