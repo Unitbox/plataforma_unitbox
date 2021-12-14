@@ -50,6 +50,9 @@
                             <a class="nav-link" href="#blogSection">BLOG</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#">SAIBA MAIS</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">ENTRAR</a>
                         </li>
 

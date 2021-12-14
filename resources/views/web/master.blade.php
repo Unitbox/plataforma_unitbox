@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
     <style type="text/css">
-        html {
+        /* html {
             scroll-behavior: smooth;
-        }
+        } */
 
         .btn-theme-purple {
             color: #fff;
@@ -84,8 +84,6 @@
         a:hover .text-inherit-green {
             color: #09e2deba !important
         }
-
-        
 
     </style>
 
@@ -284,6 +282,8 @@
     <!-- ========== END SECONDARY CONTENTS ========== -->
 
     <!-- JS Global Compulsory  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JS Implementing Plugins -->
@@ -316,6 +316,21 @@
             AOS.init({
                 duration: 650,
                 once: true
+            });
+
+            $("li.nav-item .nav-link").click(function(e) {
+                e.preventDefault();
+
+                $('.navbar-nav .nav-item a.active').removeClass('active');
+                $(this).addClass('active');
+                var aid = $(this).attr("href");
+                if (aid.length > 2 && aid.indexOf("#") >= 0) {
+                    $('html,body').animate({
+                        scrollTop: $(aid).offset().top
+                    }, 'slow');
+                    $('.navbar-collapse').collapse('hide');
+                }
+
             });
         })()
     </script>
