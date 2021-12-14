@@ -46,131 +46,9 @@
             <!-- END IMAGEM ABERTURA -->
             <!-- End Col -->
         </div>
-  
+
     </div>
     <!-- End ABERTURA -->
-
-
-    {{-- <!-- O QUE FAZEMOS -->
-    <div class="container content-space-1 content-space-lg-1 content-space-md-1 content-space-b-2" data-aos="fade-up">
-        <div class="w-md-90 w-lg-80 mx-md-auto mb-5 mb-md-9">
-        
-            <h2 class="display-4 mb-3 text-white font-weight-900 text-center">
-                <span class="px-3">
-                    O que podemos fazer por você
-                </span>
-            </h2>
-            <p class="lead text-white text-center">Saiba mais sobre os serviços que ofereço, de sites a videogames e
-                aplicativos.</p>
-        </div>
-
-        <!-- SVG Shape -->
-        <div class="position-absolute bottom-0 start-0 d-none d-lg-block" style="width: 10rem; margin-left: -9rem;">
-            <img class="img-fluid" src="{{ asset('assets/svg/illustrations/oc-peeking.svg') }}" alt="SVG">
-        </div>
-        <!-- End SVG Shape -->
-        <!-- End Card Grid -->
-
-        <div class="row gx-lg-7 gx-md-7 gy-lg-7 ">
-            <div class="col-lg-6 col-xl-6 col-sm-12 mb-3">
-
-                <a class="card shadow bg-dark border-bottom-green h-100" href="#" target="_blank">
-                    <div class="card-body">
-                        <div class="mb-5">
-                            <img class="img-fluid rounded-2" src="./assets/img/1200x900/img1.jpg" alt="Image Description">
-                        </div>
-                        <h3 class="display-6 font-weight-900 text-inherit-green">SOFTWARE HOUSE</h3>
-                        <p class="card-text lead text-white">Se você está procurando <span
-                                class="text-green font-weight-900">atualizar seu site ou construir
-                                um novo</span>,
-                            podemos ajudá-lo a encontrar uma solução que se adapte à sua marca e às suas
-                            necessidades.
-                            Desenvolvemos sites em pouco tempo e que se destacam da multidão.</p>
-                    </div>
-                    <div class="col-lg-12 text-center">
-                        <button class="btn btn-theme-success btn-transition rounded-pill mb-4 font-weight-900" href="" target="_blank">SAIBA MAIS <span class="bi-chevron-right small ms-1"></span></button>
-                    </div>
-                </a>
-                <!-- End Card -->
-            </div>
-
-            <div class="col-lg-6 col-xl-6 col-sm-12 mb-3">
-                <a class="card shadow bg-dark border-bottom-green h-100" href="#" target="_blank">
-                    <div class="card-body">
-                        <div class="mb-5">
-                            <img class="img-fluid rounded-2" src="./assets/img/1200x900/img3.jpg" alt="Image Description">
-                        </div>
-
-                        <h3 class="display-6 font-weight-900 text-inherit-green">
-                            Marketing Digital</h3>
-                        <p class="card-text lead text-white">Se você está procurando <span>atualizar seu site ou
-                                construir
-                                um novo</span> ,
-                            posso ajudá-lo a encontrar uma solução que se adapte à sua marca e às suas
-                            necessidades.
-                            Eu desenho e desenvolvo sites que se destacam da multidão.</p>
-                    </div>
-                    <div class="col-lg-12 text-center">
-                        <button class="btn btn-theme-success btn-transition rounded-pill mb-4 font-weight-900" href="" target="_blank">SAIBA MAIS <span class="bi-chevron-right small ms-1"></span></button>
-                    </div>
-                </a>
-            </div>
-            <!-- End Col -->
-
-            <div class="col-lg-6 col-xl-6 col-sm-12 mb-3">
-
-                <!-- Card -->
-                <a class="card  shadow bg-dark border-bottom-purple h-100" href="#" target="_blank">
-                    <div class="card-body">
-                        <div class="mb-5">
-                            <img class="img-fluid rounded-2" src="./assets/img/1200x900/img2.jpg" alt="Image Description">
-                        </div>
-
-                        <h3 class="display-6 font-weight-900 text-inherit-purple">Solução de negócio</h3>
-                        <p class="card-text lead text-white">Se você está procurando <span>atualizar seu site ou
-                                construir
-                                um novo</span> ,
-                            posso ajudá-lo a encontrar uma solução que se adapte à sua marca e às suas
-                            necessidades.
-                            Eu desenho e desenvolvo sites que se destacam da multidão.</p>
-
-                    </div>
-                    <div class="col-lg-12 text-center">
-                        <button class="btn btn-theme-purple btn-transition rounded-pill mb-4 font-weight-900" href="" target="_blank">SAIBA MAIS <span class="bi-chevron-right small ms-1"></span></button>
-                    </div>
-                </a>
-                <!-- End Card -->
-            </div>
-
-            <div class="col-lg-6 col-xl-6 col-sm-12 mb-3">
-                <!-- Card -->
-                <a class="card shadow bg-dark border-bottom-purple h-100" href="#" target="_blank">
-                    <div class="card-body">
-                        <div class="mb-5">
-                            <img class="img-fluid rounded-2" src="./assets/img/1200x900/img4.jpg" alt="Image Description">
-                        </div>
-
-                        <h3 class="display-6 font-weight-900 text-inherit-purple">Produção de
-                            fotografia e video</h3>
-                        <p class="card-text lead text-white">Se você está procurando atualizar seu site ou construir
-                            um novo</span> ,
-                            posso ajudá-lo a encontrar uma solução que se adapte à sua marca e às suas
-                            necessidades.
-                            Eu desenho e desenvolvo sites que se destacam da multidão.</p>
-
-                    </div>
-                    <div class="col-lg-12 text-center mb-4">
-                        <button class="btn btn-theme-purple btn-transition rounded-pill font-weight-900" href="" target="_blank">SAIBA MAIS <span class="bi-chevron-right small ms-1"></span></button>
-                    </div>
-                </a>
-                <!-- End Card -->
-
-            </div>
-            <!-- End Col -->
-        </div>
-        <!-- End Row -->
-    </div>
-    <!-- End O QUE FAZEMOS --> --}}
 
     <!-- Card Grid -->
     <div id="produtosSection" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2">
@@ -248,7 +126,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img1.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                    object-position: top;">
+                                                                                                                                                        object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -277,7 +155,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img13.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                    object-position: top;">
+                                                                                                                                                        object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -381,7 +259,8 @@
     </div>
     <!--fim Features -->
 
-    <div class="container content-space-1 content-space-lg-1 mb-5 content-space-md-1 content-space-b-2">
+    <div id="saibaMaisSection"
+        class="container content-space-1 content-space-lg-1 mb-5 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h1 class="display-4 mb-3 text-white font-weight-900">Tire suas dúvidas
             </h1>
@@ -483,10 +362,112 @@
             </div>
         </div>
 
-
-
-
     </div>
     <!--fim Features -->
+
+    <!--fale conosco -->
+    <!-- Contacts -->
+    <div class="position-relative">
+        <div class="bg-dark" style="background-image: url(./assets/svg/components/wave-pattern-light.svg);">
+            <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-1">
+                <!-- Heading -->
+                <div class="w-lg-50 text-center mx-lg-auto mb-7">
+                    <span class="text-cap text-white-70">Fale Conosco</span>
+                    <h2 class="text-white lh-base">Ficou com alguma dúvida? Precisa de ajuda, ou quer trabalhar a gente?
+                        <br> <span class="text-green">Let's chat.</span>
+                    </h2>
+                </div>
+                <!-- End Heading -->
+
+                <div class="mx-auto" style="max-width: 35rem;">
+                    <!-- Card -->
+                    <div class="card zi-2">
+                        <div class="card-body">
+                            <!-- Form -->
+                            <small class="text-small">Para entrar em contato conosco, preencha o formulário abaixo. Nós
+                                respondemos a quase todos dentro de um dia útil e estamos animados com seu contato.</small>
+                            <hr>
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <!-- Form -->
+                                        <div class="mb-3">
+                                            <label class="form-label" for="name">Nome *</label>
+                                            <input type="text" class="form-control form-control-lg" name="name" id="name"
+                                                placeholder="Digite seu nome" aria-label="Digite seu nome" required>
+                                        </div>
+                                        <!-- End Form -->
+                                    </div>
+                                </div>
+                                <!-- End Row -->
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="email">E-mail *</label>
+                                    <input type="email" class="form-control form-control-lg" name="email" id="email"
+                                        placeholder="ex. email@site.com" aria-label="email@site.com" required>
+                                </div>
+                                <!-- End Form -->
+
+                                <!-- Form -->
+                                <div class="mb-3">
+                                    <label class="form-label" for="companyname">Nome da Empresa<span
+                                            class="form-label-secondary"> (Opcional)</span></label>
+                                    <input type="text" class="form-control form-control-lg" name="companyname"
+                                        id="companyname" placeholder="Digite o nome da empresa"
+                                        aria-label="Digite o nome da empresa" required>
+                                </div>
+                                <!-- End Form -->
+
+                                <!-- Select -->
+                                <div class="mb-3">
+                                    <label class="form-label" for="subject">Seu Interesse *</label>
+                                    <select id="subject" class="form-select form-select-lg" name="hireUsFormNameBudget"
+                                        aria-label="Seu Interesse" required>
+                                        <option selected>Selecione..</option>
+                                        <option value="duvida">Dúvidas</option>
+                                        <option value="parceria">Parceria</option>
+                                        <option value="orcamento">Orçamento</option>
+                                        <option value="outros">Outros</option>
+                                    </select>
+                                </div>
+                                <!-- End Select -->
+
+                                <!-- Form -->
+                                <div class="mb-4">
+                                    <label class="form-label" for="message">Mensagem *</label>
+                                    <textarea class="form-control form-control-lg" name="message" id="message"
+                                        placeholder="Digite sua mensagem" aria-label="Digite sua mensagem"
+                                        rows="4"></textarea>
+                                </div>
+                                <!-- End Form -->
+
+                                <!-- Check -->
+                                <div class="form-check mb-4">
+                                    <input type="checkbox" class="form-check-input" id="signupFormPrivacyCheck"
+                                        name="signupFormPrivacyCheck" required data-msg="Please accept our Privacy Policy.">
+                                    <label class="form-check-label" for="signupFormPrivacyCheck"> Aceito compartilhar
+                                        minhas informações com a <b>Unitbox</b> e estou ciente da
+                                        <a href=./page-privacy.html>Política de Privacidade.</a></label>
+                                </div>
+                                <!-- End Check -->
+
+                                <div class="d-grid mb-2">
+                                    <button type="submit" class="btn btn-theme-purple btn-lg">Enviar Mensagem</button>
+                                </div>
+
+                                <div class="text-center">
+                                    <span class="form-text"> <small>Fica tranquilo, também odeio SPAM!
+                                            Seu e-mail está seguro comigo. ❤️</small></span>
+                                </div>
+                            </form>
+                            <!-- End Form -->
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim fale conosco -->
 
 @endsection

@@ -1,0 +1,121 @@
+
+    {{-- <!-- O QUE FAZEMOS -->
+    <div class="container content-space-1 content-space-lg-1 content-space-md-1 content-space-b-2" data-aos="fade-up">
+        <div class="w-md-90 w-lg-80 mx-md-auto mb-5 mb-md-9">
+        
+            <h2 class="display-4 mb-3 text-white font-weight-900 text-center">
+                <span class="px-3">
+                    O que podemos fazer por você
+                </span>
+            </h2>
+            <p class="lead text-white text-center">Saiba mais sobre os serviços que ofereço, de sites a videogames e
+                aplicativos.</p>
+        </div>
+
+        <!-- SVG Shape -->
+        <div class="position-absolute bottom-0 start-0 d-none d-lg-block" style="width: 10rem; margin-left: -9rem;">
+            <img class="img-fluid" src="{{ asset('assets/svg/illustrations/oc-peeking.svg') }}" alt="SVG">
+        </div>
+        <!-- End SVG Shape -->
+        <!-- End Card Grid -->
+
+        <div class="row gx-lg-7 gx-md-7 gy-lg-7 ">
+            <div class="col-lg-6 col-xl-6 col-sm-12 mb-3">
+
+                <a class="card shadow bg-dark border-bottom-green h-100" href="#" target="_blank">
+                    <div class="card-body">
+                        <div class="mb-5">
+                            <img class="img-fluid rounded-2" src="./assets/img/1200x900/img1.jpg" alt="Image Description">
+                        </div>
+                        <h3 class="display-6 font-weight-900 text-inherit-green">SOFTWARE HOUSE</h3>
+                        <p class="card-text lead text-white">Se você está procurando <span
+                                class="text-green font-weight-900">atualizar seu site ou construir
+                                um novo</span>,
+                            podemos ajudá-lo a encontrar uma solução que se adapte à sua marca e às suas
+                            necessidades.
+                            Desenvolvemos sites em pouco tempo e que se destacam da multidão.</p>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <button class="btn btn-theme-success btn-transition rounded-pill mb-4 font-weight-900" href="" target="_blank">SAIBA MAIS <span class="bi-chevron-right small ms-1"></span></button>
+                    </div>
+                </a>
+                <!-- End Card -->
+            </div>
+
+            <div class="col-lg-6 col-xl-6 col-sm-12 mb-3">
+                <a class="card shadow bg-dark border-bottom-green h-100" href="#" target="_blank">
+                    <div class="card-body">
+                        <div class="mb-5">
+                            <img class="img-fluid rounded-2" src="./assets/img/1200x900/img3.jpg" alt="Image Description">
+                        </div>
+
+                        <h3 class="display-6 font-weight-900 text-inherit-green">
+                            Marketing Digital</h3>
+                        <p class="card-text lead text-white">Se você está procurando <span>atualizar seu site ou
+                                construir
+                                um novo</span> ,
+                            posso ajudá-lo a encontrar uma solução que se adapte à sua marca e às suas
+                            necessidades.
+                            Eu desenho e desenvolvo sites que se destacam da multidão.</p>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <button class="btn btn-theme-success btn-transition rounded-pill mb-4 font-weight-900" href="" target="_blank">SAIBA MAIS <span class="bi-chevron-right small ms-1"></span></button>
+                    </div>
+                </a>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-lg-6 col-xl-6 col-sm-12 mb-3">
+
+                <!-- Card -->
+                <a class="card  shadow bg-dark border-bottom-purple h-100" href="#" target="_blank">
+                    <div class="card-body">
+                        <div class="mb-5">
+                            <img class="img-fluid rounded-2" src="./assets/img/1200x900/img2.jpg" alt="Image Description">
+                        </div>
+
+                        <h3 class="display-6 font-weight-900 text-inherit-purple">Solução de negócio</h3>
+                        <p class="card-text lead text-white">Se você está procurando <span>atualizar seu site ou
+                                construir
+                                um novo</span> ,
+                            posso ajudá-lo a encontrar uma solução que se adapte à sua marca e às suas
+                            necessidades.
+                            Eu desenho e desenvolvo sites que se destacam da multidão.</p>
+
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <button class="btn btn-theme-purple btn-transition rounded-pill mb-4 font-weight-900" href="" target="_blank">SAIBA MAIS <span class="bi-chevron-right small ms-1"></span></button>
+                    </div>
+                </a>
+                <!-- End Card -->
+            </div>
+
+            <div class="col-lg-6 col-xl-6 col-sm-12 mb-3">
+                <!-- Card -->
+                <a class="card shadow bg-dark border-bottom-purple h-100" href="#" target="_blank">
+                    <div class="card-body">
+                        <div class="mb-5">
+                            <img class="img-fluid rounded-2" src="./assets/img/1200x900/img4.jpg" alt="Image Description">
+                        </div>
+
+                        <h3 class="display-6 font-weight-900 text-inherit-purple">Produção de
+                            fotografia e video</h3>
+                        <p class="card-text lead text-white">Se você está procurando atualizar seu site ou construir
+                            um novo</span> ,
+                            posso ajudá-lo a encontrar uma solução que se adapte à sua marca e às suas
+                            necessidades.
+                            Eu desenho e desenvolvo sites que se destacam da multidão.</p>
+
+                    </div>
+                    <div class="col-lg-12 text-center mb-4">
+                        <button class="btn btn-theme-purple btn-transition rounded-pill font-weight-900" href="" target="_blank">SAIBA MAIS <span class="bi-chevron-right small ms-1"></span></button>
+                    </div>
+                </a>
+                <!-- End Card -->
+
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Row -->
+    </div>
+    <!-- End O QUE FAZEMOS --> --}}

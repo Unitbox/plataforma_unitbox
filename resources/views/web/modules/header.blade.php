@@ -41,7 +41,7 @@
                     <ul class="navbar-nav" style="font-weight:900">
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="{{ route('web.home') }}">HOME</a>
+                            <a class="nav-link active" href="#homeSection">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#produtosSection">PRODUTOS</a>
@@ -50,7 +50,7 @@
                             <a class="nav-link" href="#blogSection">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SAIBA MAIS</a>
+                            <a class="nav-link" href="#saibaMaisSection">SAIBA MAIS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ENTRAR</a>
