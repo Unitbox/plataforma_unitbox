@@ -3,6 +3,10 @@
 
 @section('content')
 
+    <!-- tools -->
+    <div class="message-toast"></div>
+    <!-- end tools -->
+
     <!-- ABERTURA -->
     <div id="homeSection" class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1"
         data-aos="fade-right">
@@ -126,7 +130,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img1.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                                        object-position: top;">
+                                                                                                                                                                                object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -155,7 +159,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img13.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                                        object-position: top;">
+                                                                                                                                                                                object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -366,108 +370,178 @@
     <!--fim Features -->
 
     <!--fale conosco -->
-    <!-- Contacts -->
-    <div class="position-relative">
-        <div class="bg-dark" style="background-image: url(./assets/svg/components/wave-pattern-light.svg);">
-            <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-1">
-                <!-- Heading -->
-                <div class="w-lg-50 text-center mx-lg-auto mb-7">
-                    <span class="text-cap text-white-70">Fale Conosco</span>
-                    <h2 class="text-white lh-base">Ficou com alguma dúvida? Precisa de ajuda, ou quer trabalhar a gente?
-                        <br> <span class="text-green">Let's chat.</span>
-                    </h2>
-                </div>
-                <!-- End Heading -->
+    <div class="bg-dark" style="background-image: url(./assets/svg/components/wave-pattern-light.svg);" id="faleconoscoSection">
+        <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-1">
+            <!-- Heading -->
+            <div class="w-lg-50 text-center mx-lg-auto mb-7">
+                <span class="text-cap text-white-70">Fale Conosco</span>
+                <h2 class="text-white lh-base">Ficou com alguma dúvida? Precisa de ajuda, ou quer trabalhar a gente?
+                    <br> <span class="text-green">Let's chat.</span>
+                </h2>
+            </div>
+            <!-- End Heading -->
 
-                <div class="mx-auto" style="max-width: 35rem;">
-                    <!-- Card -->
-                    <div class="card zi-2">
-                        <div class="card-body">
-                            <!-- Form -->
-                            <small class="text-small">Para entrar em contato conosco, preencha o formulário abaixo. Nós
-                                respondemos a quase todos dentro de um dia útil e estamos animados com seu contato.</small>
-                            <hr>
-                            <form>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <!-- Form -->
-                                        <div class="mb-3">
-                                            <label class="form-label" for="name">Nome *</label>
-                                            <input type="text" class="form-control form-control-lg" name="name" id="name"
-                                                placeholder="Digite seu nome" aria-label="Digite seu nome" required>
-                                        </div>
-                                        <!-- End Form -->
+            <div class="mx-auto" style="max-width: 35rem;">
+                <!-- Card -->
+                <div class="card zi-2">
+                    <div class="card-body">
+                        <!-- Form -->
+                        <small class="text-small">Para entrar em contato conosco, preencha o formulário abaixo. Nós
+                            respondemos a quase todos dentro de um dia útil e estamos animados com seu contato.</small>
+                        <hr>
+                        <form action="{{ route('web.faleconosco.store') }}" method="POST" name="form_faleconosco">
+                            @csrf
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <!-- Form -->
+                                    <div class="mb-3">
+                                        <label class="form-label" for="name">Nome *</label>
+                                        <input type="text" class="form-control form-control-lg" name="name" id="name"
+                                            placeholder="Digite seu nome" aria-label="Digite seu nome" value="Leonarrod"
+                                            required>
                                     </div>
+                                    <!-- End Form -->
                                 </div>
-                                <!-- End Row -->
+                            </div>
+                            <!-- End Row -->
 
-                                <div class="mb-3">
-                                    <label class="form-label" for="email">E-mail *</label>
-                                    <input type="email" class="form-control form-control-lg" name="email" id="email"
-                                        placeholder="ex. email@site.com" aria-label="email@site.com" required>
-                                </div>
-                                <!-- End Form -->
-
-                                <!-- Form -->
-                                <div class="mb-3">
-                                    <label class="form-label" for="companyname">Nome da Empresa<span
-                                            class="form-label-secondary"> (Opcional)</span></label>
-                                    <input type="text" class="form-control form-control-lg" name="companyname"
-                                        id="companyname" placeholder="Digite o nome da empresa"
-                                        aria-label="Digite o nome da empresa" required>
-                                </div>
-                                <!-- End Form -->
-
-                                <!-- Select -->
-                                <div class="mb-3">
-                                    <label class="form-label" for="subject">Seu Interesse *</label>
-                                    <select id="subject" class="form-select form-select-lg" name="hireUsFormNameBudget"
-                                        aria-label="Seu Interesse" required>
-                                        <option selected>Selecione..</option>
-                                        <option value="duvida">Dúvidas</option>
-                                        <option value="parceria">Parceria</option>
-                                        <option value="orcamento">Orçamento</option>
-                                        <option value="outros">Outros</option>
-                                    </select>
-                                </div>
-                                <!-- End Select -->
-
-                                <!-- Form -->
-                                <div class="mb-4">
-                                    <label class="form-label" for="message">Mensagem *</label>
-                                    <textarea class="form-control form-control-lg" name="message" id="message"
-                                        placeholder="Digite sua mensagem" aria-label="Digite sua mensagem"
-                                        rows="4"></textarea>
-                                </div>
-                                <!-- End Form -->
-
-                                <!-- Check -->
-                                <div class="form-check mb-4">
-                                    <input type="checkbox" class="form-check-input" id="signupFormPrivacyCheck"
-                                        name="signupFormPrivacyCheck" required data-msg="Please accept our Privacy Policy.">
-                                    <label class="form-check-label" for="signupFormPrivacyCheck"> Aceito compartilhar
-                                        minhas informações com a <b>Unitbox</b> e estou ciente da
-                                        <a href=./page-privacy.html>Política de Privacidade.</a></label>
-                                </div>
-                                <!-- End Check -->
-
-                                <div class="d-grid mb-2">
-                                    <button type="submit" class="btn btn-theme-purple btn-lg">Enviar Mensagem</button>
-                                </div>
-
-                                <div class="text-center">
-                                    <span class="form-text"> <small>Fica tranquilo, também odeio SPAM!
-                                            Seu e-mail está seguro comigo. ❤️</small></span>
-                                </div>
-                            </form>
+                            <div class="mb-3">
+                                <label class="form-label" for="email">E-mail *</label>
+                                <input type="email" class="form-control form-control-lg" name="email" id="email"
+                                    placeholder="ex. email@site.com" aria-label="email@site.com"
+                                    value="leonardo.silva@sconline.com.br" required>
+                            </div>
                             <!-- End Form -->
-                        </div>
+
+                            <!-- Form -->
+                            <div class="mb-3">
+                                <label class="form-label" for="companyname">Nome da Empresa<span
+                                        class="form-label-secondary"> (Opcional)</span></label>
+                                <input type="text" class="form-control form-control-lg" name="companyname" id="companyname"
+                                    placeholder="Digite o nome da empresa" aria-label="Digite o nome da empresa"
+                                    value="Teste" required>
+                            </div>
+                            <!-- End Form -->
+
+                            <!-- Select -->
+                            <div class="mb-3">
+                                <label class="form-label" for="subject">Seu Interesse *</label>
+                                <select id="subject" class="form-select form-select-lg" name="subject"
+                                    aria-label="Seu Interesse" required>
+                                    <option>Selecione..</option>
+                                    <option value="duvida" selected>Dúvidas</option>
+                                    <option value="parceria">Parceria</option>
+                                    <option value="orcamento">Orçamento</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <!-- End Select -->
+
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label class="form-label" for="message">Mensagem *</label>
+                                <textarea class="form-control form-control-lg" name="message" id="message"
+                                    placeholder="Digite sua mensagem" aria-label="Digite sua mensagem"
+                                    rows="4">dasdasdasdsa</textarea>
+                            </div>
+                            <!-- End Form -->
+
+                            <!-- Check -->
+                            <div class="form-check mb-4">
+                                <input type="checkbox" class="form-check-input" id="aceite" name="aceite"
+                                    data-msg="Campo obrigatório.">
+                                <label class="form-check-label" for="aceite"> Aceito compartilhar
+                                    minhas informações com a <b>Unitbox</b> e estou ciente da
+                                    <a href=./page-privacy.html>Política de Privacidade.</a></label>
+                            </div>
+                            <!-- End Check -->
+
+                            <div class="d-grid mb-2">
+                                <button type="submit"
+                                    class="btn btn-theme-purple btn-lg btn-faleconosco font-weight-900">Enviar
+                                    Mensagem</button>
+                            </div>
+
+                            <div class="text-center">
+                                <span class="form-text"> <small>Fica tranquilo, também odeio SPAM!
+                                        Seu e-mail está seguro comigo. ❤️</small></span>
+                            </div>
+                        </form>
+                        <!-- End Form -->
                     </div>
-                    <!-- End Card -->
                 </div>
+                <!-- End Card -->
             </div>
         </div>
     </div>
     <!-- fim fale conosco -->
+@endsection
+@section('js')
+    <script>
+        $(function() {
+
+            $.ajaxSetup({
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
+                }
+            });
+
+            $('form[name="form_faleconosco"]').submit(function(e) {
+                e.preventDefault();
+
+                if (!$(this).valid()) {
+                    return false;
+                }
+
+                const form = $(this);
+                const action = form.attr('action');
+                const form_data = $(this).serialize();
+
+                var button = $(".btn-faleconosco");
+
+                button.addClass('disabled')
+                    .html(
+                        '<span class="spinner-border spinner-border-sm " role="status" aria-hidden="true"></span> ' +
+                        button.text());
+
+                $.post(action, form_data, 'json')
+                    .done(function(response) {
+
+                        $(button).removeClass('disabled').html(button.text());
+                    })
+                    .fail(function(xhr, status, error) {
+                        if (xhr.status === 401 || xhr.status === 419) {
+                            getapp.message(
+                                "Whoops, sua sessão expirou, você será redirecionado! Por favor aguarde.",
+                                "warning");
+                            setTimeout(function() {
+                                window.location.reload();
+                            }, 2000);
+                            return false;
+                        }
+                        if (xhr.status === 422) {
+                            var errors = xhr.responseJSON;
+
+                            var errorsHtml = "";
+                            $.each(errors, function(key, value) {
+                                if ($.isPlainObject(value)) {
+                                    $.each(value, function(key, value) {
+                                        errorsHtml += "* " + value + "</br>";
+                                    });
+                                }
+                            });
+                            short.message("danger", "Whoops, Mensagem não enviada!", errorsHtml);
+                        } else {
+                            short.message("danger",
+                                "Whoops, Estamos com problemas no momento, tente novamente mais tarxe!",
+                                "");
+                        }
+
+                        $(button).removeClass('disabled').html(button.text());
+                    })
+                    .always(function() {});
+            });
+        });
+    </script>
 
 @endsection

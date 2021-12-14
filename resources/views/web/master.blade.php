@@ -19,6 +19,10 @@
 
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
+    @hasSection('css')
+        @yield('css')
+    @endif
+
 
     <style type="text/css">
         /* html {
@@ -110,7 +114,7 @@
                     <!-- Logo -->
                     <div class="mb-5">
                         <a class="navbar-brand" href="./index.html" aria-label="Space">
-                            <span class="font-weight-900 text-white" style="font-size: 30px"> UNIT <i
+                            <span class="font-weight-900 text-white" style="font-size: 30px">UNIT <i
                                     class="bi bi-box text-success" style="font-size: 30px"></i> BOX </span>
                         </a>
                     </div>
@@ -121,12 +125,12 @@
                         <h6>VAMOS TOMAR UM CAFÉ? </h6>
                         <li> <a class="link-sm" href="mailto:contato@unitbox.com.br"><i
                                     class="bi bi-envelope me-1"></i> contato@unitbox.com.br</a>
-
                         </li>
                         <li>
-                            <a class="btn small btn-theme-purple rounded-pill" href="" target="_blank"
+                            <a class="btn small btn-theme-purple rounded-pill slidelink" href="#faleconoscoSection"
                                 style="font-weight:900; font-size: 12px">FALE CONOSCO<span
-                                    class="bi-chevron-right small ms-1"></span></a>
+                                    class="bi-chevron-right small ms-1"></span>
+                            </a>
                         </li>
 
                     </ul>
@@ -284,16 +288,22 @@
     <!-- JS Global Compulsory  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- JS Implementing Plugins -->
-    <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
-    <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-    <script src="./assets/vendor/aos/dist/aos.js"></script>
-    <script src="./assets/vendor/fslightbox/index.js"></script>
+    <script src="{{ asset('assets/vendor/hs-header/dist/hs-header.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/hs-go-to/dist/hs-go-to.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/aos/dist/aos.js') }}"></script>
+    <script src="{{ asset('assets/vendor/fslightbox/index.js') }}"></script>
+    <script src="{{ asset('assets/vendor/jquery-validate/validate.js') }}"></script>
 
     <!-- JS Front -->
-    <script src="./assets/js/theme.min.js"></script>
+    <script src="{{ asset('assets/js/theme.min.js') }}"></script>
+    <script src="{{ asset('assets/js/theme-custom.js') }}"></script>
+
+    @hasSection('js')
+        @yield('js')
+    @endif
 
     <!-- JS Plugins Init. -->
     <script>
@@ -310,7 +320,6 @@
             // =======================================================
             new HSGoTo('.js-go-to')
 
-
             // INITIALIZATION OF AOS
             // =======================================================
             AOS.init({
@@ -318,7 +327,7 @@
                 once: true
             });
 
-            $("li.nav-item .nav-link").click(function(e) {
+            $("li.nav-item .nav-link, .slidelink").click(function(e) {
                 e.preventDefault();
 
                 $('.navbar-nav .nav-item a.active').removeClass('active');

@@ -1,4 +1,4 @@
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-dark navbar-show-hide "
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-dark navbar-show-hide"
     data-hs-header-options='{
   "fixMoment": 1000,
   "fixEffect": "slide"
@@ -11,7 +11,7 @@
     </div>
     <!-- FIM PROMOÇÃO --> --}}
 
-    <div class="container my-2">
+    <div class="container">
         <nav class="navbar-nav-wrap">
             <!-- Default Logo -->
             <a class="navbar-brand " href="{{ route('web.home') }}" aria-label="Unitibox">
@@ -69,7 +69,7 @@
 
                         <!-- Button -->
                         <li class="nav-item ps-lg-4 ps-md-4">
-                            <a class="btn btn-theme-purple btn-transition rounded-pill" href="" target="_blank"
+                            <a class="btn btn-theme-purple btn-transition rounded-pill slidelink" href="#faleconoscoSection"
                                 style="font-weight:900">FALE CONOSCO<span
                                     class="bi-chevron-right small ms-1"></span></a>
                         </li>
