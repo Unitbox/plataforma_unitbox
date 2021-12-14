@@ -106,7 +106,8 @@
                     <!-- Logo -->
                     <div class="mb-5">
                         <a class="navbar-brand" href="./index.html" aria-label="Space">
-                            <span class="font-weight-900 text-white" style="font-size: 30px"> UNIT <i class="bi bi-box text-success" style="font-size: 30px"></i> BOX </span>
+                            <span class="font-weight-900 text-white" style="font-size: 30px"> UNIT <i
+                                    class="bi bi-box text-success" style="font-size: 30px"></i> BOX </span>
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -285,7 +286,8 @@
     <script src="./assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
     <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
     <script src="./assets/vendor/aos/dist/aos.js"></script>
-    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
+    <script src="./assets/vendor/fslightbox/index.js"></script>
 
     <!-- JS Front -->
     <script src="./assets/js/theme.min.js"></script>
@@ -329,22 +331,16 @@
             // HSCore.components.HSTyped.init('.js-typedjs')
 
 
-
-
-            // INITIALIZATION OF SWIPER
+            // INITIALIZATION OF SCROLLSPY
             // =======================================================
-            var slidesPerView = new Swiper('.js-swiper-slides-per-view', {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                pagination: {
-                    el: '.js-swiper-slides-per-view-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.js-swiper-slides-per-view-button-next',
-                    prevEl: '.js-swiper-slides-per-view-button-prev',
-                },
-            });
+            new bootstrap.ScrollSpy(document.body, {
+                target: '#navbarNavDropdownNav'
+            })
+
+            new HSScrollspy('#navbarNavDropdown', {
+                breakpoint: 'lg',
+                scrollOffset: -10
+            })
 
 
 

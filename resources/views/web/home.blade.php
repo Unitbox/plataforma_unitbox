@@ -4,37 +4,42 @@
 @section('content')
 
     <!-- ABERTURA -->
-    <div class="container content-space-2 content-space-lg-4 content-space-md-4 content-space-b-2" data-aos="fade-right">
+    <div id="homeSection" class="container content-space-2 content-space-lg-4 content-space-md-4 content-space-b-1" data-aos="fade-right" >
         <div class="row">
-            <div class="col-md-7 col-lg-7 mb-7 mb-md-0 text-lg-start text-md-start text-center">
+            <div class="col-md-6 col-lg-6 mb-7 mb-md-0 text-lg-start text-md-start text-center">
                 <!-- TEXT ABERTURA -->
                 <div class="mb-5 ">
-                    <span class="text-cap text-success">TIRE SUA IDEIA DO PAPEL</span>
+                    <span class="text-cap text-success">PENSE FORA DA CAIXA</span>
                     <h1 class="display-4 mb-3 text-white font-weight-900">Desenvolvemos Soluções que melhoram o seu
                         negócio</h1>
                     <p class="lead font-weight-900" style="font-size: 35px;">
                         <span class="text-purple">PENSE.</span>
-                        <span class="text-white">CRIE.</span>
+                        <span class="text-primary">CRIE.</span>
                         <span class="text-green">APRIMORE.</span>
                     </p>
                     <div class="text-lg-start text-md-start text-center gap-3">
-                        <a class="px-2 py-3 btn btn-theme-success btn-transition rounded-pill font-weight-600 "
-                            href="#">AUMENTE O NÍVEL DO SEU NEGÓCIO <span class="bi-chevron-right small ms-1"></span></a>
+                        <a class="btn btn-theme-purple btn-transition font-weight-600  me-2"
+                            href="./page-login-simple.html">
+                            FALE CONOSCO <i class="bi-chevron-right small ms-1"></i>
+                        </a>
+
+                        <a class="video-player btn btn-white btn-transition"
+                            href="https://www.youtube.com/watch?v=d4eDWc8g0e0" role="button"
+                            data-fslightbox="youtube-video">
+                            <i class="bi-play-circle-fill me-1"></i> <span
+                                class="d-none d-md-inline-block">SAIBA MAIS</span>
+                        </a>
                     </div>
                 </div>
                 <!-- End TEXT ABERTURA -->
             </div>
             <!-- End Col -->
             <!-- IMAGEM ABERTURA -->
-            <div class="col-md-5">
-                <div class="position-relative">
-                    <img class="img-fluid rounded-2" src="./assets/svg/components/card-10.svg" alt="Image Description">
-                    <div class="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5">
-                    </div>
+            <div class="col-md-6" >
+                <div class="position-relative p-0">
+                    <img class="img-fluid rounded-2" src="https://lzctrl.com/_next/static/images/lzHero-806d116c1e687af68dca75834b30dbef.png"  alt="Image Description">
                 </div>
             </div>
-
-
             <!-- END IMAGEM ABERTURA -->
             <!-- End Col -->
         </div>
@@ -42,12 +47,10 @@
     </div>
     <!-- End ABERTURA -->
     
-    <!-- O QUE FAZEMOS -->
+    {{-- <!-- O QUE FAZEMOS -->
     <div class="container content-space-1 content-space-lg-1 content-space-md-1 content-space-b-2" data-aos="fade-up">
         <div class="w-md-90 w-lg-80 mx-md-auto mb-5 mb-md-9">
-            <span class="text-cap text-center">
-                <i class="bi bi-box text-success font-weight-900" style="font-size: 60px"></i>
-            </span>
+        
             <h2 class="display-4 mb-3 text-white font-weight-900 text-center">
                 <span class="px-3">
                     O que podemos fazer por você
@@ -72,8 +75,7 @@
                         <div class="mb-5">
                             <img class="img-fluid rounded-2" src="./assets/img/1200x900/img1.jpg" alt="Image Description">
                         </div>
-                        <h3 class="display-6 font-weight-900 text-inherit-green">Criação de site e
-                            aplicativos Mobile</h3>
+                        <h3 class="display-6 font-weight-900 text-inherit-green">SOFTWARE HOUSE</h3>
                         <p class="card-text lead text-white">Se você está procurando <span
                                 class="text-green font-weight-900">atualizar seu site ou construir
                                 um novo</span>,
@@ -164,10 +166,10 @@
         </div>
         <!-- End Row -->
     </div>
-    <!-- End O QUE FAZEMOS -->
+    <!-- End O QUE FAZEMOS --> --}}
 
     <!-- Card Grid -->
-    <div class="container content-space-1 content-space-lg-1 content-space-md-1 content-space-b-2">
+    <div id="produtosSection" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h1 class="display-4 mb-3 text-white font-weight-900">Projetos que desenvolvemos
             </h1>
@@ -305,7 +307,7 @@
     </div>
     <!-- End Card Grid -->
 
-    <div class="container content-space-1 content-space-lg-1 content-space-md-1 content-space-b-2">
+    <div id="blogSection" class="container content-space-2 content-space-lg-3 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h1 class="display-4 mb-3 text-white font-weight-900">De uma olhada no nosso blog
             </h1>

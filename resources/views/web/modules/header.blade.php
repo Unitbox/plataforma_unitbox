@@ -14,8 +14,10 @@
     <div class="container my-2">
         <nav class="navbar-nav-wrap">
             <!-- Default Logo -->
-            <a class="navbar-brand" href="./index.html" aria-label="Front">
-                <span class="font-weight-900 " style="font-size: 30px"> UNIT <i class="bi bi-box text-success" style="font-size: 30px"></i> BOX </span>
+            <a class="navbar-brand" href="{{ route('web.home') }}" aria-label="Unitibox">
+                <span class="font-weight-900 " style="font-size: 30px"> UNIT 
+                    <i class="bi bi-box text-success" style="font-size: 30px"></i> 
+                    <span class="text-green"></span> BOX </span>
             </a>
             <!-- End Default Logo -->
 
@@ -37,17 +39,16 @@
                     <ul class="navbar-nav" style="font-weight:900">
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="../demo-shop/index.html">HOME</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="../demo-shop/index.html">PORTIFÓLIO</a>
+                            <a class="nav-link active" href="{{ route('web.home') }}">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../demo-shop/index.html">BLOG</a>
+                            <a class="nav-link" href="#produtosSection">PRODUTOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../demo-shop/index.html">LEARNING TO CODE</a>
+                            <a class="nav-link" href="#blogSection">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ENTRAR</a>
                         </li>
 
                         {{-- <li class="nav-item">
@@ -64,7 +65,7 @@
                         <!-- Button -->
                         <li class="nav-item ps-lg-4 ps-md-4">
                             <a class="btn btn-theme-purple btn-transition rounded-pill" href="" target="_blank"
-                                style="font-weight:900">AUMENTE O NÍVEL <span
+                                style="font-weight:900">FALE CONOSCO<span
                                 class="bi-chevron-right small ms-1"></span></a>
                         </li>
                         <!-- End Button -->
