@@ -17,7 +17,7 @@ class FaleConoscoController extends Controller
         $request->validate([
             'name' => 'required|max:191',
             'email' => 'email|required|max:191',
-            'companyname' => 'nullable|max:191',
+            'company_name' => 'nullable|max:191',
             'subject' => 'required|max:191',
             'message' => 'required',
             'aceite' => 'required|max:191',
@@ -38,9 +38,4 @@ class FaleConoscoController extends Controller
             'message' => 'Em breve entraremo em contato. Obrigado!'], 200);
     }
 
-    public function index() 
-    {
-        
-
-    }
 }

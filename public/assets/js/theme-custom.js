@@ -31,7 +31,7 @@ var short = (function () {
         toast += '</span>';
         toast += '</div>';
         toast += '<div class="flex-grow-1 ms-3">';
-        toast += '<h5 class="mb-0">'+ assunto +'</h5>';
+        toast += '<h5 class="mb-0">' + assunto + '</h5>';
         toast += '</div>';
         toast += '<div class="text-end">';
         toast += '<button type="button" class="btn-close text-white avatar avatar-sm rounded-circle shadow-sm p-0" data-bs-dismiss="toast" aria-label="Close"></button>';
@@ -39,7 +39,7 @@ var short = (function () {
         toast += '</div>';
         toast += '</div>';
         if (message != "" || message != null) {
-            toast += '<div class="toast-body text-white-70">'+ message+'</div>';
+            toast += '<div class="toast-body text-white-70">' + message + '</div>';
         }
         toast += '</div>';
 
@@ -48,6 +48,36 @@ var short = (function () {
         const liveToast = new bootstrap.Toast(document.querySelector('#liveToast'));
 
         liveToast.show();
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        let expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function checkCookie() {
+        let cookies = getCookie("cookie_funcional");
+        if (cookies == "") {
+            $(".notification_cookie").show();
+        }
     }
 
 
@@ -181,5 +211,8 @@ var short = (function () {
         message: message,
         lock: lock,
         unlock: unlock,
+        setCookie: setCookie,
+        getCookie: getCookie,
+        checkCookie: checkCookie
     };
 }());

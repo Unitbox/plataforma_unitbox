@@ -23,8 +23,8 @@
                         <span class="text-green">APRIMORE.</span>
                     </p>
                     <div class="text-lg-start text-md-start text-center gap-3">
-                        <a class="btn btn-theme-purple btn-transition font-weight-600  me-2"
-                            href="./page-login-simple.html">
+                        <a class="btn btn-theme-purple btn-transition font-weight-600 slidelink me-2"
+                            href="#faleconoscoSection">
                             FALE CONOSCO <i class="bi-chevron-right small ms-1"></i>
                         </a>
 
@@ -417,7 +417,7 @@
                             <div class="mb-3">
                                 <label class="form-label" for="companyname">Nome da Empresa<span
                                         class="form-label-secondary"> (Opcional)</span></label>
-                                <input type="text" class="form-control form-control-lg" name="companyname" id="companyname"
+                                <input type="text" class="form-control form-control-lg" name="company_name" id="company_name"
                                     placeholder="Digite o nome da empresa" aria-label="Digite o nome da empresa"
                                     value="" required>
                             </div>
@@ -504,6 +504,8 @@
                         short.message(response.status, response.subject, response.message);
 
                         $(button).removeClass('disabled').html(button.text());
+
+                        $(form).trigger("reset");
                     })
                     .fail(function(xhr, status, error) {
                         if (xhr.status === 401 || xhr.status === 419) {

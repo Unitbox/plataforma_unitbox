@@ -98,6 +98,10 @@
     @include('web.modules.header')
     <!-- ========== END HEADER ========== -->
 
+    <!-- ========== COOKIE ========== -->
+    @include('web.modules.notificationcookie')
+    <!-- ========== END COOKIE ========== -->
+
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
 
@@ -321,6 +325,8 @@
         (function() {
 
             short.init();
+            short.checkCookie();
+
             // INITIALIZATION OF HEADER
             // =======================================================
             new HSHeader('#header').init()
@@ -352,8 +358,17 @@
                     }, 'slow');
                     $('.navbar-collapse').collapse('hide');
                 }
+            });
+
+            $(".btn_cookie").click(function() {
+
+               const days = 10;
+               short.setCookie("cookie_funcional", true, days);
+               short.setCookie("cookie_otimizacao", $('input[name="otimizacao"]').is(':checked'), days);
+               short.setCookie("cookie_estatistica", $('input[name="otimizacao"]').is(':checked'), days);
 
             });
+
         })()
     </script>
 </body>
