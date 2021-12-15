@@ -61,7 +61,9 @@ class FaleConoscoController extends Controller
 
         Mail::send(new FaleConoscoMail($contato));
 
-        return new FaleConoscoMail($contato);
+        dd("mensagem Enviada");
+
+        //return new FaleConoscoMail($contato);
 
     }
 }
