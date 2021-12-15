@@ -6,7 +6,7 @@
     <!-- tools -->
     <div class="message-toast"></div>
     <!-- end tools -->
-{{-- 
+
     <!-- ABERTURA -->
     <div class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1" data-aos="fade-right">
         <div class="row">
@@ -51,7 +51,7 @@
         </div>
 
     </div>
-    <!-- End ABERTURA --> --}}
+    <!-- End ABERTURA -->
 
     <!-- Card Grid -->
     <div id="produtosSection" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2">
