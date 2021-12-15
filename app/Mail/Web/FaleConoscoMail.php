@@ -2,6 +2,7 @@
 
 namespace App\Mail\Web;
 
+use App\Models\Web\FaleConosco;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -12,18 +13,21 @@ class FaleConoscoMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    private $user;
+    private $contato;
 
-    public function __construct(stdClass $user)
+    public function __construct(stdClass $contato)
     {
-        $this->user = $user;
+        $this->contato = $contato;
     }
 
     public function build()
     {
-        $this->subject('Teste');
-        $this->to('leoaugusto45@gmail.com');
+        $this->subject('Nova Mensagem do Site');
+        $this->to($this->contato->to);
 
-        return $this->markdown('mail.web.faleconoscoemail', ['name' => $this->user->name]);
+        return $this->markdown('mail.web.faleconoscoemail', [
+            'url' => $this->contato->url,
+           
+        ]);
     }
 }

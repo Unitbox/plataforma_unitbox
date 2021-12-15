@@ -247,6 +247,15 @@ img {
     border-left: 18px solid #e3342f;
 }
 
+.button-purple,
+.button-success {
+    background-color: #6f42c1;
+    border-top: 10px solid #6f42c1;
+    border-right: 18px solid #6f42c1;
+    border-bottom: 10px solid #6f42c1;
+    border-left: 18px solid #6f42c1;
+}
+
 /* Panels */
 
 .panel {
