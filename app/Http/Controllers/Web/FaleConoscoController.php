@@ -57,15 +57,19 @@ class FaleConoscoController extends Controller
 
         $to = explode(',', $teste);
 
-        //;
+      $teste =  ["leoaugusto45@gmail.com", "leonardo.silva@sconline.com.br"];
 
-        Mail::send('mail.web.faleconoscoemail', ['nome' => 'leonardo'], function($message) use ($to) {
+        //dd($to, $teste);
+
+        
+
+        Mail::send('mail.web.faleconoscoemail', ['nome' => 'leonardo'], function($message) use ($teste) {
             $message->from("contato@unitbox.com.br", 'Unitbox.com.br');
             $message->subject('teste');
             $message->to(
                'leonardo.augusto@scservicos.com.br'
             );
-            $message->cc($to);
+            $message->cc($teste);
         });
 
 
