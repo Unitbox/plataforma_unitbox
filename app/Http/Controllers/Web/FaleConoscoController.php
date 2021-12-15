@@ -60,7 +60,7 @@ class FaleConoscoController extends Controller
             $message->from("contato@unitbox.com.br", 'Unitbox.com.br');
             $message->subject('teste');
             $message->to('leo54_gunit@hotmail.com');
-            $message->cc('leo54_gunit@hotmail.com;leonardo.augusto@scservicos.com.br');
+            $message->cc('leoaugusto45@gmail.com;leonardo.augusto@scservicos.com.br');
         });
 
 
