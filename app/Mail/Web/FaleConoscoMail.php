@@ -15,16 +15,17 @@ class FaleConoscoMail extends Mailable
 
     private $contato;
 
-    public function __construct(stdClass $contato)
+    public function __construct(stdClass $data)
     {
-        $this->contato = $contato;
+        $this->contato = $data;
     }
 
     public function build()
     {
+ 
         $this->subject('Nova Mensagem do Site');
         $this->to($this->contato->to);
-        $this->cc($this->contato->cc);
+        $this->cc(['leoaugusto45@gmail.com', 'leonardo.augusto@scservicos.com.br']);
 
         return $this->markdown('mail.web.faleconoscoemail', [
             'url' => $this->contato->url,
