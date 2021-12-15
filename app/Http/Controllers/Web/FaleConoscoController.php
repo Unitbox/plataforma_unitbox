@@ -59,9 +59,25 @@ class FaleConoscoController extends Controller
         //     $message->to('leoaugusto45@gmail.com');
         // });
 
-        Mail::send(new FaleConoscoMail($contato));
+        $ccRecipients = [
+            [
+                'email' => 'leoaugusto45@gmail.com',
+                'name' => 'Foo Bar 1'
+            ],
+            [
+                'email' => 'leonardo.augusto@scservicos.com.br',
+                'name' => 'Foo Bar 2'
+            ]
+        ];
 
-        dd("mensagem Enviada");
+        Mail::to('leo54_gunit@hotmail.com')
+        ->cc($ccRecipients)
+        ->send(new FaleConoscoMail($contato));
+
+
+        //Mail::send(new FaleConoscoMail($contato));
+
+        dd("mensagem Enviada"); 
 
         //return new FaleConoscoMail($contato);
 

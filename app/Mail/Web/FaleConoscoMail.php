@@ -24,8 +24,8 @@ class FaleConoscoMail extends Mailable
     {
  
         $this->subject('Nova Mensagem do Site');
-        $this->to('leonardo.augusto@scservicos.com.br');
-        $this->cc(['leoaugusto45@gmail.com', 'leonardo.augusto@scservicos.com.br']);
+        // $this->to('leonardo.augusto@scservicos.com.br');
+        // $this->cc(['leoaugusto45@gmail.com', 'leonardo.augusto@scservicos.com.br']);
 
         return $this->markdown('mail.web.faleconoscoemail', [
             'url' => $this->contato->url,
