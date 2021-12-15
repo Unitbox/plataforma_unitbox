@@ -48,23 +48,15 @@ class FaleConoscoController extends Controller
     public function index() 
     {
         $contato = new stdClass;
-        $contato->name = "Leonardo Augusto Soares da Silva";
-        $contato->to = 'leo54_gunit@hotmail.com';
         $contato->cc = ['leoaugusto45@gmail.com', 'leonardo.augusto@scservicos.com.br'];
         $contato->url = "https://uniplay.com.br";
 
-        $teste = 'leoaugusto45@gmail.com,leonardo.silva@sconline.com.br';
-
-        $to = explode(',', $teste);
-
-      $teste =  ["leoaugusto45@gmail.com", "leonardo.silva@sconline.com.br"];
-
-        //dd($to, $teste);
+        $copia =  ["leoaugusto45@gmail.com", "leonardo.silva@sconline.com.br"];
 
         Mail::to(
             'leonardo.augusto@scservicos.com.br'
          )
-        ->cc($teste)
+        ->cc($copia)
         ->send(new FaleConoscoMail($contato));
 
         // Mail::send('mail.web.faleconoscoemail', ['nome' => 'leonardo'], function($message) use ($teste) {
