@@ -8,7 +8,7 @@
     <!-- end tools -->
 
     <!-- ABERTURA -->
-    <div id="homeSection" class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1"
+    <div class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1"
         data-aos="fade-right">
         <div class="row">
             <div class="col-md-6 col-lg-6 mb-7 mb-md-0 text-lg-start text-md-start text-center">

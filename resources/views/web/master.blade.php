@@ -216,10 +216,10 @@
                     <!-- Socials -->
                     <ul class="list-inline list-separator mb-0">
                         <li class="list-inline-item">
-                            <a class="text-body" href="#">Política de Privacidade </a>
+                            <a class="text-body" href="{{ route('web.privacidade') }}">Política de Privacidade </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="text-body" href="#">Termos de Uso</a>
+                            <a class="text-body" href="{{ route('web.termos') }}">Termos de Uso</a>
                         </li>
                     </ul>
                     <!-- End Socials -->
@@ -350,8 +350,11 @@
                 e.preventDefault();
 
                 $('.navbar-nav .nav-item a.active').removeClass('active');
+                
                 $(this).addClass('active');
                 var aid = $(this).attr("href");
+                console.log(aid);
+
                 if (aid.length > 2 && aid.indexOf("#") >= 0) {
                     $('html,body').animate({
                         scrollTop: $(aid).offset().top

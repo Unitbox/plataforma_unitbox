@@ -1,10 +1,11 @@
 <!-- Cookie Alert -->
 <div class="container position-fixed bottom-0 start-0 end-0 zi-3 notification_cookie" style="display: none;">
-    <div class="alert alert-white w-lg-75 shadow-sm mx-auto" role="alert">
+    <div class="alert alert-white w-lg-75 shadow-sm mx-auto " role="alert">
         <h5 class="text-dark">Este website utiliza cookies</h5>
         <p class="small">
             A Unitbox utiliza cookies para personalizar e aprimorar a experiência, além de fornecer funcionalidades de redes sociais e analisar o nosso tráfego.
-            Você poderá consentir o uso de tais tecnologias ao usar o botão <strong>“Aceitar”</strong>. <a href="">Clique aqui</a> para saber mais.</p>
+            Você poderá consentir o uso de tais tecnologias ao usar o botão <strong>“Aceitar”</strong>. 
+            <a href="{{ route('web.privacidade') }}">Clique aqui</a> para saber mais.</p>
             
         <div class="row align-items-sm-center ">
             <div class="col-sm-8 mb-3 mb-sm-0 cookies_checkbox">
