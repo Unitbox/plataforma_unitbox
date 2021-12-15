@@ -90,13 +90,7 @@
         }
 
 
-        .accordion-button:not(.collapsed)::after {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M5.5,13a.5.5,0,0,1-.5-.5v-1a.5.5,0,0,1,.5-.5h13a.5.5,0,0,1,.5.5v1a.5.5,0,0,1-.5.5Z'/%3e%3c/svg%3e");
-        }
-
-        .accordion-button.collapsed::after {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-        }
+  
 
     </style>
 
@@ -108,7 +102,7 @@
     <!-- ========== END HEADER ========== -->
 
     <!-- ========== COOKIE ========== -->
-
+    @include('web.modules.notificationcookie')
     <!-- ========== END COOKIE ========== -->
 
     <!-- ========== MAIN CONTENT ========== -->
@@ -117,13 +111,170 @@
         @yield('content')
 
     </main>
-
-    <!-- ========== FOOTER ========== -->
-
-    <!-- ========== END FOOTER ========== -->
     <!-- ========== END MAIN CONTENT ========== -->
 
-    {{-- <!-- Go To -->
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-dark">
+        <div class="container pb-1 pb-lg-2">
+            <div class="row content-space-t-1">
+                <div class="col-lg-3 mb-7 mb-lg-0">
+                    <!-- Logo -->
+                    <div class="mb-5">
+                        <a class="navbar-brand" href="./index.html" aria-label="Space">
+                            <span class="font-weight-900 text-white" style="font-size: 30px">UNIT <i
+                                    class="bi bi-box text-success" style="font-size: 30px"></i> BOX </span>
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-2">
+                        <h6>VAMOS TOMAR UM CAFÉ? </h6>
+                        <li> <a class="link-sm" href="mailto:contato@unitbox.com.br"><i
+                                    class="bi bi-envelope me-1"></i> contato@unitbox.com.br</a>
+                        </li>
+                        <li>
+                            <a class="btn small btn-theme-purple rounded-pill slidelink" href="#faleconoscoSection"
+                                style="font-weight:900; font-size: 12px">FALE CONOSCO<span
+                                    class="bi-chevron-right small ms-1"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- End List -->
+
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm mb-7 mb-sm-0">
+                    <h5 class="mb-3 ">LINKS RÁPIDOS</h5>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-secondary font-weight-bolder" href="#">PÁGINA PRINCIPAL</a></li>
+                        <li><a class="link-sm link-secondary" href="#">PORTIFÓLIO
+                            </a></li>
+                        <li><a class="link-sm link-secondary" href="#">BLOG</a></li>
+                        <li><a class="link-sm link-secondary" href="#">SOBRE NÓS</a></li>
+                        {{-- <li><a class="link-sm link-secondary" href="#">TRABALHE CONOCOSCO</a></li> --}}
+                    </ul>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm mb-7 mb-sm-0">
+                    <h5 class="mb-3 ">ALGUNS PROJETOS</h5>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-secondary" href="#">MIMICS ARCADE </a></li>
+                        <li><a class="link-sm link-secondary" href="#">WAY BOX</a></li>
+                        <li><a class="link-sm link-secondary" href="#">CHATBOT</a></li>
+                        <li><a class="link-sm link-secondary" href="#">LANDING PAGE</a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm">
+                    <h5 class="mb-3 ">PLATAFORMA</h5>
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-5">
+                        <li><a class="link-sm link-secondary" href="#"><i class="bi-person-circle me-1"></i> ENTRAR</a>
+                        </li>
+                        <li><a class="link-sm link-secondary" href="#"><i class="bi-question-circle-fill me-1"></i>
+                                CENTRAL DE AJUDA</a></li>
+                    </ul>
+                    <h5 class="mb-3 ">NOSSOS INTEGRANTES</h5>
+                    <div class="col-auto mt-3">
+                        <!-- Avatar Group -->
+                        <div class="avatar-group avatar-group-sm mb-1">
+                            <span class="avatar avatar-circle">
+                                <img class="avatar-img" src="../assets/img/160x160/img10.jpg"
+                                    alt="Image Description">
+                            </span>
+                            <span class="avatar avatar-dark avatar-circle">
+                                <span class="avatar-initials">A</span>
+                            </span>
+                            <span class="avatar avatar-circle">
+                                <img class="avatar-img" src="../assets/img/160x160/img3.jpg"
+                                    alt="Image Description">
+                            </span>
+                            <span class="avatar avatar-primary avatar-circle">
+                                <span class="avatar-initials">2+</span>
+                            </span>
+                        </div>
+                        <!-- End Avatar Group -->
+                    </div>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+
+            <div class="border-top my-7"></div>
+
+            <div class="row mb-7">
+                <div class="col-sm mb-3 mb-sm-0">
+                    <!-- Socials -->
+                    <ul class="list-inline list-separator mb-0">
+                        <li class="list-inline-item">
+                            <a class="text-body" href="{{ route('web.privacidade') }}">Política de Privacidade
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-body" href="{{ route('web.termos') }}">Termos de Uso</a>
+                        </li>
+                    </ul>
+                    <!-- End Socials -->
+                </div>
+
+                <div class="col-sm-auto">
+                    <!-- Socials -->
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="#">
+                                <i class="bi-facebook " style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="#">
+                                <i class="bi-google " style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="#">
+                                <i class="bi-twitter " style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="#">
+                                <i class="bi-github " style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Socials -->
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="w-md-85 text-lg-center mx-lg-auto">
+                <p class="text-muted small">Feito com <i class="bi bi-heart text-danger"></i> por &copy; UNITBOX
+                    <?php echo date('Y'); ?></p>
+                <p class="text-muted small">Todos os direitos reservados</p>
+            </div>
+            <!-- End Copyright -->
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    <!-- ========== SECONDARY CONTENTS ========== -->
+
+
+    <!-- Go To -->
     <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
        "offsetTop": 700,
        "position": {
@@ -140,7 +291,7 @@
      }'>
         <i class="bi-chevron-up"></i>
     </a>
-    <!-- ========== END SECONDARY CONTENTS ========== --> --}}
+    <!-- ========== END SECONDARY CONTENTS ========== -->
 
     <!-- JS Global Compulsory  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
