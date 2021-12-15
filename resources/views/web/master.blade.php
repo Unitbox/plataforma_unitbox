@@ -13,12 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-icons/font/bootstrap-icons.css')}}">
-    <link rel="stylesheet" href="{{ asset('assets/vendor/aos/dist/aos.css')}}">
-    <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-icons/font/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/aos/dist/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}">
 
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
     @hasSection('css')
         @yield('css')
     @endif
@@ -87,6 +87,15 @@
 
         a:hover .text-inherit-green {
             color: #09e2deba !important
+        }
+
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M5.5,13a.5.5,0,0,1-.5-.5v-1a.5.5,0,0,1,.5-.5h13a.5.5,0,0,1,.5.5v1a.5.5,0,0,1-.5.5Z'/%3e%3c/svg%3e");
+        }
+
+        .accordion-button.collapsed::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
         }
 
     </style>
@@ -216,7 +225,8 @@
                     <!-- Socials -->
                     <ul class="list-inline list-separator mb-0">
                         <li class="list-inline-item">
-                            <a class="text-body" href="{{ route('web.privacidade') }}">Política de Privacidade </a>
+                            <a class="text-body" href="{{ route('web.privacidade') }}">Política de Privacidade
+                            </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="text-body" href="{{ route('web.termos') }}">Termos de Uso</a>
@@ -350,7 +360,7 @@
                 e.preventDefault();
 
                 $('.navbar-nav .nav-item a.active').removeClass('active');
-                
+
                 $(this).addClass('active');
                 var aid = $(this).attr("href");
                 console.log(aid);
@@ -365,10 +375,10 @@
 
             $(".btn_cookie").click(function() {
 
-               const days = 10;
-               short.setCookie("cookie_funcional", true, days);
-               short.setCookie("cookie_otimizacao", $('input[name="otimizacao"]').is(':checked'), days);
-               short.setCookie("cookie_estatistica", $('input[name="otimizacao"]').is(':checked'), days);
+                const days = 10;
+                short.setCookie("cookie_funcional", true, days);
+                short.setCookie("cookie_otimizacao", $('input[name="otimizacao"]').is(':checked'), days);
+                short.setCookie("cookie_estatistica", $('input[name="otimizacao"]').is(':checked'), days);
 
             });
 

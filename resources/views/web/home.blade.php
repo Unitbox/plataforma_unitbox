@@ -271,22 +271,22 @@
             <p class="lead text-white">Está com dúvidas sobre nós? </p>
         </div>
 
-        <div class="card">
-            <div class="card-body">
+        <div class="card bg-dark">
+            <div class="card-body ">
                 <div class="w-lg-100 mx-lg-auto">
                     <!-- Accordion -->
                     <div class="accordion accordion-flush accordion-lg" id="accordionFAQ">
                         <!-- Accordion Item -->
-                        <div class="accordion-item">
+                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #fff !important;">
                             <div class="accordion-header" id="headingCuriousOne">
-                                <a class="accordion-button" role="button" data-bs-toggle="collapse"
+                                <a class="accordion-button bg-dark text-white" role="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     What methods of payments are supported?
                                 </a>
                             </div>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
+                            <div id="collapseOne" class="accordion-collapse collapse show bg-dark"
                                 aria-labelledby="headingCuriousOne" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body">
+                                <div class="accordion-body bg-dark text-white-70">
                                     You can purchase the themes on Bootstrap Themes via any major credit/debit card
                                     (via
                                     Stripe) or with your Paypal account. We don't support cryptocurrencies or
@@ -298,16 +298,16 @@
                         <!-- End Accordion Item -->
 
                         <!-- Accordion Item -->
-                        <div class="accordion-item">
+                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #fff !important;">
                             <div class="accordion-header" id="headingCuriousTwo">
-                                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                                <a class="accordion-button collapsed bg-dark text-white" role="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Can I cancel at anytime?
                                 </a>
                             </div>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingCuriousTwo"
                                 data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body">
+                                <div class="accordion-body text-white-70">
                                     If you'd like a refund please reach out to us at <a
                                         href="#">themes@getbootstrap.com</a>. If you need technical help with the
                                     theme
@@ -320,45 +320,23 @@
                         <!-- End Accordion Item -->
 
                         <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingCuriousThree">
-                                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #fff !important;">
+                            <div class="accordion-header" id="headingCuriousThree" >
+                                <a class="accordion-button collapsed text-white bg-dark" role="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" 
+                                    >
                                     How do I get a receipt for my purchase?
                                 </a>
                             </div>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="headingCuriousThree" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body">
+                                <div class="accordion-body text-white-70">
                                     You'll receive an email from Bootstrap themes once your purchase is complete.
                                 </div>
                             </div>
                         </div>
                         <!-- End Accordion Item -->
 
-                        <!-- Accordion Item -->
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingCuriousFour">
-                                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Which license do I need?
-                                </a>
-                            </div>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingCuriousFour"
-                                data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body">
-                                    There are three license types - <a href="#">Standard</a>, <a href="#">Multisite</a>,
-                                    and <a href="#">Extended</a>. We've provided the table below for a quick look at
-                                    the
-                                    difference between the them, as well as a few examples of ways each license
-                                    could be
-                                    used. If you'd like more of the nitty-gritty details you can find them below and
-                                    always feel free to reach out with any questions you have at <a
-                                        href="#">themes@getbootstrap.com</a>.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Accordion Item -->
                     </div>
                     <!-- End Accordion -->
                 </div>
