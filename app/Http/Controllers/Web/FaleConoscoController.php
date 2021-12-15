@@ -53,22 +53,25 @@ class FaleConoscoController extends Controller
         $contato->cc = ['leoaugusto45@gmail.com', 'leonardo.augusto@scservicos.com.br'];
         $contato->url = "https://uniplay.com.br";
 
-        Mail::send('mail.web.faleconoscoemail', ['nome' => 'leonardo'], function($message) {
+
+        $ccRecipients = [
+            [
+                'email' => 'leoaugusto45@gmail.com',
+                'name' => 'Foo Bar 1'
+            ],
+            [
+                'email' => 'leonardo.augusto@scservicos.com.br',
+                'name' => 'Foo Bar 2'
+            ]
+        ];
+
+        Mail::send('mail.web.faleconoscoemail', ['nome' => 'leonardo'], function($message) use ($ccRecipients) {
             $message->from("contato@unitbox.com.br", 'Unitbox.com.br');
             $message->subject('teste');
-            $message->to('leoaugusto45@gmail.com');
+            $message->to('leo54_gunit@hotmail.com');
+            $message->cc($ccRecipients);
         });
 
-        // $ccRecipients = [
-        //     [
-        //         'email' => 'leoaugusto45@gmail.com',
-        //         'name' => 'Foo Bar 1'
-        //     ],
-        //     [
-        //         'email' => 'leonardo.augusto@scservicos.com.br',
-        //         'name' => 'Foo Bar 2'
-        //     ]
-        // ];
 
         // Mail::to('leoaugusto45@gmail.com')
         // //->cc($ccRecipients)
