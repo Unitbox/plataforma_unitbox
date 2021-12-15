@@ -3,9 +3,7 @@
 
 @section('content')
 
-    <!-- tools -->
-    <div class="message-toast"></div>
-    <!-- end tools -->
+  
 
     <!-- ABERTURA -->
     <div class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1" data-aos="fade-right">
