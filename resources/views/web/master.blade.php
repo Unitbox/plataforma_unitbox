@@ -108,7 +108,7 @@
     <!-- ========== END HEADER ========== -->
 
     <!-- ========== COOKIE ========== -->
-    @include('web.modules.notificationcookie')
+    
     <!-- ========== END COOKIE ========== -->
 
     <!-- ========== MAIN CONTENT ========== -->

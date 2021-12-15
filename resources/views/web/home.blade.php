@@ -8,8 +8,7 @@
     <!-- end tools -->
 
     <!-- ABERTURA -->
-    <div class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1"
-        data-aos="fade-right">
+    <div class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1" data-aos="fade-right">
         <div class="row">
             <div class="col-md-6 col-lg-6 mb-7 mb-md-0 text-lg-start text-md-start text-center">
                 <!-- TEXT ABERTURA -->
@@ -130,7 +129,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img1.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                                                                object-position: top;">
+                                                                                                                                                                                    object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -159,7 +158,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img13.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                                                                object-position: top;">
+                                                                                                                                                                                    object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -277,7 +276,7 @@
                     <!-- Accordion -->
                     <div class="accordion accordion-flush accordion-lg" id="accordionFAQ">
                         <!-- Accordion Item -->
-                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #fff !important;">
+                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #09e2deba !important;">
                             <div class="accordion-header" id="headingCuriousOne">
                                 <a class="accordion-button bg-dark text-white" role="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -298,10 +297,11 @@
                         <!-- End Accordion Item -->
 
                         <!-- Accordion Item -->
-                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #fff !important;">
+                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #09e2deba !important;">
                             <div class="accordion-header" id="headingCuriousTwo">
-                                <a class="accordion-button collapsed bg-dark text-white" role="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <a class="accordion-button collapsed bg-dark text-white" role="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
                                     Can I cancel at anytime?
                                 </a>
                             </div>
@@ -320,11 +320,11 @@
                         <!-- End Accordion Item -->
 
                         <!-- Accordion Item -->
-                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #fff !important;">
-                            <div class="accordion-header" id="headingCuriousThree" >
-                                <a class="accordion-button collapsed text-white bg-dark" role="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" 
-                                    >
+                        <div class="accordion-item bg-dark" style="border-bottom: solid 1px #09e2deba !important;">
+                            <div class="accordion-header" id="headingCuriousThree">
+                                <a class="accordion-button collapsed text-white bg-dark" role="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
                                     How do I get a receipt for my purchase?
                                 </a>
                             </div>
@@ -348,7 +348,8 @@
     <!--fim Features -->
 
     <!--fale conosco -->
-    <div class="bg-dark" style="background-image: url(./assets/svg/components/wave-pattern-light.svg);" id="faleconoscoSection">
+    <div class="bg-dark" style="background-image: url(./assets/svg/components/wave-pattern-light.svg);"
+        id="faleconoscoSection">
         <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-1">
             <!-- Heading -->
             <div class="w-lg-50 text-center mx-lg-auto mb-7">
@@ -375,8 +376,7 @@
                                     <div class="mb-3">
                                         <label class="form-label" for="name">Nome *</label>
                                         <input type="text" class="form-control form-control-lg" name="name" id="name"
-                                            placeholder="Digite seu nome" aria-label="Digite seu nome" value=""
-                                            required>
+                                            placeholder="Digite seu nome" aria-label="Digite seu nome" value="" required>
                                     </div>
                                     <!-- End Form -->
                                 </div>
@@ -386,8 +386,7 @@
                             <div class="mb-3">
                                 <label class="form-label" for="email">E-mail *</label>
                                 <input type="email" class="form-control form-control-lg" name="email" id="email"
-                                    placeholder="ex. email@site.com" aria-label="email@site.com"
-                                    value="" required>
+                                    placeholder="ex. email@site.com" aria-label="email@site.com" value="" required>
                             </div>
                             <!-- End Form -->
 
@@ -395,9 +394,9 @@
                             <div class="mb-3">
                                 <label class="form-label" for="companyname">Nome da Empresa<span
                                         class="form-label-secondary"> (Opcional)</span></label>
-                                <input type="text" class="form-control form-control-lg" name="company_name" id="company_name"
-                                    placeholder="Digite o nome da empresa" aria-label="Digite o nome da empresa"
-                                    value="" required>
+                                <input type="text" class="form-control form-control-lg" name="company_name"
+                                    id="company_name" placeholder="Digite o nome da empresa"
+                                    aria-label="Digite o nome da empresa" value="" required>
                             </div>
                             <!-- End Form -->
 
@@ -407,7 +406,7 @@
                                 <select id="subject" class="form-select form-select-lg" name="subject"
                                     aria-label="Seu Interesse" required>
                                     <option value="" selected>Selecione..</option>
-                                    <option value="duvida" >Dúvidas</option>
+                                    <option value="duvida">Dúvidas</option>
                                     <option value="parceria">Parceria</option>
                                     <option value="orcamento">Orçamento</option>
                                     <option value="outros">Outros</option>
@@ -432,7 +431,8 @@
                             </div>
                             <div class="d-grid mb-2">
                                 <button type="submit"
-                                    class="btn btn-theme-purple btn-lg btn-faleconosco font-weight-900">ENVIAR MENSAGEM</button>
+                                    class="btn btn-theme-purple btn-lg btn-faleconosco font-weight-900">ENVIAR
+                                    MENSAGEM</button>
                             </div>
                             <div class="text-center">
                                 <span class="form-text"> <small>Fica tranquilo, também odeio SPAM!
@@ -487,7 +487,9 @@
                     })
                     .fail(function(xhr, status, error) {
                         if (xhr.status === 401 || xhr.status === 419) {
-                            short.message('warning', "Whoops, sua sessão expirou, você será redirecionado! Por favor aguarde.","");
+                            short.message('warning',
+                                "Whoops, sua sessão expirou, você será redirecionado! Por favor aguarde.",
+                                "");
                             setTimeout(function() {
                                 window.location.reload();
                             }, 2000);
