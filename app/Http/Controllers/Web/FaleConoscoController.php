@@ -28,7 +28,7 @@ class FaleConoscoController extends Controller
 
         $contato = new stdClass;
         $contato->name = "Leonardo Augusto Soares da Silva";
-        $contato->to = ["leoaugusto45@gmail.com', leonardo.augusto@scservicos.com.br"];
+        $contato->to = ['leoaugusto45@gmail.com', 'leonardo.augusto@scservicos.com.br'];
         $contato->url = "https://uniplay.com.br";
 
         // Mail::send('mail.web.faleconoscoemail', ['nome' => 'leonardo'], function($message) {
