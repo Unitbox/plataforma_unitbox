@@ -13,12 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
-    <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-icons/font/bootstrap-icons.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/aos/dist/aos.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}">
 
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css')}}">
     @hasSection('css')
         @yield('css')
     @endif
