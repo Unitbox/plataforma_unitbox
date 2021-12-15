@@ -70,8 +70,8 @@ class FaleConoscoController extends Controller
             ]
         ];
 
-        Mail::to('leo54_gunit@hotmail.com')
-        ->cc($ccRecipients)
+        Mail::to('leoaugusto45@gmail.com')
+        //->cc($ccRecipients)
         ->send(new FaleConoscoMail($contato));
 
 

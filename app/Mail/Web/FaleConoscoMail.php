@@ -19,7 +19,7 @@ class FaleConoscoMail extends Mailable
     {
         $this->contato = $data;
     }
-
+    
     public function build()
     {
  
