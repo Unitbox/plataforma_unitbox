@@ -279,7 +279,7 @@
     <!-- ========== END FOOTER ========== -->
     <!-- ========== END MAIN CONTENT ========== -->
 
-    <!-- Go To -->
+    {{-- <!-- Go To -->
     <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
        "offsetTop": 700,
        "position": {
@@ -296,7 +296,7 @@
      }'>
         <i class="bi-chevron-up"></i>
     </a>
-    <!-- ========== END SECONDARY CONTENTS ========== -->
+    <!-- ========== END SECONDARY CONTENTS ========== --> --}}
 
     <!-- JS Global Compulsory  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
