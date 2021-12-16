@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Mail\Web\FaleConosco as WebFaleConosco;
 use App\Mail\Web\FaleConoscoMail;
 use App\Models\Web\FaleConosco;
+use App\Models\Web\Interacao;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use stdClass;
@@ -23,7 +24,7 @@ class FaleConoscoController extends Controller
             'aceite' => 'required|max:191',
         ]);
         
-        FaleConosco::create($request->all());
+        Interacao::create($request->all());
 
         $contato = new stdClass;
         $contato->url = "https://uniplay.com.br";

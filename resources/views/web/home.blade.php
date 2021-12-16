@@ -368,7 +368,7 @@
                         <small class="text-small">Para entrar em contato conosco, preencha o formulário abaixo. Nós
                             respondemos a quase todos dentro de um dia útil e estamos animados com seu contato.</small>
                         <hr>
-                        <form action="{{ route('web.faleconosco.store') }}" method="POST" name="form_faleconosco">
+                        <form action="{{ route('web.interacao.store') }}" method="POST" name="form_faleconosco">
                             @csrf
                             <div class="row">
                                 <div class="col-sm-12">

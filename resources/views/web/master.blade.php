@@ -277,9 +277,6 @@
     </footer>
     <!-- ========== END FOOTER ========== -->
 
-    <!-- ========== SECONDARY CONTENTS ========== -->
-
-
     <!-- Go To -->
     <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
        "offsetTop": 700,
