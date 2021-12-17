@@ -77,10 +77,13 @@
         <div class="row mb-5 mb-md-0">
             <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
                 <!-- Card -->
-                <div class="card card-sm h-100 shadow-sm bg-dark border-bottom-green" data-aos="fade-up">
+                <a class="card card-transition card-sm h-100 shadow-sm bg-dark border-bottom-green"
+                    href="https://uniplay.com.br" target="_blank">
+
                     <div class="p-2">
-                        <img class="card-img" src="./assets/img/web/boneco-celular-mimicas-mimics-uniplay.png"
-                            alt="Image Description">
+                        <img class="card-img"
+                            src="{{ asset('/assets/img/web/boneco-celular-mimicas-mimics-uniplay.png') }}"
+                            alt="Mimics Arcade">
                     </div>
 
                     <div class="card-body">
@@ -113,14 +116,12 @@
                             </div>
                             <!-- End Avatar Group -->
                         </div>
-
-                        <!-- End Row -->
-                        <!-- End List Pointer -->
                     </div>
+                    <button class="btn btn-link">SAIBA MAIS<i class="bi-chevron-right small ms-1"></i>
+                    </button>
 
-                    <a class="card-footer card-link border-top" href="#">Saiba mais<i
-                            class="bi-chevron-right small ms-1"></i></a>
-                </div>
+                </a>
+
                 <!-- End Card -->
             </div>
             <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
@@ -129,7 +130,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img1.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                                                                    object-position: top;">
+                                                                                                                                                                                                object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -158,7 +159,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img13.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                                                                    object-position: top;">
+                                                                                                                                                                                                object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -174,15 +175,15 @@
                         <!-- End List Pointer -->
                     </div>
 
-                    <a class="card-footer card-link border-top" href="#">Saiba mais<i
-                            class="bi-chevron-right small ms-1"></i></a>
+                    <a class="card-footer card-link border-top">Saiba mais<i class="bi-chevron-right small ms-1"></i></a>
                 </div>
                 <!-- End Card -->
             </div>
             <!-- End Col -->
         </div>
-        <div class="col-lg-12 text-center mt-5">
-            <a class="btn btn-theme-purple btn-transition rounded-pill font-weight-900" href="" target="_blank">CONFIRA
+        <div class="col-lg-12 text-center mt-7">
+            <a class="btn btn-lg btn-theme-success btn-transition rounded-pill font-weight-900" href=""
+                target="_blank">CONFIRA
                 TODOS OS NOSSOS PROJETOS <span class="bi-chevron-right small ms-1"></span></a>
         </div>
         <!-- Card Info -->
