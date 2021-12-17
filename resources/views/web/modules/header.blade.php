@@ -41,16 +41,16 @@
                     <ul class="navbar-nav" style="font-weight:900">
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#homeSection">HOME</a>
+                            <a class="nav-link active" href="{{ route('web.home') }}/#home">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#produtosSection">PRODUTOS</a>
+                            <a class="nav-link" href="{{ route('web.home') }}/#produtos">PRODUTOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#blogSection">BLOG</a>
+                            <a class="nav-link" href="{{ route('web.home') }}/#blog">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#saibaMaisSection">SAIBA MAIS</a>
+                            <a class="nav-link" href="{{ route('web.home') }}/#saibamais">SAIBA MAIS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ENTRAR</a>
@@ -69,7 +69,7 @@
 
                         <!-- Button -->
                         <li class="nav-item ps-lg-4 ps-md-4">
-                            <a class="btn btn-theme-purple btn-transition rounded-pill slidelink" href="#faleconoscoSection"
+                            <a class="btn btn-theme-purple btn-transition rounded-pill slidelink" href="{{ route('web.home') }}/#faleconosco"
                                 style="font-weight:900">FALE CONOSCO<span
                                     class="bi-chevron-right small ms-1"></span></a>
                         </li>

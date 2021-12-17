@@ -23,7 +23,7 @@
                     </p>
                     <div class="text-lg-start text-md-start text-center gap-3">
                         <a class="btn btn-theme-purple btn-transition font-weight-600 slidelink me-2"
-                            href="#faleconoscoSection">
+                            href="{{ route('web.home') }}/#faleconosco">
                             FALE CONOSCO <i class="bi-chevron-right small ms-1"></i>
                         </a>
 
@@ -54,7 +54,7 @@
     <!-- End ABERTURA -->
 
     <!-- Card Grid -->
-    <div id="produtosSection" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2">
+    <div id="produtos" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h1 class="display-4 mb-3 text-white font-weight-900">Projetos que desenvolvemos
             </h1>
@@ -127,7 +127,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img1.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                                                                                object-position: top;">
+                                                                                                                                                                                                    object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -156,7 +156,7 @@
                     <div class="p-2">
                         <img class="card-img" src="./assets/img/900x450/img13.jpg" alt="Image Description"
                             style="height: 350px !important; object-fit: cover;
-                                                                                                                                                                                                object-position: top;">
+                                                                                                                                                                                                    object-position: top;">
                     </div>
 
                     <div class="card-body">
@@ -190,7 +190,7 @@
     </div>
     <!-- End Card Grid -->
 
-    <div id="blogSection" class="container content-space-2 content-space-lg-3 content-space-md-1 content-space-b-2">
+    <div id="blog" class="container content-space-2 content-space-lg-3 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h1 class="display-4 mb-3 text-white font-weight-900">De uma olhada no nosso blog
             </h1>
@@ -260,8 +260,7 @@
     </div>
     <!--fim Features -->
 
-    <div id="saibaMaisSection"
-        class="container content-space-1 content-space-lg-1 mb-5 content-space-md-1 content-space-b-2">
+    <div id="saibamais" class="container content-space-1 content-space-lg-1 mb-5 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h1 class="display-4 mb-3 text-white font-weight-900">Tire suas dúvidas
             </h1>
@@ -347,7 +346,7 @@
 
     <!--fale conosco -->
     <div class="bg-dark" style="background-image: url(./assets/svg/components/wave-pattern-light.svg);"
-        id="faleconoscoSection">
+        id="faleconosco">
         <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-1">
             <!-- Heading -->
             <div class="w-lg-50 text-center mx-lg-auto mb-7">

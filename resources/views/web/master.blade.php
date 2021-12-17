@@ -14,10 +14,9 @@
     <meta property="og:title" content="Unitbox" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://unitbox.com.br" />
-    <meta property="og:image"
-        content="" />
+    <meta property="og:image" content="" />
     <meta property="og:description" content="" />
-   
+
     <title>@yield('title') | {{ env('APP_NAME') }}</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sc_logo.png" />
     <!-- Font -->
@@ -36,9 +35,9 @@
 
 
     <style type="text/css">
-        /* html {
+        html {
             scroll-behavior: smooth;
-        } */
+        }
 
         .btn-theme-purple {
             color: #fff;
@@ -156,7 +155,7 @@
                                     class="bi bi-envelope me-1"></i> contato@unitbox.com.br</a>
                         </li>
                         <li>
-                            <a class="btn small btn-theme-purple rounded-pill slidelink" href="#faleconoscoSection"
+                            <a class="btn small btn-theme-purple rounded-pill slidelink" href="{{ route('web.home') }}/#faleconosco"
                                 style="font-weight:900; font-size: 12px">FALE CONOSCO<span
                                     class="bi-chevron-right small ms-1"></span>
                             </a>
@@ -375,15 +374,12 @@
                 $('.navbar-nav .nav-item a.active').removeClass('active');
 
                 $(this).addClass('active');
-                var aid = $(this).attr("href");
-                console.log(aid);
+                var url = $(this).attr("href");
 
-                if (aid.length > 2 && aid.indexOf("#") >= 0) {
-                    $('html,body').animate({
-                        scrollTop: $(aid).offset().top
-                    }, 'slow');
-                    $('.navbar-collapse').collapse('hide');
-                }
+                var hash = url.substring(url.indexOf("#")+1);
+                window.location.href = url;
+
+                $('.navbar-collapse').collapse('hide');
             });
 
             $(".btn_cookie").click(function() {
