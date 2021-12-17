@@ -1,4 +1,4 @@
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-dark navbar-show-hide"
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-dark navbar-show-hide bg-dark-theme"
     data-hs-header-options='{
   "fixMoment": 1000,
   "fixEffect": "slide"
