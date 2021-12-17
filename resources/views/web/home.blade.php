@@ -61,9 +61,6 @@
             <p class="lead text-white">Confira os sites que criamos para colocar sorrisos no rosto de outras
                 pessoas..</p>
         </div>
-
-
-
         <div class="text-center mb-10">
             <!-- List Checked -->
             <ul class="list-inline list-checked list-checked-primary">

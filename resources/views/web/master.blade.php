@@ -6,7 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="keywords"
+        content="Marketing Digital, criador de sites, desenvolvimento de aplicativos, desenvolvimento de soluções, criação de websites, criação de aplicativos, criação de app, criação de sites sp, melhores empresas desenvolvimento de sites e aplicativos, whatsApp, chatbot, medir interações, criação de sites profissionais, site já pronto, Unitbox">
 
+    <meta name="description" content="">
+    <meta content="Unitbox" name="author" />
+    <meta property="og:title" content="Unitbox" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://unitbox.com.br" />
+    <meta property="og:image"
+        content="" />
+    <meta property="og:description" content="" />
+   
     <title>@yield('title') | {{ env('APP_NAME') }}</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sc_logo.png" />
     <!-- Font -->
@@ -99,7 +110,7 @@
         }
 
         .bg-dark-theme {
-            background-color: #000000!important;
+            background-color: #000000 !important;
         }
 
     </style>
@@ -111,6 +122,7 @@
     @include('web.modules.header')
     <!-- ========== END HEADER ========== -->
 
+    <h1 style="display: none"></h1>
     <!-- ========== COOKIE ========== -->
     @include('web.modules.notificationcookie')
     <!-- ========== END COOKIE ========== -->
