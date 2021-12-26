@@ -20,7 +20,7 @@
     <div class="card card-lg bg-dark">
         <!-- Header -->
         <div class="card-header bg-dark">
-            <h1 class="text-success font-weight-900">
+            <h1 class="text-white font-weight-900">
                 Termos de Uso
             </h1>
             <p class="card-text text-white">Última modificação: 15 de dezembro de 2021</p>

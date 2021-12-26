@@ -52,10 +52,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('web.home') }}/#saibamais">SAIBA MAIS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ENTRAR</a>
-                        </li>
-
+                        
                         {{-- <li class="nav-item">
                        
                             <a class="text-white text-decoration-none" href="https://instagram.com/meuagendo" target="_blank">

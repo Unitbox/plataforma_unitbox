@@ -2,6 +2,7 @@
 
 
 Route::group(['namespace' => 'Web', 'as' => 'web.' ], function () {
+ 
 
     Route::get('/', 'HomeController@index')->name('home');
 

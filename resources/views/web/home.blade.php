@@ -61,21 +61,21 @@
             <p class="lead text-white">Confira os sites que criamos para colocar sorrisos no rosto de outras
                 pessoas..</p>
         </div>
-        <div class="text-center mb-10">
+        {{-- <div class="text-center mb-10">
             <!-- List Checked -->
             <ul class="list-inline list-checked list-checked-primary">
-                <li class="list-inline-item list-checked-item">Projetos entregue antes do prazo</li>
+                <li class="list-inline-item list-checked-item">Desenvolvimento de websites e aplicativos Mobiles</li>
                 <li class="list-inline-item list-checked-item">Clientes 100% satisfeitos</li>
                 <li class="list-inline-item list-checked-item">Acompanhamento dos projetos em tempo real</li>
             </ul>
             <!-- End List Checked -->
-        </div>
+        </div> --}}
 
-        <div class="row mb-5 mb-md-0">
-            <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+        <div class="row mb-5 mb-md-0 d-flex justify-content-center">
+            <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 ">
                 <!-- Card -->
                 <a class="card card-transition card-sm h-100 shadow-sm bg-dark border-bottom-green"
-                    href="https://uniplay.com.br" target="_blank">
+                    href="https://uniplay.com.br" target="_blank" data-aos="fade-up" data-aos-delay="50">
 
                     <div class="p-2">
                         <img class="card-img"
@@ -86,29 +86,42 @@
                     <div class="card-body">
                         <h2 class="card-title text-inherit text-white display-7 font-weight-900">Mimics
                             Arcade</h2>
-                        <p class="lead text-white-70">Jogo de mímicas para jogar em qualquer lugar utilizando um
+                        <p class="lead text-white-70">Jogo de mímicas gratuíto para jogar em qualquer lugar utilizando um
                             dispositivo conectado a internet.</p>
 
-                        <!-- List Pointer -->
-                        <ul class="list-pointer mb-0">
-                            <li class="list-pointer-item">Website, game, design, mímicas</li>
-                        </ul>
+                        <span class="text-white-50 fs--2">Contribuições:</span>
                         <div class="col-auto mt-3">
                             <!-- Avatar Group -->
-                            <div class="avatar-group avatar-group-sm mb-1">
-                                <span class="avatar avatar-circle">
-                                    <img class="avatar-img" src="../assets/img/160x160/img10.jpg"
+                            <div class="avatar-group avatar-group-sm mb-0">
+                                <span class="avatar avatar-circle"
+                                    onclick="window.open('https://www.linkedin.com/in/leonardo-augustus/', '_blank')">
+                                    <img class="avatar-img"
+                                        src="{{ asset('assets/img/perfis/leonardo_1628340865587.jpeg') }}"
                                         alt="Image Description">
                                 </span>
-                                <span class="avatar avatar-dark avatar-circle">
-                                    <span class="avatar-initials">A</span>
-                                </span>
-                                <span class="avatar avatar-circle">
-                                    <img class="avatar-img" src="../assets/img/160x160/img3.jpg"
+                                <span class="avatar avatar-circle"
+                                    onclick="window.open('https://www.linkedin.com/in/ferrerolan/', '_blank')">
+                                    <img class="avatar-img"
+                                        src="{{ asset('assets/img/perfis/alan_1604883049174.jpeg') }}"
                                         alt="Image Description">
                                 </span>
-                                <span class="avatar avatar-primary avatar-circle">
-                                    <span class="avatar-initials">2+</span>
+                                <span class="avatar avatar-circle"
+                                    onclick="window.open('https://www.linkedin.com/in/mauricio-freitas-a973b3141/', '_blank')">
+                                    <img class="avatar-img"
+                                        src="{{ asset('assets/img/perfis/mauricio_1634892342100.jpeg') }}"
+                                        alt="Image Description">
+                                </span>
+                                <span class="avatar avatar-circle"
+                                    onclick="window.open('https://www.linkedin.com/in/rafaelnanis/', '_blank')">
+                                    <img class="avatar-img"
+                                        src="{{ asset('assets/img/perfis/rafa_1629135925566.jpeg') }}"
+                                        alt="Image Description">
+                                </span>
+                                <span class="avatar avatar-circle"
+                                    onclick="window.open('https://www.linkedin.com/in/rubismar-souza/', '_blank')">
+                                    <img class="avatar-img"
+                                        src="{{ asset('assets/img/perfis/rubis_1573603044622.jpeg') }}"
+                                        alt="Image Description">
                                 </span>
                             </div>
                             <!-- End Avatar Group -->
@@ -118,71 +131,56 @@
                     </button>
 
                 </a>
-
                 <!-- End Card -->
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 ">
                 <!-- Card -->
-                <div class="card card-sm h-100 bg-dark border-bottom-green" data-aos="fade-up" data-aos-delay="100">
+                <a class="card card-transition card-sm h-100 shadow-sm bg-dark border-bottom-green"
+                    href="#" target="_blank" data-aos="fade-up" data-aos-delay="100">
+
                     <div class="p-2">
-                        <img class="card-img" src="./assets/img/900x450/img1.jpg" alt="Image Description"
-                            style="height: 350px !important; object-fit: cover;
-                                                                                                                                                                                                    object-position: top;">
+                        <img class="card-img"
+                            src="{{ asset('/assets/img/900x450/img1.jpg') }}"
+                            alt="Mimics Arcade" style="height: 340px !important; object-fit: cover;">
                     </div>
 
                     <div class="card-body">
-                        <h2 class="card-title text-inherit text-white display-7 font-weight-900">Way
-                            Box
-                        </h2>
-                        <p class="lead text-white-70">Plataforma de gestão de time e acompanhamento de projetos.</p>
+                        <h2 class="card-title text-inherit text-white display-7 font-weight-900">About Me</h2>
+                        <p class="lead text-white-70">Gerador de portifólio gratuíto</p>
 
-                        <!-- List Pointer -->
-                        <ul class="list-pointer mb-0">
-                            <li class="list-pointer-item">Cost Transformation</li>
-                        </ul>
-                        <!-- End List Pointer -->
+                        <span class="text-white-50 fs--2">Contribuições:</span>
+                        <div class="col-auto mt-3">
+                            <!-- Avatar Group -->
+                            <div class="avatar-group avatar-group-sm mb-0">
+                                <span class="avatar avatar-circle"
+                                    onclick="window.open('https://www.linkedin.com/in/leonardo-augustus/', '_blank')">
+                                    <img class="avatar-img"
+                                        src="{{ asset('assets/img/perfis/leonardo_1628340865587.jpeg') }}"
+                                        alt="Image Description">
+                                </span>
+                                <span class="avatar avatar-circle"
+                                    onclick="window.open('https://www.linkedin.com/in/ferrerolan/', '_blank')">
+                                    <img class="avatar-img"
+                                        src="{{ asset('assets/img/perfis/alan_1604883049174.jpeg') }}"
+                                        alt="Image Description">
+                                </span>
+                            </div>
+                            <!-- End Avatar Group -->
+                        </div>
                     </div>
+                    <button class="btn btn-link">SAIBA MAIS<i class="bi-chevron-right small ms-1"></i>
+                    </button>
 
-                    <a class="card-footer card-link border-top" href="#">Saiba mais <i
-                            class="bi-chevron-right small ms-1"></i></a>
-                </div>
+                </a>
                 <!-- End Card -->
             </div>
-            <!-- End Col -->
 
-            <div class="col-sm-6 col-lg-4">
-                <!-- Card -->
-                <div class="card card-sm h-100 bg-dark border-bottom-green" data-aos="fade-up" data-aos-delay="150">
-                    <div class="p-2">
-                        <img class="card-img" src="./assets/img/900x450/img13.jpg" alt="Image Description"
-                            style="height: 350px !important; object-fit: cover;
-                                                                                                                                                                                                    object-position: top;">
-                    </div>
-
-                    <div class="card-body">
-                        <h2 class="card-title text-inherit text-white display-7 font-weight-900">
-                            Chatbox
-                            box One</h2>
-                        <p class="lead text-white-70">IA de conversação realista com agentes virtuais de última
-                            geração.</p>
-                        <!-- List Pointer -->
-                        <ul class="list-pointer mb-0">
-                            <li class="list-pointer-item">Enterprise Technology</li>
-                        </ul>
-                        <!-- End List Pointer -->
-                    </div>
-
-                    <a class="card-footer card-link border-top">Saiba mais<i class="bi-chevron-right small ms-1"></i></a>
-                </div>
-                <!-- End Card -->
-            </div>
-            <!-- End Col -->
         </div>
-        <div class="col-lg-12 text-center mt-7">
+        {{-- <div class="col-lg-12 text-center mt-7">
             <a class="btn btn-lg btn-theme-success btn-transition rounded-pill font-weight-900" href=""
                 target="_blank">CONFIRA
                 TODOS OS NOSSOS PROJETOS <span class="bi-chevron-right small ms-1"></span></a>
-        </div>
+        </div> --}}
         <!-- Card Info -->
 
         <!-- End Card Info -->
@@ -197,7 +195,7 @@
             <p class="lead text-white">Confira algumas dicas, experiêcias que vivemos (algo nesse sentido)..</p>
         </div>
 
-        <div class="row">
+        <div class="row d-flex justify-content-center">
 
             <div class="order-lg-4 col-sm-6 col-lg-4 mb-3 mb-sm-7">
                 <!-- Card -->

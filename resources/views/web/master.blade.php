@@ -122,9 +122,7 @@
     <!-- ========== END HEADER ========== -->
 
     <h1 style="display: none"></h1>
-    <!-- ========== COOKIE ========== -->
-    @include('web.modules.notificationcookie')
-    <!-- ========== END COOKIE ========== -->
+  
 
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
@@ -133,6 +131,10 @@
 
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
+
+      <!-- ========== COOKIE ========== -->
+      @include('web.modules.notificationcookie')
+      <!-- ========== END COOKIE ========== -->
 
     <!-- ========== FOOTER ========== -->
     <footer class="bg-dark">
