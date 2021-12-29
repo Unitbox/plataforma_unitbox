@@ -333,6 +333,7 @@
                         <hr>
                         <form action="{{ route('web.interacao.store') }}" method="POST" name="form_faleconosco" data-grecaptcha-action="message">
                             @csrf
+                            <input type="hidden" name="grecaptcha" id="grecaptcha">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <!-- Form -->
@@ -445,7 +446,7 @@
                         short.message(response.status, response.subject, response.message);
 
                         $(button).removeClass('disabled').html(button.text());
-
+                        
                         $(form).trigger("reset");
                     })
                     .fail(function(xhr, status, error) {
@@ -472,13 +473,15 @@
                             short.message("danger", "Whoops, Mensagem não enviada!", errorsHtml);
                         } else {
                             short.message("danger",
-                                "Whoops, Estamos com problemas no momento, tente novamente mais tarxe!",
+                                "Whoops, Estamos com problemas no momento, tente novamente mais tarde!",
                                 "");
                         }
 
                         $(button).removeClass('disabled').html(button.text());
                     })
-                    .always(function() {});
+                    .always(function() {
+                        recaptcha();
+                    });
             });
         });
     </script>

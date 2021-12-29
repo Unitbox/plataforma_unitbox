@@ -206,33 +206,41 @@ var short = (function () {
         }
 
 
-        let grecaptchaKeyMeta = document.querySelector("meta[name='grecaptcha-key']");
-        let grecaptchaKey = grecaptchaKeyMeta.getAttribute("content");
+        // let grecaptchaKeyMeta = document.querySelector("meta[name='grecaptcha-key']");
+        // let grecaptchaKey = grecaptchaKeyMeta.getAttribute("content");
 
-        grecaptcha.ready(function () {
-            let forms = document.querySelectorAll('form[data-grecaptcha-action]');
+        // grecaptcha.ready(function () {
+        //     let forms = document.querySelectorAll('form[data-grecaptcha-action]');
 
-            Array.from(forms).forEach(function (form) {
-                form.onsubmit = (e) => {
-                    e.preventDefault();
+        //     Array.from(forms).forEach(function (form) {
 
-                    let grecaptchaAction = form.getAttribute('data-grecaptcha-action');
+        //         console.log(forms);
 
-                    grecaptcha.execute(grecaptchaKey, { action: grecaptchaAction })
-                        .then((token) => {
-                            input = document.createElement('input');
-                            input.type = 'hidden';
-                            input.name = 'grecaptcha';
-                            input.value = token;
+        //         form.onsubmit = (e) => {
+        //             e.preventDefault();
 
-                            form.append(input);
+        //             let grecaptchaAction = form.getAttribute('data-grecaptcha-action');
+        //             alert(grecaptchaAction);
 
-                            form.submit();
-                        });
-                }
-            });
-        });
+        //             grecaptcha.execute(grecaptchaKey, { action: grecaptchaAction })
+        //                 .then((token) => {
+        //                     input = document.createElement('input');
+        //                     input.type = 'hidden';
+        //                     input.name = 'grecaptcha';
+        //                     input.value = token;
 
+        //                     form.append(input);
+                            
+        //                     alert("teste");
+        //                 });
+        //         }
+        //     });
+        // });
+        // grecaptcha.ready(function () {
+        //     grecaptcha.execute('6LdwtqgaAAAAAITnw9swNyifmyQUFw6JyOlQPWU-', { action: 'action_name' }).then(function (token) {
+        //         $("#g-recaptcha-response").val(token);
+        //     });
+        // });
     }
 
     return {

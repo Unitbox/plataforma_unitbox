@@ -16,8 +16,8 @@
     <meta property="og:url" content="https://unitbox.com.br" />
     <meta property="og:image" content="" />
     <meta property="og:description" content="" />
-    <meta name="grecaptcha-key" content="{{config('recaptcha.v3.public_key')}}">
-    
+    <meta name="grecaptcha-key" content="{{ config('recaptcha.v3.public_key') }}">
+
     <title>@yield('title') | {{ env('APP_NAME') }}</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sc_logo.png" />
     <!-- Font -->
@@ -30,8 +30,8 @@
 
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
-    
-    <script src="https://www.google.com/recaptcha/api.js?render={{config('recaptcha.v3.public_key')}}"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render={{ config('recaptcha.v3.public_key') }}"></script>
 
     @hasSection('css')
         @yield('css')
@@ -126,7 +126,7 @@
     <!-- ========== END HEADER ========== -->
 
     <h1 style="display: none"></h1>
-  
+
 
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
@@ -136,9 +136,9 @@
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
-      <!-- ========== COOKIE ========== -->
-      @include('web.modules.notificationcookie')
-      <!-- ========== END COOKIE ========== -->
+    <!-- ========== COOKIE ========== -->
+    @include('web.modules.notificationcookie')
+    <!-- ========== END COOKIE ========== -->
 
     <!-- ========== FOOTER ========== -->
     <footer class="bg-dark">
@@ -161,7 +161,8 @@
                                     class="bi bi-envelope me-1"></i> contato@unitbox.com.br</a>
                         </li>
                         <li>
-                            <a class="btn small btn-theme-purple rounded-pill slidelink" href="{{ route('web.home') }}/#faleconosco"
+                            <a class="btn small btn-theme-purple rounded-pill slidelink"
+                                href="{{ route('web.home') }}/#faleconosco"
                                 style="font-weight:900; font-size: 12px">FALE CONOSCO<span
                                     class="bi-chevron-right small ms-1"></span>
                             </a>
@@ -382,7 +383,7 @@
                 $(this).addClass('active');
                 var url = $(this).attr("href");
 
-                var hash = url.substring(url.indexOf("#")+1);
+                var hash = url.substring(url.indexOf("#") + 1);
                 window.location.href = url;
 
                 $('.navbar-collapse').collapse('hide');
@@ -397,7 +398,25 @@
 
             });
 
+
         })()
+
+        $(function() {
+            recaptcha();
+        });
+
+        function recaptcha() {
+            let grecaptchaKeyMeta = document.querySelector("meta[name='grecaptcha-key']");
+            let grecaptchaKey = grecaptchaKeyMeta.getAttribute("content");
+
+            grecaptcha.ready(function() {
+                grecaptcha.execute(grecaptchaKey, {
+                    action: 'contato'
+                }).then(function(token) {
+                    $("#grecaptcha").val(token);
+                });
+            });
+        }
     </script>
 </body>
 

@@ -21,18 +21,27 @@ class ReCAPTCHAv3 implements Rule
                 ],
             ]);
         } catch (\GuzzleHttp\Exception\BadResponseException $e) {
+            
             return false;
         }
-        return $this->getScore($response) >= config('recaptcha.v3.minimum_score');
+        $response =  $this->getScore($response) >= config('recaptcha.v3.minimum_score');
+
+        return $response;
     }
     private function getScore($response)
     {
-        return \GuzzleHttp\json_decode($response->getBody(), true)['score'];
+        try {
+            $score = \GuzzleHttp\json_decode($response->getBody(), true)['score'];
+        } catch (\Exception $e) {
+            //throw $th;
+            $score = 0;
+        }
+        return $score;
     }
- 
 
     public function message()
     {
-        return 'Failed on reCAPTCHA verification.';
+        return 'Whoops, ocorreu um erro ao enviar os dados do formulário. Por favor recarregue a página e tente novamente. 
+        Error: Failed on reCAPTCHA verification.';
     }
 }

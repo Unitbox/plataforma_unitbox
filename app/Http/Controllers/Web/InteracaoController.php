@@ -36,7 +36,7 @@ class InteracaoController extends Controller
             'aceite' => 'required|max:191',
             'grecaptcha' => ['required', new ReCAPTCHAv3]
         ]);
-        
+
         Interacao::create($request->all());
 
         $contato = new stdClass;
@@ -50,6 +50,28 @@ class InteracaoController extends Controller
             'status' => 'success', 
             'subject' => 'Mensagem enviada com sucesso!', 
             'message' => 'Em breve entraremo em contato. Obrigado!'], 200);
+    }
+
+
+    public function passes($attribute, $value)
+    {
+        $client = new Client();
+        try {
+            $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
+                'form_params' => [
+                    'secret' => config('recaptcha.v3.private_key'),
+                    'response' => $value,
+                    'remoteip' => Request::ip(),
+                ],
+            ]);
+        } catch (\GuzzleHttp\Exception\BadResponseException $e) {
+            return false;
+        }
+        return $this->getScore($response) >= config('recaptcha.v3.minimum_score');
+    }
+    private function getScore($response)
+    {
+        return \GuzzleHttp\json_decode($response->getBody(), true)['score'];
     }
 
     public function show($id)
