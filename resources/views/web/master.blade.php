@@ -16,7 +16,8 @@
     <meta property="og:url" content="https://unitbox.com.br" />
     <meta property="og:image" content="" />
     <meta property="og:description" content="" />
-
+    <meta name="grecaptcha-key" content="{{config('recaptcha.v3.public_key')}}">
+    
     <title>@yield('title') | {{ env('APP_NAME') }}</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sc_logo.png" />
     <!-- Font -->
@@ -29,6 +30,9 @@
 
     <!-- CSS Front Template -->
     <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
+    
+    <script src="https://www.google.com/recaptcha/api.js?render={{config('recaptcha.v3.public_key')}}"></script>
+
     @hasSection('css')
         @yield('css')
     @endif

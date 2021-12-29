@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Web;
 use App\Http\Controllers\Controller;
 use App\Mail\Web\FaleConoscoMail;
 use App\Models\Web\Interacao;
+use App\Rules\ReCAPTCHAv3;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use stdClass;
@@ -33,6 +34,7 @@ class InteracaoController extends Controller
             'subject' => 'required|max:191',
             'message' => 'required',
             'aceite' => 'required|max:191',
+            'grecaptcha' => ['required', new ReCAPTCHAv3]
         ]);
         
         Interacao::create($request->all());
