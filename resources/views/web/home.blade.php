@@ -3,6 +3,12 @@
 
 @section('content')
 
+    @php
+    date_default_timezone_set('America/Sao_Paulo');
+    setlocale(LC_ALL, 'pt_BR.utf-8', 'ptb', 'pt_BR', 'portuguese-brazil', 'portuguese-brazilian', 'bra', 'brazil', 'br');
+    setlocale(LC_TIME, 'pt_BR.utf-8', 'ptb', 'pt_BR', 'portuguese-brazil', 'portuguese-brazilian', 'bra', 'brazil', 'br');
+    @endphp
+
     <!-- tools -->
     <div class="message-toast"></div>
     <!-- end tools -->
@@ -127,50 +133,11 @@
                             <!-- End Avatar Group -->
                         </div>
                     </div>
-                    <button class="btn btn-link">SAIBA MAIS<i class="bi-chevron-right small ms-1"></i>
-                    </button>
-
-                </a>
-                <!-- End Card -->
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 ">
-                <!-- Card -->
-                <a class="card card-transition card-sm h-100 shadow-sm bg-dark border-bottom-green"
-                    href="#" target="_blank" data-aos="fade-up" data-aos-delay="100">
-
-                    <div class="p-2">
-                        <img class="card-img"
-                            src="{{ asset('/assets/img/900x450/img1.jpg') }}"
-                            alt="Mimics Arcade" style="height: 340px !important; object-fit: cover;">
+                    <div>
+                        <button class="btn btn-link">SAIBA MAIS<i class="bi-chevron-right small ms-1"></i>
+                        </button>
                     </div>
-
-                    <div class="card-body">
-                        <h2 class="card-title text-inherit text-white display-7 font-weight-900">About Me</h2>
-                        <p class="lead text-white-70">Gerador de portifólio gratuíto</p>
-
-                        <span class="text-white-50 fs--2">Contribuições:</span>
-                        <div class="col-auto mt-3">
-                            <!-- Avatar Group -->
-                            <div class="avatar-group avatar-group-sm mb-0">
-                                <span class="avatar avatar-circle"
-                                    onclick="window.open('https://www.linkedin.com/in/leonardo-augustus/', '_blank')">
-                                    <img class="avatar-img"
-                                        src="{{ asset('assets/img/perfis/leonardo_1628340865587.jpeg') }}"
-                                        alt="Image Description">
-                                </span>
-                                <span class="avatar avatar-circle"
-                                    onclick="window.open('https://www.linkedin.com/in/ferrerolan/', '_blank')">
-                                    <img class="avatar-img"
-                                        src="{{ asset('assets/img/perfis/alan_1604883049174.jpeg') }}"
-                                        alt="Image Description">
-                                </span>
-                            </div>
-                            <!-- End Avatar Group -->
-                        </div>
-                    </div>
-                    <button class="btn btn-link">SAIBA MAIS<i class="bi-chevron-right small ms-1"></i>
-                    </button>
-
+                    
                 </a>
                 <!-- End Card -->
             </div>
@@ -197,64 +164,65 @@
 
         <div class="row d-flex justify-content-center">
 
-            <div class="order-lg-4 col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Card -->
-                <a class="card card-stretched-vertical card-transition bg-img-start gradient-y-overlay-sm-gray-900"
-                    href="./blog-article.html"
-                    style="background-image: url(./assets/img/400x500/img1.jpg); min-height: 25rem;">
-                    <div class="card-header">
-                        <span class="card-subtitle text-white">Business</span>
-                    </div>
+            @if (!empty($posts))
+                @foreach ($posts as $post)
 
-                    <div class="card-footer">
-                        <h3 class="card-title text-white">Front Interview with a Lead Designer of the Hubble</h3>
-                        <p class="card-link link-light">Read more <i class="bi-chevron-right small ms-1"></i></p>
-                    </div>
-                </a>
-                <!-- End Card -->
-            </div>
-            <!-- End Col -->
+                    @php
+                    $dt = Carbon\Carbon::createFromTimeString($post->published_pub);
+                    $dtConvertida = $dt->formatLocalized('%A %d %B %Y');
+                    
+                    @endphp
 
-            <div class="order-lg-5 col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Card -->
-                <a class="card card-stretched-vertical card-transition bg-img-start gradient-y-overlay-sm-gray-900"
-                    href="./blog-article.html"
-                    style="background-image: url(./assets/img/400x500/img4.jpg); min-height: 25rem;">
-                    <div class="card-header">
-                        <span class="card-subtitle text-white">Health</span>
-                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <!-- Card -->
+                        <a class="card card-transition card-sm h-100 shadow-sm bg-dark"
+                            href="{{ $post->url_post }}" target="_blank" data-aos="fade-up" data-aos-delay="50">
 
-                    <div class="card-footer">
-                        <h3 class="card-title text-white">Better is when everything works together</h3>
-                        <p class="card-link link-light">Read more <i class="bi-chevron-right small ms-1"></i></p>
-                    </div>
-                </a>
-                <!-- End Card -->
-            </div>
-            <!-- End Col -->
+                            <div class="shape-container">
+                                <img class="card-img-top" src="{{ $post->url_image }}" alt="Image Description"
+                                    style="height: 280px !important; object-fit: cover;">
+                                <!-- Shape -->
+                                <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                                        <path fill="#232e3c" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                                    </svg>
+                                </div>
+                                <!-- End Shape -->
+                            </div>
 
-            <div class="order-lg-last col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Card -->
-                <a class="card card-stretched-vertical card-transition bg-img-start gradient-y-overlay-sm-gray-900"
-                    href="./blog-article.html"
-                    style="background-image: url(./assets/img/400x500/img5.jpg); min-height: 25rem;">
-                    <div class="card-header">
-                        <span class="card-subtitle text-white">Stories</span>
-                    </div>
+                            <div class="card-body">
+                                <h2 class="card-title text-inherit text-white display-7 font-weight-900">
+                                    {{ $post->title }}</h2>
 
-                    <div class="card-footer">
-                        <h3 class="card-title text-white">Should You Buy An Apple Pencil?</h3>
-                        <p class="card-link link-light">Read more <i class="bi-chevron-right small ms-1"></i></p>
+                            </div>
+                            <!-- Card Footer -->
+                            <div class="card-footer text-white-70">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 avatar-group avatar-group-xs">
+                                        <span class="avatar avatar-circle" href="#" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="{{ $post->author }}">
+                                            <img class="avatar-img" src="{{ $post->url_avatar_author }}"
+                                                alt="Image Description">
+                                        </span>
+                                    </div>
+
+                                    <div class="flex-grow-1">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="card-text text-white-70">{{ $dtConvertida }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card Footer -->
+                        </a>
+                        <!-- End Card -->
                     </div>
-                </a>
-                <!-- End Card -->
-            </div>
-            <!-- End Col -->
+                    <!-- End Col -->
+                @endforeach
+            @endif
+
         </div>
         <!-- End Row -->
-
-
-
     </div>
     <!--fim Features -->
 
@@ -349,7 +317,7 @@
             <!-- Heading -->
             <div class="w-lg-50 text-center mx-lg-auto mb-7">
                 <span class="text-cap text-white-70">Fale Conosco</span>
-                <h2 class="text-white lh-base">Ficou com alguma dúvida? Precisa de ajuda, ou quer trabalhar a gente?
+                <h2 class="text-white lh-base">Ficou com alguma dúvida? Precisa de ajuda, ou quer trabalhar c a gente?
                     <br> <span class="text-green">Let's chat.</span>
                 </h2>
             </div>
