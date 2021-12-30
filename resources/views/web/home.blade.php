@@ -20,12 +20,11 @@
                 <!-- TEXT ABERTURA -->
                 <div class="mb-5 ">
                     <span class="text-cap text-success">PENSE FORA DA CAIXA</span>
-                    <h1 class="display-4 mb-3 text-white font-weight-900">Desenvolvemos Soluções que melhoram o seu
-                        negócio</h1>
+                    <h1 class="display-4 mb-3 text-white font-weight-900">CONECTAMOS VOCÊ A MELHORES SOLUÇÕES</h1>
                     <p class="lead font-weight-900" style="font-size: 35px;">
-                        <span class="text-purple">PENSE.</span>
-                        <span class="text-primary">CRIE.</span>
-                        <span class="text-green">APRIMORE.</span>
+                        <span class="text-purple">PENSE,</span>
+                        <span class="text-primary">CRIE E</span>
+                        <span class="text-green">APRIMORE</span>
                     </p>
                     <div class="text-lg-start text-md-start text-center gap-3">
                         <a class="btn btn-theme-purple btn-transition font-weight-600 slidelink me-2"
@@ -55,28 +54,16 @@
             <!-- END IMAGEM ABERTURA -->
             <!-- End Col -->
         </div>
-
     </div>
     <!-- End ABERTURA -->
 
     <!-- Card Grid -->
     <div id="produtos" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
-            <h1 class="display-4 mb-3 text-white font-weight-900">Projetos que desenvolvemos
+            <h1 class="display-4 mb-3 text-white font-weight-900">NOSSOS PRODUTOS
             </h1>
-            <p class="lead text-white">Confira os sites que criamos para colocar sorrisos no rosto de outras
-                pessoas..</p>
+            <p class="lead text-white">Confira as soluções que desenvolvemos</p>
         </div>
-        {{-- <div class="text-center mb-10">
-            <!-- List Checked -->
-            <ul class="list-inline list-checked list-checked-primary">
-                <li class="list-inline-item list-checked-item">Desenvolvimento de websites e aplicativos Mobiles</li>
-                <li class="list-inline-item list-checked-item">Clientes 100% satisfeitos</li>
-                <li class="list-inline-item list-checked-item">Acompanhamento dos projetos em tempo real</li>
-            </ul>
-            <!-- End List Checked -->
-        </div> --}}
-
         <div class="row mb-5 mb-md-0 d-flex justify-content-center">
             <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 ">
                 <!-- Card -->
@@ -157,9 +144,9 @@
 
     <div id="blog" class="container content-space-2 content-space-lg-3 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
-            <h1 class="display-4 mb-3 text-white font-weight-900">De uma olhada no nosso blog
+            <h1 class="display-4 mb-3 text-white font-weight-900">CONFIRA NOSSO BLOG
             </h1>
-            <p class="lead text-white">Confira algumas dicas, experiêcias que vivemos (algo nesse sentido)..</p>
+            <p class="lead text-white">ARTIGOS SOBRE TECNOLOGIA, EXPERIÊNCIAS E PRODUTOS.</p>
         </div>
 
         <div class="row d-flex justify-content-center">
@@ -224,7 +211,7 @@
         </div>
         <!-- End Row -->
     </div>
-    <!--fim Features -->
+    <!--fim saiba mais -->
 
     <div id="saibamais" class="container content-space-1 content-space-lg-1 mb-5 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
@@ -308,7 +295,7 @@
         </div>
 
     </div>
-    <!--fim Features -->
+    <!--fim saiba mais -->
 
     <!--fale conosco -->
     <div class="bg-dark" style="background-image: url(./assets/svg/components/wave-pattern-light.svg);"
@@ -331,7 +318,7 @@
                         <small class="text-small">Para entrar em contato conosco, preencha o formulário abaixo. Nós
                             respondemos a quase todos dentro de um dia útil e estamos animados com seu contato.</small>
                         <hr>
-                        <form action="{{ route('web.interacao.store') }}" method="POST" name="form_faleconosco" data-grecaptcha-action="message">
+                        <form action="{{ route('web.interacao.store') }}" method="POST" name="form_faleconosco" data-grecaptcha-action="contato">
                             @csrf
                             <input type="hidden" name="grecaptcha" id="grecaptcha">
                             <div class="row">

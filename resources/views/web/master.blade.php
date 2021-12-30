@@ -116,6 +116,10 @@
             background-color: #000000 !important;
         }
 
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+
     </style>
 
 </head>
@@ -130,9 +134,7 @@
 
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
-
         @yield('content')
-
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
@@ -156,7 +158,7 @@
 
                     <!-- List -->
                     <ul class="list-unstyled list-py-2">
-                        <h6>VAMOS TOMAR UM CAFÉ? </h6>
+                        <h6>VAMOS TOMAR UM CAFÉ E CONVERAR? </h6>
                         <li> <a class="link-sm" href="mailto:contato@unitbox.com.br"><i
                                     class="bi bi-envelope me-1"></i> contato@unitbox.com.br</a>
                         </li>
@@ -179,11 +181,11 @@
 
                     <!-- List -->
                     <ul class="list-unstyled list-py-1 mb-0">
-                        <li><a class="link-sm link-secondary font-weight-bolder" href="#">PÁGINA PRINCIPAL</a></li>
-                        <li><a class="link-sm link-secondary" href="#">PORTIFÓLIO
+                        <li><a class="link-sm link-secondary font-weight-bolder" href="{{ route('web.home') }}/#home">HOME</a></li>
+                        <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#produtos">PRODUTOS
                             </a></li>
-                        <li><a class="link-sm link-secondary" href="#">BLOG</a></li>
-                        <li><a class="link-sm link-secondary" href="#">SOBRE NÓS</a></li>
+                        <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#blog">BLOG</a></li>
+                        <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#saibamais">SOBRE NÓS</a></li>
                         {{-- <li><a class="link-sm link-secondary" href="#">TRABALHE CONOCOSCO</a></li> --}}
                     </ul>
                     <!-- End List -->
@@ -195,41 +197,46 @@
 
                     <!-- List -->
                     <ul class="list-unstyled list-py-1 mb-0">
-                        <li><a class="link-sm link-secondary" href="#">MIMICS ARCADE </a></li>
-                        <li><a class="link-sm link-secondary" href="#">WAY BOX</a></li>
-                        <li><a class="link-sm link-secondary" href="#">CHATBOT</a></li>
-                        <li><a class="link-sm link-secondary" href="#">LANDING PAGE</a></li>
+                        <li><a class="link-sm link-secondary" href="https://uniplay.com.br" target="_blank">MIMICS ARCADE </a></li>
                     </ul>
                     <!-- End List -->
                 </div>
                 <!-- End Col -->
 
                 <div class="col-sm">
-                    <h5 class="mb-3 ">PLATAFORMA</h5>
-                    <!-- List -->
-                    <ul class="list-unstyled list-py-1 mb-5">
-                        <li><a class="link-sm link-secondary" href="#"><i class="bi-person-circle me-1"></i> ENTRAR</a>
-                        </li>
-                        <li><a class="link-sm link-secondary" href="#"><i class="bi-question-circle-fill me-1"></i>
-                                CENTRAL DE AJUDA</a></li>
-                    </ul>
-                    <h5 class="mb-3 ">NOSSOS INTEGRANTES</h5>
+                    <h5 class="mb-3 ">COLABORADORES</h5>
                     <div class="col-auto mt-3">
                         <!-- Avatar Group -->
                         <div class="avatar-group avatar-group-sm mb-1">
-                            <span class="avatar avatar-circle">
-                                <img class="avatar-img" src="../assets/img/160x160/img10.jpg"
+                            <span class="avatar avatar-circle"
+                                onclick="window.open('https://www.linkedin.com/in/leonardo-augustus/', '_blank')">
+                                <img class="avatar-img"
+                                    src="{{ asset('assets/img/perfis/leonardo_1628340865587.jpeg') }}"
                                     alt="Image Description">
                             </span>
-                            <span class="avatar avatar-dark avatar-circle">
-                                <span class="avatar-initials">A</span>
-                            </span>
-                            <span class="avatar avatar-circle">
-                                <img class="avatar-img" src="../assets/img/160x160/img3.jpg"
+                            <span class="avatar avatar-circle"
+                                onclick="window.open('https://www.linkedin.com/in/ferrerolan/', '_blank')">
+                                <img class="avatar-img"
+                                    src="{{ asset('assets/img/perfis/alan_1604883049174.jpeg') }}"
                                     alt="Image Description">
                             </span>
-                            <span class="avatar avatar-primary avatar-circle">
-                                <span class="avatar-initials">2+</span>
+                            <span class="avatar avatar-circle"
+                                onclick="window.open('https://www.linkedin.com/in/mauricio-freitas-a973b3141/', '_blank')">
+                                <img class="avatar-img"
+                                    src="{{ asset('assets/img/perfis/mauricio_1634892342100.jpeg') }}"
+                                    alt="Image Description">
+                            </span>
+                            <span class="avatar avatar-circle"
+                                onclick="window.open('https://www.linkedin.com/in/rafaelnanis/', '_blank')">
+                                <img class="avatar-img"
+                                    src="{{ asset('assets/img/perfis/rafa_1629135925566.jpeg') }}"
+                                    alt="Image Description">
+                            </span>
+                            <span class="avatar avatar-circle"
+                                onclick="window.open('https://www.linkedin.com/in/rubismar-souza/', '_blank')">
+                                <img class="avatar-img"
+                                    src="{{ asset('assets/img/perfis/rubis_1573603044622.jpeg') }}"
+                                    alt="Image Description">
                             </span>
                         </div>
                         <!-- End Avatar Group -->
@@ -268,18 +275,19 @@
 
                         <li class="list-inline-item">
                             <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="#">
-                                <i class="bi-google " style="font-size: 1.5rem;"></i>
+                                <i class="bi-twitch " style="font-size: 1.5rem;"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item">
-                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="#">
-                                <i class="bi-twitter " style="font-size: 1.5rem;"></i>
+                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon"
+                                href="https://www.instagram.com/unitbox/">
+                                <i class="bi-instagram " style="font-size: 1.5rem;"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item">
-                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="#">
+                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="https://github.com/Unitibox">
                                 <i class="bi-github " style="font-size: 1.5rem;"></i>
                             </a>
                         </li>
@@ -300,11 +308,12 @@
     <!-- ========== END FOOTER ========== -->
 
     <!-- Go To -->
-    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
-       "offsetTop": 700,
+    <a class="js-go-to go-to position-fixed btn-theme-purple" href="javascript:;" style="visibility: hidden;"
+        data-hs-go-to-options='{
+       "offsetTop": 1000,
        "position": {
          "init": {
-           "right": "2rem"
+           "right": "8rem"
          },
          "show": {
            "bottom": "2rem"
@@ -314,22 +323,19 @@
          }
        }
      }'>
-        <i class="bi-chevron-up"></i>
+        <i class="bi-chevron-up text-white"></i>
     </a>
-    <!-- ========== END SECONDARY CONTENTS ========== -->
 
     <!-- JS Global Compulsory  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-
     <!-- JS Implementing Plugins -->
     <script src="{{ asset('assets/vendor/hs-header/dist/hs-header.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/hs-go-to/dist/hs-go-to.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/aos/dist/aos.js') }}"></script>
     <script src="{{ asset('assets/vendor/fslightbox/index.js') }}"></script>
     <script src="{{ asset('assets/vendor/jquery-validate/validate.js') }}"></script>
-
     <!-- JS Front -->
     <script src="{{ asset('assets/js/theme.min.js') }}"></script>
     <script src="{{ asset('assets/js/theme-custom.js') }}"></script>
@@ -390,15 +396,11 @@
             });
 
             $(".btn_cookie").click(function() {
-
                 const days = 10;
                 short.setCookie("cookie_funcional", true, days);
                 short.setCookie("cookie_otimizacao", $('input[name="otimizacao"]').is(':checked'), days);
                 short.setCookie("cookie_estatistica", $('input[name="otimizacao"]').is(':checked'), days);
-
             });
-
-
         })()
 
         $(function() {

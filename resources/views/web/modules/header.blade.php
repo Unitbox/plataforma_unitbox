@@ -16,9 +16,9 @@
             <!-- Default Logo -->
             <a class="navbar-brand " href="{{ route('web.home') }}" aria-label="Unitibox">
                 <span class="font-weight-900 " style="font-size: 30px">
-                    <span class="d-none d-md-inline-block">UNIT</span>
+                    <span class="d-none d-md-inline-block">UNITBOX</span>
                     <i class="bi bi-box text-success ms-1" style="font-size: 40px"></i>
-                    <span class="d-none d-md-inline-block">BOX</span>
+                    
                 </span>
             </a>
             <!-- End Default Logo -->
