@@ -14,9 +14,23 @@
     <!-- end tools -->
 
     <!-- ABERTURA -->
-    <div class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-1" data-aos="fade-right">
+    <figure class="position-absolute bottom-0 start-0 zi-n1 mb-n10 me-n10" style="width: 21rem;">
+        <svg viewBox="0 0 451 902" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.125" d="M0 82C203.8 82 369 247.2 369 451C369 654.8 203.8 820 0 820"
+                stroke="url(#paint1_linear)" stroke-width="164" stroke-miterlimit="10"></path>
+            <defs>
+                <linearGradient id="paint1_linear" x1="323.205" y1="785.242" x2="-97.6164" y2="56.3589"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="white" stop-opacity="0"></stop>
+                    <stop offset="1" stop-color="#377dff"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
+    </figure>
+
+    <div class="container content-space-t-3 content-space-lg-4 content-space-md-4 content-space-b-0" data-aos="fade-right">
         <div class="row">
-            <div class="col-md-6 col-lg-6 mb-7 mb-md-0 text-lg-start text-md-start text-center">
+            <div class="col-md-5 col-lg-5 mb-7 mb-md-0 text-lg-start text-md-start text-center">
                 <!-- TEXT ABERTURA -->
                 <div class="mb-5 ">
                     <span class="text-cap text-success">PENSE FORA DA CAIXA</span>
@@ -44,21 +58,20 @@
             </div>
             <!-- End Col -->
             <!-- IMAGEM ABERTURA -->
-            <div class="col-md-6 ">
+            <div class="col-md-7 p-0  col-sm-12 col-lg-7">
                 <div class="position-relative p-0">
-                    <img class="img-fluid rounded-2"
-                        src="https://lzctrl.com/_next/static/images/lzHero-806d116c1e687af68dca75834b30dbef.png"
-                        alt="Image Description">
+                    <img class="img-fluid rounded-2" src="{{ asset('assets/img/web/connect_image_unitbox.svg') }}" alt="Imagem Principal Unitbox">
                 </div>
             </div>
             <!-- END IMAGEM ABERTURA -->
             <!-- End Col -->
         </div>
+
     </div>
     <!-- End ABERTURA -->
 
     <!-- Card Grid -->
-    <div id="produtos" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2">
+    <div id="produtos" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2 ">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h1 class="display-4 mb-3 text-white font-weight-900">NOSSOS PRODUTOS
             </h1>
@@ -67,7 +80,7 @@
         <div class="row mb-5 mb-md-0 d-flex justify-content-center">
             <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 ">
                 <!-- Card -->
-                <a class="card card-transition card-sm h-100 shadow-sm bg-dark border-bottom-green"
+                <a class="card card-transition card-sm h-100 shadow-none bg-dark border-bottom-green"
                     href="https://uniplay.com.br" target="_blank" data-aos="fade-up" data-aos-delay="50">
 
                     <div class="p-2">
@@ -124,7 +137,7 @@
                         <button class="btn btn-link">SAIBA MAIS<i class="bi-chevron-right small ms-1"></i>
                         </button>
                     </div>
-                    
+
                 </a>
                 <!-- End Card -->
             </div>
@@ -155,14 +168,14 @@
                 @foreach ($posts as $post)
 
                     @php
-                    $dt = Carbon\Carbon::createFromTimeString($post->published_pub);
-                    $dtConvertida = $dt->formatLocalized('%A %d %B %Y');
-                    
+                        $dt = Carbon\Carbon::createFromTimeString($post->published_pub);
+                        $dtConvertida = $dt->formatLocalized('%A %d %B %Y');
+                        
                     @endphp
 
                     <div class="col-sm-6 col-lg-4 mb-4">
                         <!-- Card -->
-                        <a class="card card-transition card-sm h-100 shadow-sm bg-dark"
+                        <a class="card card-transition card-sm h-100 shadow-none border-1 bg-dark"
                             href="{{ $post->url_post }}" target="_blank" data-aos="fade-up" data-aos-delay="50">
 
                             <div class="shape-container">
@@ -220,7 +233,7 @@
             <p class="lead text-white">Está com dúvidas sobre nós? </p>
         </div>
 
-        <div class="card bg-dark">
+        <div class="card bg-dark shadow-none">
             <div class="card-body ">
                 <div class="w-lg-100 mx-lg-auto">
                     <!-- Accordion -->
@@ -230,17 +243,18 @@
                             <div class="accordion-header" id="headingCuriousOne">
                                 <a class="accordion-button bg-dark text-white" role="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What methods of payments are supported?
+                                    SOBRE NÓS
                                 </a>
                             </div>
                             <div id="collapseOne" class="accordion-collapse collapse show bg-dark"
                                 aria-labelledby="headingCuriousOne" data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body bg-dark text-white-70">
-                                    You can purchase the themes on Bootstrap Themes via any major credit/debit card
-                                    (via
-                                    Stripe) or with your Paypal account. We don't support cryptocurrencies or
-                                    invoicing
-                                    at this time.
+                                    Mais do que pensar, pensamos fora da caixa! 
+                                    
+                                    Nossa empresa foi criada em 2019 com o objetivo claro de oferecer ao mercado
+                                    soluções e consultorias de T.I que geram otimização e performance para o seu negócio.
+
+                                    Temos paixão em apresentar alternativas que possam garantir o sucesso de nosso cliente no ambiente digital. 
                                 </div>
                             </div>
                         </div>
@@ -252,18 +266,15 @@
                                 <a class="accordion-button collapsed bg-dark text-white" role="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    Can I cancel at anytime?
+                                    QUAIS SOLUÇÕES PODEMOS OFERECER?
                                 </a>
                             </div>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingCuriousTwo"
                                 data-bs-parent="#accordionFAQ">
                                 <div class="accordion-body text-white-70">
-                                    If you'd like a refund please reach out to us at <a
-                                        href="#">themes@getbootstrap.com</a>. If you need technical help with the
-                                    theme
-                                    before a refund please reach out to the seller first and they can get in touch
-                                    with
-                                    us if they're unable to resolve the issue.
+                                    Temos um time de especialistas e fornecedores prontos para entender e ajudar a desenvolver o seu projeto. 
+                                    Do concepção até a estratégia de lançamento do seu produto. <br>
+
                                 </div>
                             </div>
                         </div>
@@ -318,7 +329,8 @@
                         <small class="text-small">Para entrar em contato conosco, preencha o formulário abaixo. Nós
                             respondemos a quase todos dentro de um dia útil e estamos animados com seu contato.</small>
                         <hr>
-                        <form action="{{ route('web.interacao.store') }}" method="POST" name="form_faleconosco" data-grecaptcha-action="contato">
+                        <form action="{{ route('web.interacao.store') }}" method="POST" name="form_faleconosco"
+                            data-grecaptcha-action="contato">
                             @csrf
                             <input type="hidden" name="grecaptcha" id="grecaptcha">
                             <div class="row">
@@ -433,7 +445,7 @@
                         short.message(response.status, response.subject, response.message);
 
                         $(button).removeClass('disabled').html(button.text());
-                        
+
                         $(form).trigger("reset");
                     })
                     .fail(function(xhr, status, error) {

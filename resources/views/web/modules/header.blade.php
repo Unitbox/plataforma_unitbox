@@ -1,8 +1,10 @@
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-dark navbar-show-hide bg-dark-theme"
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-transparent navbar-dark navbar-show-hide shadow-none"
     data-hs-header-options='{
   "fixMoment": 1000,
   "fixEffect": "slide"
 }'>
+
+
     {{-- <!-- INICIO PROMOÇÃO -->
     <div class="container ">
       <ul class="nav ms-auto mb-2 right-0 mt-1">
@@ -18,7 +20,7 @@
                 <span class="font-weight-900 " style="font-size: 30px">
                     <span class="d-none d-md-inline-block">UNITBOX</span>
                     <i class="bi bi-box text-success ms-1" style="font-size: 40px"></i>
-                    
+                    {{-- <img src="{{ asset('assets/img/web/site/Cover.png') }}" alt="logo-mimics-uniplay" title="Mimics Arcade" class="logo-dark p-0" style="width: 250px"> --}}
                 </span>
             </a>
             <!-- End Default Logo -->

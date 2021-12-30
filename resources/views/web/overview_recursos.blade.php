@@ -7,7 +7,7 @@
         <div class="">
             <div class="">
                 <div class="swiper-slide d-flex gradient-x-overlay-sm-dark bg-img-start"
-                    style="background-image: url(./assets/img/1920x1080/img4.jpg); min-height: 40rem;">
+                    style="background-image: url(./assets/img/1920x1080/img3.jpg); min-height: 40rem;">
                     <!-- Container -->
                     <div class="container content-space-2 content-space-lg-4 content-space-md-4 content-space-b-2"
                         style="min-height: 40rem;">

@@ -113,11 +113,21 @@
         }
 
         .bg-dark-theme {
-            background-color: #000000 !important;
+            background-color: #222529 !important;
         }
 
         .grecaptcha-badge {
             visibility: hidden;
+        }
+
+        .navbar-transparent {
+            box-shadow: 0 1px 5px 0px rgb(0 0 0 / 20%);
+            -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 1px 5px 0px rgb(0 0 0 / 20%);
+            -o-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+            -ms-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+            opacity: 0.9;
+            transition: 0.4s;
         }
 
     </style>
@@ -149,9 +159,9 @@
                 <div class="col-lg-3 mb-7 mb-lg-0">
                     <!-- Logo -->
                     <div class="mb-5">
-                        <a class="navbar-brand" href="./index.html" aria-label="Space">
-                            <span class="font-weight-900 text-white" style="font-size: 30px">UNIT <i
-                                    class="bi bi-box text-success" style="font-size: 30px"></i> BOX </span>
+                        <a class="navbar-brand" href="{{ route('web.home') }}/#home" aria-label="Space">
+                            <span class="font-weight-900 text-white" style="font-size: 24px">UNITBOX &nbsp;<i
+                                    class="bi bi-box text-success" style="font-size: 30px"></i> </span>
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -181,11 +191,13 @@
 
                     <!-- List -->
                     <ul class="list-unstyled list-py-1 mb-0">
-                        <li><a class="link-sm link-secondary font-weight-bolder" href="{{ route('web.home') }}/#home">HOME</a></li>
+                        <li><a class="link-sm link-secondary font-weight-bolder"
+                                href="{{ route('web.home') }}/#home">HOME</a></li>
                         <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#produtos">PRODUTOS
                             </a></li>
                         <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#blog">BLOG</a></li>
-                        <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#saibamais">SOBRE NÓS</a></li>
+                        <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#saibamais">SOBRE NÓS</a>
+                        </li>
                         {{-- <li><a class="link-sm link-secondary" href="#">TRABALHE CONOCOSCO</a></li> --}}
                     </ul>
                     <!-- End List -->
@@ -197,7 +209,8 @@
 
                     <!-- List -->
                     <ul class="list-unstyled list-py-1 mb-0">
-                        <li><a class="link-sm link-secondary" href="https://uniplay.com.br" target="_blank">MIMICS ARCADE </a></li>
+                        <li><a class="link-sm link-secondary" href="https://uniplay.com.br" target="_blank">MIMICS
+                                ARCADE </a></li>
                     </ul>
                     <!-- End List -->
                 </div>
