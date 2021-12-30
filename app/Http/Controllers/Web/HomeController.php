@@ -13,6 +13,8 @@ class HomeController extends Controller
     {
         $posts = Cache::get('posts');
 
+        dd($posts);
+
         return view('web.home', [
             'posts' => $posts
         ]);
