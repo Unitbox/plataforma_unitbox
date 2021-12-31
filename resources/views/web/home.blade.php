@@ -574,6 +574,7 @@
                     .html(
                         '<span class="spinner-border spinner-border-sm " role="status" aria-hidden="true"></span> ' +
                         button.text());
+                        
 
                 $.post(action, form_data, 'json')
                     .done(function(response) {
