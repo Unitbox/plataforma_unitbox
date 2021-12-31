@@ -1,5 +1,5 @@
 @extends('web.master')
-@section('title', 'Página Principal')
+@section('title', 'Soluções em tecnologia ideal para o seu negócio')
 
 @section('content')
 
