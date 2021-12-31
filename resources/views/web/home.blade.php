@@ -119,7 +119,7 @@
                 <!-- Card -->
                 <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-purple" href="#">
                     <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
-                        <img class="img-fluid" src="../assets/svg/illustrations/oc-building-apps.svg" alt="Image Description" style="height: 9rem;">
+                        <img class="img-fluid" src="{{ asset('assets/svg/illustrations/oc-building-apps.svg') }}" alt="Image Description" style="height: 9rem;">
                     </div>
                     <div class="card-body">
                         <h3 class="card-title mt-3">EQUIPE ESPECIALIZADA</h3>
@@ -138,7 +138,7 @@
                 <!-- Card -->
                 <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-green" href="#">
                     <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
-                        <img class="img-fluid" src="../assets/svg/illustrations/oc-money-profits.svg" alt="Image Description" style="height: 9rem;">
+                        <img class="img-fluid" src="{{ asset('assets/svg/illustrations/oc-money-profits.svg') }}" alt="Image Description" style="height: 9rem;">
                     </div>
                     <div class="card-body">
                         <h3 class="card-title mt-3">CUSTO DE IMPLANTAÇÃO</h3>
@@ -158,7 +158,7 @@
                 <!-- Card -->
                 <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-purple" href="#">
                     <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
-                        <img class="img-fluid" src="../assets/svg/illustrations/oc-collaboration.svg" alt="Image Description" style="height: 9rem;">
+                        <img class="img-fluid" src="{{ asset('assets/svg/illustrations/oc-collaboration.svg') }}" alt="Image Description" style="height: 9rem;">
                     </div>
                     <div class="card-body">
                         <h3 class="card-title mt-3">GARANTIA EXTENDIDA</h3>

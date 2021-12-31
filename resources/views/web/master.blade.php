@@ -19,7 +19,7 @@
     <meta name="grecaptcha-key" content="{{ config('recaptcha.v3.public_key') }}">
 
     <title>@yield('title') | {{ env('APP_NAME') }}</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sc_logo.png" />
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/web/cube_favicon.png')}}" />
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 
@@ -36,7 +36,6 @@
     @hasSection('css')
         @yield('css')
     @endif
-
 
     <style type="text/css">
         html {
