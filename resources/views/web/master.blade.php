@@ -14,12 +14,12 @@
     <meta property="og:title" content="Unitbox" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://unitbox.com.br" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="{{ asset('assets/img/web/site/icon_unitbox.png')}}" />
     <meta property="og:description" content="" />
     <meta name="grecaptcha-key" content="{{ config('recaptcha.v3.public_key') }}">
 
     <title>@yield('title') | {{ env('APP_NAME') }}</title>
-    <link rel="icon" type="image/png" href="{{ asset('assets/img/web/cube_favicon.png')}}" />
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/web/site/icon_unitbox.png')}}" />
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 
