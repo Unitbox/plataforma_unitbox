@@ -106,9 +106,9 @@
     <div id="featuresSection" class="container content-space-t-2 content-space-b-md-2 content-space-lg-3">
         <!-- Heading -->
         <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <h2 class="h1">O que esperar de resultados com o Agile Team da Objective
+            <h2 class="h1">O que esperar de resultados com as soluções <span class="text-primary">Unitbox</span> 
             </h2>
-            <p>Linhas de softwares e serviços especialmente projetados para cada segmento..</p>
+            <p class="lead text-white-70">Linhas de softwares e serviços especialmente projetados para cada segmento.</p>
         </div>
         <!-- End Heading -->
 
@@ -250,7 +250,7 @@
     <!-- PRODUTOS -->
     <div id="produtos" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2 ">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
-            <h2 class="display-5 mb-3 text-white ">NOSSOS PRODUTOS
+            <h2 class="display-5 mb-3 text-white ">Cases de sucesso
             </h2>
             <p class="lead text-white">Confira as soluções que desenvolvemos</p>
         </div>
