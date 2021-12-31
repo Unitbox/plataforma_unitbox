@@ -160,8 +160,21 @@
                     <!-- Logo -->
                     <div class="mb-5">
                         <a class="navbar-brand" href="{{ route('web.home') }}/#home" aria-label="Space">
-                            <span class="font-weight-900 text-white" style="font-size: 24px">UNITBOX &nbsp;<i
-                                    class="bi bi-box text-success" style="font-size: 30px"></i> </span>
+                            <span class="font-weight-900 text-white" style="font-size: 24px">UNITBOX &nbsp;
+                                <span class="svg-icon svg-icon-sm text-success" >
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M5 8.04999L11.8 11.95V19.85L5 15.85V8.04999Z"
+                                            fill="#035A4B" />
+                                        <path
+                                            d="M20.1 6.65L12.3 2.15C12 1.95 11.6 1.95 11.3 2.15L3.5 6.65C3.2 6.85 3 7.15 3 7.45V16.45C3 16.75 3.2 17.15 3.5 17.25L11.3 21.75C11.5 21.85 11.6 21.85 11.8 21.85C12 21.85 12.1 21.85 12.3 21.75L20.1 17.25C20.4 17.05 20.6 16.75 20.6 16.45V7.45C20.6 7.15 20.4 6.75 20.1 6.65ZM5 15.85V7.95L11.8 4.05L18.6 7.95L11.8 11.95V19.85L5 15.85Z"
+                                            fill="#035A4B" />
+                                    </svg>
+
+                                </span>
+                            </span>
+
+
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -350,6 +363,7 @@
     <script src="{{ asset('assets/vendor/fslightbox/index.js') }}"></script>
     <script src="{{ asset('assets/vendor/jquery-validate/validate.js') }}"></script>
     <!-- JS Front -->
+    <script src="./assets/vendor/typed.js/lib/typed.min.js"></script>
     <script src="{{ asset('assets/js/theme.min.js') }}"></script>
     <script src="{{ asset('assets/js/theme-custom.js') }}"></script>
 
@@ -365,8 +379,12 @@
 
                 getapp.message(tipo, subject, '');
             });
+
+            
         </script>
     @endif
+
+    
 
     <!-- JS Plugins Init. -->
     <script>
@@ -375,10 +393,13 @@
             short.init();
             short.checkCookie();
 
+            HSCore.components.HSTyped.init('.js-text-animation')
+
             // INITIALIZATION OF HEADER
             // =======================================================
             new HSHeader('#header').init()
 
+            
             // INITIALIZATION OF BOOTSTRAP DROPDOWN
             // =======================================================
             HSBsDropdown.init()
@@ -394,6 +415,8 @@
                 once: true
             });
 
+
+            
             $("li.nav-item .nav-link, .slidelink").click(function(e) {
                 e.preventDefault();
 
