@@ -9,23 +9,25 @@
     <meta name="keywords"
         content="Marketing Digital, criador de sites, desenvolvimento de aplicativos, desenvolvimento de soluções, criação de websites, criação de aplicativos, criação de app, criação de sites sp, melhores empresas desenvolvimento de sites e aplicativos, whatsApp, chatbot, medir interações, criação de sites profissionais, site já pronto, Unitbox">
 
-    <meta name="description" content="Acesse o site da Unitbox e conheça as nossas soluções em tecnologia. Oferecemos consultorias e produtos que geram otimização e performance para o seu negócio!">
-    <meta name="author" content="Unitbox"/>
+    <meta name="description"
+        content="Acesse o site da Unitbox e conheça as nossas soluções em tecnologia. Oferecemos consultorias e produtos que geram otimização e performance para o seu negócio!">
+    <meta name="author" content="Unitbox" />
     <link rel="canonical" href="https://www.unitbox.com.br" />
 
-	<meta property="og:site_name" content="Unitbox" />
+    <meta property="og:site_name" content="Unitbox" />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:title" content="Unitbox" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://www.unitbox.com.br" />
-    <meta property="og:image" content="{{ asset('assets/img/web/site/og_unitbox.jpg')}}" />
-    <meta property="og:description" content="Acesse o site da Unitbox e conheça as nossas soluções em tecnologia. Oferecemos consultorias e produtos que geram otimização e performance para o seu negócio!" />
+    <meta property="og:image" content="{{ asset('assets/img/web/site/og_unitbox.jpg') }}" />
+    <meta property="og:description"
+        content="Acesse o site da Unitbox e conheça as nossas soluções em tecnologia. Oferecemos consultorias e produtos que geram otimização e performance para o seu negócio!" />
 
     <meta name="grecaptcha-key" content="{{ config('recaptcha.v3.public_key') }}">
 
     <title>@yield('title') | {{ env('APP_NAME') }}</title>
-    <link rel="icon" type="image/png" href="{{ asset('assets/img/web/site/icon_unitbox.png')}}" />
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/web/site/icon_unitbox.png') }}" />
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 
@@ -144,9 +146,6 @@
     @include('web.modules.header')
     <!-- ========== END HEADER ========== -->
 
-    <h1 style="display: none"></h1>
-
-
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
         @yield('content')
@@ -166,7 +165,7 @@
                     <div class="mb-5">
                         <a class="navbar-brand" href="{{ route('web.home') }}/#home" aria-label="Space">
                             <span class="font-weight-900 text-white" style="font-size: 24px">UNITBOX &nbsp;
-                                <span class="svg-icon svg-icon-sm text-success" >
+                                <span class="svg-icon svg-icon-sm text-success">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path opacity="0.3" d="M5 8.04999L11.8 11.95V19.85L5 15.85V8.04999Z"
@@ -209,8 +208,16 @@
 
                     <!-- List -->
                     <ul class="list-unstyled list-py-1 mb-0">
-                        <li><a class="link-sm link-secondary font-weight-bolder"
-                                href="{{ route('web.home') }}/#home">HOME</a></li>
+                        <li>
+                            <a class="link-sm link-secondary font-weight-bolder"
+                                href="{{ route('web.home') }}/#home">HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-sm link-secondary font-weight-bolder"
+                                href="{{ route('web.home') }}/#servicos">SERVIÇOS
+                            </a>
+                        </li>
                         <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#produtos">PRODUTOS
                             </a></li>
                         <li><a class="link-sm link-secondary" href="{{ route('web.home') }}/#blog">BLOG</a></li>
@@ -384,12 +391,10 @@
 
                 getapp.message(tipo, subject, '');
             });
-
-            
         </script>
     @endif
 
-    
+
 
     <!-- JS Plugins Init. -->
     <script>
@@ -404,7 +409,7 @@
             // =======================================================
             new HSHeader('#header').init()
 
-            
+
             // INITIALIZATION OF BOOTSTRAP DROPDOWN
             // =======================================================
             HSBsDropdown.init()
@@ -421,7 +426,7 @@
             });
 
 
-            
+
             $("li.nav-item .nav-link, .slidelink").click(function(e) {
                 e.preventDefault();
 

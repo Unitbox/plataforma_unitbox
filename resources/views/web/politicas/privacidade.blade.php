@@ -35,7 +35,7 @@
                     respeitar a sua
                     privacidade
                     em relação a qualquer informação sua que possamos coletar no site <a
-                        href="http://127.0.0.1:8000">Unitibox</a>.</p><br>
+                        href="{{ route('web.home') }}">Unitbox</a>.</p><br>
                 <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe
                     fornecer
                     um

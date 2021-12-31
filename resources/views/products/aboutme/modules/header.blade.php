@@ -14,7 +14,7 @@
     <div class="container">
         <nav class="navbar-nav-wrap">
             <!-- Default Logo -->
-            <a class="navbar-brand " href="{{ route('web.home') }}" aria-label="Unitibox">
+            <a class="navbar-brand " href="{{ route('web.home') }}/#home" aria-label="Unitbox">
                 <span class="font-weight-900 " style="font-size: 30px">
                     <span class="d-none d-md-inline-block">About</span>
                     <i class="bi bi-box text-success ms-1" style="font-size: 40px"></i>

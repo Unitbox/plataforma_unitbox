@@ -16,7 +16,7 @@
     <div class="container">
         <nav class="navbar-nav-wrap">
             <!-- Default Logo -->
-            <a class="navbar-brand " href="{{ route('web.home') }}" aria-label="Unitibox">
+            <a class="navbar-brand " href="{{ route('web.home') }}/#home" aria-label="Unitbox">
                 <span class="font-weight-900 " style="font-size: 30px">
                     <span class="d-none d-md-inline-block">UNITBOX</span>
                     <span class="svg-icon text-success" >
@@ -53,6 +53,9 @@
 
                         <li class="nav-item">
                             <a class="nav-link active" href="{{ route('web.home') }}/#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('web.home') }}/#servicos">SERVIÇOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('web.home') }}/#produtos">PRODUTOS</a>

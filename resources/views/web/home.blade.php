@@ -39,15 +39,22 @@
                 <!-- End Heading -->
 
                 <div class="d-grid d-sm-flex justify-content-sm-center align-items-sm-center gap-3">
-                    <a class="btn btn-theme-purple btn-transition font-weight-600 slidelink me-2" href="#">FALE CONOSCO <i
+                    <a class="btn btn-theme-purple btn-transition font-weight-600 slidelink me-2" href="{{ route('web.home') }}/#faleconosco">FALE CONOSCO <i
                             class="bi-chevron-right small ms-1"></i></a>
 
                     <small class="text-white">ou</small>
 
-                    <a class="video-player btn btn-white btn-transition" href="https://www.youtube.com/watch?v=d4eDWc8g0e0"
+                    {{-- <a class="video-player btn btn-white btn-transition" href="https://www.youtube.com/watch?v=d4eDWc8g0e0"
                         role="button" data-fslightbox="youtube-video">
                         SAIBA MAIS <i class="bi-play-circle-fill me-1"></i>
+                    </a> --}}
+
+                     <a class="btn btn-white btn-transition" href="{{ route('web.home') }}/#servicos">
+                        SAIBA MAIS <i class="bi-play-circle-fill me-1"></i>
                     </a>
+
+
+
                 </div>
             </div>
         </div>
@@ -117,7 +124,7 @@
         <div class="row gx-3">
             <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                 <!-- Card -->
-                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-purple" href="#">
+                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-purple" href="{{ route('web.home') }}/#faleconosco">
                     <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
                         <img class="img-fluid" src="{{ asset('assets/svg/illustrations/oc-building-apps.svg') }}" alt="Image Description" style="height: 9rem;">
                     </div>
@@ -136,7 +143,7 @@
 
             <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                 <!-- Card -->
-                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-green" href="#">
+                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-green" href="{{ route('web.home') }}/#faleconosco">
                     <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
                         <img class="img-fluid" src="{{ asset('assets/svg/illustrations/oc-money-profits.svg') }}" alt="Image Description" style="height: 9rem;">
                     </div>
@@ -156,7 +163,7 @@
 
             <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                 <!-- Card -->
-                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-purple" href="#">
+                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-purple" href="{{ route('web.home') }}/#faleconosco">
                     <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
                         <img class="img-fluid" src="{{ asset('assets/svg/illustrations/oc-collaboration.svg') }}" alt="Image Description" style="height: 9rem;">
                     </div>
