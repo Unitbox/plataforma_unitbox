@@ -13,28 +13,28 @@
     <div class="message-toast"></div>
     <!-- end tools -->
 
-    <div class="gradient-x-overlay-sm-primary position-relative overflow-hidden">
-        <div class="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
+    <div  class="gradient-x-overlay-sm-primary position-relative overflow-hidden">
+        <div id="home" class="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
             <div class="w-lg-65 text-center mx-lg-auto">
                 <!-- Heading -->
                 <div class="mb-5">
                     <span class="text-cap text-success">PENSE FORA DA CAIXA</span>
                     <h1 class="display-4 mb-3 display-4 mb-3 font-weight-900">
-                        Somos especialistas no desenvolvimento de Softwares <br>
+                        Somos especialistas no desenvolvimento de<br>
 
                         <span class="text-primary text-highlight-warning">
                             <span class="js-text-animation" data-hs-typed-options='{
-                                                  "strings": ["WEB.", "Aplicativos Mobile.", "de Automação de processos."],
-                                                  "typeSpeed": 90,
-                                                  "loop": true,
-                                                  "backSpeed": 30,
-                                                  "backDelay": 2500
-                                                }'></span>
+                                                          "strings": ["Software Web.", "Aplicativos Mobile.", "Automações."],
+                                                          "typeSpeed": 100,
+                                                          "loop": true,
+                                                          "backSpeed": 30,
+                                                          "backDelay": 2500
+                                                        }'></span>
                         </span>
                     </h1>
 
                     <p class="lead text-white-70">
-                        Precisa de uma solução customizada para sua empresa?
+                        Precisa de uma solução customizada para sua empresa? </p>
                 </div>
                 <!-- End Heading -->
 
@@ -46,22 +46,22 @@
 
                     <a class="video-player btn btn-white btn-transition" href="https://www.youtube.com/watch?v=d4eDWc8g0e0"
                         role="button" data-fslightbox="youtube-video">
-                        <i class="bi-play-circle-fill me-1"></i> SAIBA
-                        MAIS
+                        SAIBA MAIS <i class="bi-play-circle-fill me-1"></i>
                     </a>
                 </div>
             </div>
         </div>
 
         <!-- Mockup -->
-        <div class="container content-space-b-2 content-space-b-lg-3">
+        <div class="container content-space-b-1 content-space-b-lg-1">
             <div class="position-relative text-center mx-lg-auto">
                 <!-- Devices -->
                 <div class="devices">
                     <!-- Mobile Device -->
                     <figure class="device-mobile rotated-3d-right">
                         <div class="device-mobile-frame">
-                            <img class="device-mobile-img" src="../assets/img/407x867/img1.jpg" alt="Image Description">
+                            <img class="device-mobile-img" src="{{ asset('assets/img/web/connect_celular_.png') }}"
+                                alt="Mobile Connect">
                         </div>
                     </figure>
                     <!-- End Mobile Device -->
@@ -74,11 +74,12 @@
                                 <span class="device-browser-header-btn-list-btn"></span>
                                 <span class="device-browser-header-btn-list-btn"></span>
                             </div>
-                            <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+                            <div class="device-browser-header-browser-bar">https://unitbox.com.br</div>
                         </div>
 
                         <div class="device-browser-frame">
-                            <img class="device-browser-img" src="../assets/img/1618x1010/img1.jpg" alt="Image Description">
+                            <img class="device-browser-img" src="{{ asset('assets/img/web/connect.png') }}"
+                                alt="Desktop Connect">
                         </div>
                     </figure>
                     <!-- End Browser Device -->
@@ -103,125 +104,70 @@
         <!-- End Mockup -->
     </div>
 
-    <div id="featuresSection" class="container content-space-t-2 content-space-b-md-2 content-space-lg-3">
+    <div id="servicos" class="container content-space-t-2 content-space-b-md-2 content-space-lg-3">
         <!-- Heading -->
         <div class="text-center mx-md-auto mb-5 mb-md-9">
-            <h2 class="h1">O que esperar de resultados <br> com as soluções <span class="text-primary">Unitbox</span> 
+            <h2 class="h1">O que esperar de resultados <br> com as soluções <span
+                    class="text-primary">Unitbox</span>
             </h2>
-            <p class="lead text-white-70">Temos um time de especialistas pronto para entender e ajudar a desenvolver o seu projeto. 
-                Do papel até a estratégia de lançamento do seu produto.</p>
+            <p class="lead text-white-70"></p>
         </div>
         <!-- End Heading -->
 
         <div class="row gx-3">
-            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
+            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                 <!-- Card -->
-                <a class="card card-sm card-transition h-100" href="#">
+                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-purple" href="#">
+                    <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
+                        <img class="img-fluid" src="../assets/svg/illustrations/oc-building-apps.svg" alt="Image Description" style="height: 9rem;">
+                    </div>
                     <div class="card-body">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 21C6 21.6 6.4 22 7 22H17C17.6 22 18 21.6 18 21V20H6V21Z" fill="#035A4B"></path>
-                                <path opacity="0.3" d="M17 2H7C6.4 2 6 2.4 6 3V20H18V3C18 2.4 17.6 2 17 2Z" fill="#035A4B">
-                                </path>
-                                <path d="M12 4C11.4 4 11 3.6 11 3V2H13V3C13 3.6 12.6 4 12 4Z" fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4 class="card-title">Responsive</h4>
-                        <p class="card-text text-body">Front is an incredibly beautiful, fully responsive, and mobile-first
-                            projects on the web.</p>
+                        <h3 class="card-title mt-3">EQUIPE ESPECIALIZADA</h3>
+                        <p class="lead text-white-70">Equipes especializadas e com foco total na experiência do cliente.</p>
                     </div>
 
                     <div class="card-footer pt-0">
-                        <span class="card-link">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                        <span class="card-link">Saiba mais <i class="bi-chevron-right small ms-1"></i></span>
                     </div>
                 </a>
                 <!-- End Card -->
             </div>
             <!-- End Col -->
 
-            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
+            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                 <!-- Card -->
-                <a class="card card-sm card-transition h-100" href="#">
+                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-green" href="#">
+                    <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
+                        <img class="img-fluid" src="../assets/svg/illustrations/oc-money-profits.svg" alt="Image Description" style="height: 9rem;">
+                    </div>
                     <div class="card-body">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z"
-                                    fill="#035A4B"></path>
-                                <path opacity="0.3"
-                                    d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z"
-                                    fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4 class="card-title">Customizable</h4>
-                        <p class="card-text text-body">Front template can be easily customized with its cutting-edge
-                            components and features.</p>
+                        <h3 class="card-title mt-3">CUSTO DE IMPLANTAÇÃO</h3>
+                        <p class="lead text-white-70">
+                            Dimensionamento de recursos na medida certa para atender seu projeto.</p>
                     </div>
 
                     <div class="card-footer pt-0">
-                        <span class="card-link">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                        <span class="card-link">Saiba mais <i class="bi-chevron-right small ms-1"></i></span>
                     </div>
                 </a>
                 <!-- End Card -->
             </div>
             <!-- End Col -->
 
-            <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
+            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                 <!-- Card -->
-                <a class="card card-sm card-transition h-100" href="#">
+                <a class="card card-sm card-transition h-100 bg-dark text-center shadow-none border-bottom-purple" href="#">
+                    <div class="card-header" style="background-color: rgb(224, 224, 228)!important">
+                        <img class="img-fluid" src="../assets/svg/illustrations/oc-collaboration.svg" alt="Image Description" style="height: 9rem;">
+                    </div>
                     <div class="card-body">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4 4L11.6314 2.56911C11.875 2.52343 12.125 2.52343 12.3686 2.56911L20 4V11.9033C20 15.696 18.0462 19.2211 14.83 21.2313L12.53 22.6687C12.2057 22.8714 11.7943 22.8714 11.47 22.6687L9.17001 21.2313C5.95382 19.2211 4 15.696 4 11.9033L4 4Z"
-                                    fill="#035A4B"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M11.175 14.75C10.9354 14.75 10.6958 14.6542 10.5042 14.4625L8.58749 12.5458C8.20415 12.1625 8.20415 11.5875 8.58749 11.2042C8.97082 10.8208 9.59374 10.8208 9.92915 11.2042L11.175 12.45L14.3375 9.2875C14.7208 8.90417 15.2958 8.90417 15.6792 9.2875C16.0625 9.67083 16.0625 10.2458 15.6792 10.6292L11.8458 14.4625C11.6542 14.6542 11.4146 14.75 11.175 14.75Z"
-                                    fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4 class="card-title">Premium <span class="badge badge-success badge-pill ml-1">sketch</span>
-                        </h4>
-                        <p class="card-text text-body">Front is not only for developers but also for designers, and includes
-                            a Sketch file.</p>
+                        <h3 class="card-title mt-3">GARANTIA EXTENDIDA</h3>
+                        <p class="lead text-white-70">
+                            Acompanhamos todos os nossos projetos após sua implantação.</p>
                     </div>
 
                     <div class="card-footer pt-0">
-                        <span class="card-link">Learn more <i class="bi-chevron-right small ms-1"></i></span>
-                    </div>
-                </a>
-                <!-- End Card -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6 col-lg-3">
-                <!-- Card -->
-                <a class="card card-sm card-transition h-100" href="#">
-                    <div class="card-body">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.85714 1H11.7364C12.0911 1 12.4343 1.12568 12.7051 1.35474L17.4687 5.38394C17.8057 5.66895 18 6.08788 18 6.5292V19.0833C18 20.8739 17.9796 21 16.1429 21H4.85714C3.02045 21 3 20.8739 3 19.0833V2.91667C3 1.12612 3.02045 1 4.85714 1ZM7 13C7 12.4477 7.44772 12 8 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H8C7.44772 14 7 13.5523 7 13ZM8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18H11C11.5523 18 12 17.5523 12 17C12 16.4477 11.5523 16 11 16H8Z"
-                                    fill="#035A4B"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.85714 3H14.7364C15.0911 3 15.4343 3.12568 15.7051 3.35474L20.4687 7.38394C20.8057 7.66895 21 8.08788 21 8.5292V21.0833C21 22.8739 20.9796 23 19.1429 23H6.85714C5.02045 23 5 22.8739 5 21.0833V4.91667C5 3.12612 5.02045 3 6.85714 3ZM7 13C7 12.4477 7.44772 12 8 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H8C7.44772 14 7 13.5523 7 13ZM8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18H11C11.5523 18 12 17.5523 12 17C12 16.4477 11.5523 16 11 16H8Z"
-                                    fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4 class="card-title">Documentation</h4>
-                        <p class="card-text text-body">Every component and plugin is well documented with live examples.</p>
-                    </div>
-
-                    <div class="card-footer pt-0">
-                        <span class="card-link">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                        <span class="card-link">Saiba mais <i class="bi-chevron-right small ms-1"></i></span>
                     </div>
                 </a>
                 <!-- End Card -->
@@ -245,7 +191,6 @@
             </defs>
         </svg>
     </figure>
-
     <!-- End ABERTURA -->
 
     <!-- PRODUTOS -->
@@ -333,15 +278,17 @@
     </div>
     <!-- End PRODUTOS -->
 
+    <!-- blog -->
     <div id="blog" class="container content-space-2 content-space-lg-3 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h2 class="display-5 mb-3 text-white font-weight-900">Insights do nosso time
             </h2>
             <p class="lead text-white-70 ">
-            
-                Conheça o nosso canal de notícias e fique por dentro do universo tecnológico para comunicação, desenvolvimento de software, linguagens e muito mais para apoiar o seu time na operação e
+
+                Conheça o nosso canal de notícias e fique por dentro do universo tecnológico para comunicação,
+                desenvolvimento de software, linguagens e muito mais para apoiar o seu time na operação e
                 estratégia de negócio.
-                
+
             </p>
         </div>
 
@@ -407,8 +354,9 @@
         </div>
         <!-- End Row -->
     </div>
-    <!--fim saiba mais -->
+    <!--fim blog -->
 
+    <!--saiba mais -->
     <div id="saibamais" class="container content-space-1 content-space-lg-1 mb-5 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h2 class="h1 mb-3 text-white font-weight-900">Saiba mais
