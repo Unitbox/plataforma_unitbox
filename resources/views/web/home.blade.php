@@ -105,10 +105,11 @@
 
     <div id="featuresSection" class="container content-space-t-2 content-space-b-md-2 content-space-lg-3">
         <!-- Heading -->
-        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <h2 class="h1">O que esperar de resultados com as soluções <span class="text-primary">Unitbox</span> 
+        <div class="text-center mx-md-auto mb-5 mb-md-9">
+            <h2 class="h1">O que esperar de resultados <br> com as soluções <span class="text-primary">Unitbox</span> 
             </h2>
-            <p class="lead text-white-70">Linhas de softwares e serviços especialmente projetados para cada segmento.</p>
+            <p class="lead text-white-70">Temos um time de especialistas pronto para entender e ajudar a desenvolver o seu projeto. 
+                Do papel até a estratégia de lançamento do seu produto.</p>
         </div>
         <!-- End Heading -->
 
@@ -250,9 +251,9 @@
     <!-- PRODUTOS -->
     <div id="produtos" class="container content-space-2 content-space-lg-2 content-space-md-2 content-space-b-2 ">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
-            <h2 class="display-5 mb-3 text-white ">Cases de sucesso
+            <h2 class="h1 mb-3 text-white ">Cases de sucesso
             </h2>
-            <p class="lead text-white">Confira as soluções que desenvolvemos</p>
+            <p class="lead text-white-70">Linhas de softwares e serviços especialmente projetados para cada segmento.</p>
         </div>
         <div class="row mb-5 mb-md-0 d-flex justify-content-center">
             <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 ">
@@ -336,11 +337,11 @@
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
             <h2 class="display-5 mb-3 text-white font-weight-900">Insights do nosso time
             </h2>
-            <p class="lead text-white-70">Obtenha insights do nosso time de especialistas sobre metodologias de
-                desenvolvimento de software, linguagens, tecnologia e muito mais para apoiar o seu time na operação e
-                estratégia de negócio.
+            <p class="lead text-white-70 ">
             
-                Conheça o nosso canal de notícias e fique por dentro do universo tecnológico para comunicação. Objetivo deste canal é fornecer informação útil para o seu dia a dia.
+                Conheça o nosso canal de notícias e fique por dentro do universo tecnológico para comunicação, desenvolvimento de software, linguagens e muito mais para apoiar o seu time na operação e
+                estratégia de negócio.
+                
             </p>
         </div>
 
@@ -410,7 +411,7 @@
 
     <div id="saibamais" class="container content-space-1 content-space-lg-1 mb-5 content-space-md-1 content-space-b-2">
         <div class="w-md-90 w-lg-80 text-center mx-md-auto mb-5 mb-md-9">
-            <h2 class="display-5 mb-3 text-white font-weight-900">Tire suas dúvidas
+            <h2 class="h1 mb-3 text-white font-weight-900">Saiba mais
             </h2>
             <p class="lead text-white">Está com dúvidas sobre nós? </p>
         </div>
@@ -502,7 +503,7 @@
             <div class="w-lg-50 text-center mx-lg-auto mb-7"
                 style="background-image: url(./assets/svg/components/isometric-squares-light.svg);">
                 <span class="text-cap text-white-70">Fale Conosco</span>
-                <h2 class="text-white lh-base">Ficou com alguma dúvida? Precisa de ajuda, ou quer trabalhar c a gente?
+                <h2 class="text-white lh-base">Ficou com alguma dúvida? Precisa de ajuda, ou quer trabalhar com a gente?
                     <br> <span class="text-green">Let's chat.</span>
                 </h2>
             </div>
