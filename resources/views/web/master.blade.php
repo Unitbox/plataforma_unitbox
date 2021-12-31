@@ -9,7 +9,7 @@
     <meta name="keywords"
         content="Marketing Digital, criador de sites, desenvolvimento de aplicativos, desenvolvimento de soluções, criação de websites, criação de aplicativos, criação de app, criação de sites sp, melhores empresas desenvolvimento de sites e aplicativos, whatsApp, chatbot, medir interações, criação de sites profissionais, site já pronto, Unitbox">
 
-    <meta name="description" content="Acesse agora o site da Unitbox e conheça as nossas soluções. Oferecemos soluções e consultorias que geram otimização e performance para o seu negócio, veja!">
+    <meta name="description" content="Acesse o site da Unitbox e conheça as nossas soluções em tecnologia. Oferecemos consultorias e produtos que geram otimização e performance para o seu negócio!">
     <meta name="author" content="Unitbox"/>
     <link rel="canonical" href="https://www.unitbox.com.br" />
 
@@ -20,7 +20,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://www.unitbox.com.br" />
     <meta property="og:image" content="{{ asset('assets/img/web/site/og_unitbox.jpg')}}" />
-    <meta property="og:description" content="Acesse agora o site da Unitbox e conheça as nossas soluções. Oferecemos soluções e consultorias que geram otimização e performance para o seu negócio, veja!" />
+    <meta property="og:description" content="Acesse o site da Unitbox e conheça as nossas soluções em tecnologia. Oferecemos consultorias e produtos que geram otimização e performance para o seu negócio!" />
 
     <meta name="grecaptcha-key" content="{{ config('recaptcha.v3.public_key') }}">
 
