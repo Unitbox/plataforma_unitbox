@@ -337,7 +337,7 @@
                         </li>
 
                         <li class="list-inline-item">
-                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="https://github.com/Unitibox">
+                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="https://github.com/Unitbox">
                                 <i class="bi-github " style="font-size: 1.5rem;"></i>
                             </a>
                         </li>
