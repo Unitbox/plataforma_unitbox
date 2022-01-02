@@ -324,14 +324,14 @@
                         </li>
 
                         <li class="list-inline-item">
-                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="#">
+                            <a class="btn p-4 btn-soft-secondary btn-xs btn-icon" href="https://www.twitch.tv/5amcode/">
                                 <i class="bi-twitch " style="font-size: 1.5rem;"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item">
                             <a class="btn p-4 btn-soft-secondary btn-xs btn-icon"
-                                href="https://www.instagram.com/unitbox/">
+                                href="https://www.instagram.com/dev.unitbox/">
                                 <i class="bi-instagram " style="font-size: 1.5rem;"></i>
                             </a>
                         </li>
