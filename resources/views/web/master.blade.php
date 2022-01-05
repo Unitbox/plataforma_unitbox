@@ -406,8 +406,6 @@
         </script>
     @endif
 
-
-
     <!-- JS Plugins Init. -->
     <script>
         (function() {
