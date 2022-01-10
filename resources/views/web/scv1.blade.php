@@ -200,6 +200,10 @@
             -o-background-size: cover;
         }
 
+        .asterisco {
+            color: #ff6301;
+        }
+
 
         @media screen and (max-width: 600px) {
 
@@ -218,6 +222,19 @@
                 height: 12rem !important;
             }
         }
+
+        /*
+        Privacidade e termos de uso
+        */
+        .text-content p,
+        .text-content li {
+            --bs-text-opacity: 1;
+            color: rgba(255, 255, 255, .7) !important;
+        }
+
+         /*
+        Privacidade e termos de uso
+        */
 
     </style>
 </head>
@@ -247,27 +264,27 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 18px;letter-spacing: 1.0px">
                         <li class="nav-item active">
                             <a class="nav-link active" aria-current="page"
-                                href="http://127.0.0.1:8000/scservicos/v1/#sobre">Sobre</a>
+                                href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" aria-current="page"
-                                href="http://127.0.0.1:8000/scservicos/v1/#sobre">Serviços</a>
+                                href="#sobre">Serviços</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" aria-current="page"
-                                href="http://127.0.0.1:8000/scservicos/v1/#sobre">Clientes</a>
+                                href="#clientes">Clientes</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" aria-current="page"
-                                href="http://127.0.0.1:8000/scservicos/v1/#sobre">Acontece aqui</a>
+                            <a class="nav-link" aria-current="page" 
+                                href="https://medium.com/scservicos" target="_blank">Acontece aqui</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " aria-current="page"
-                                href="http://127.0.0.1:8000/scservicos/v1/#sobre">Curtas</a>
+                            <a class="nav-link " aria-current="page" target="_blank"
+                                href="https://medium.com/curtas-sc">Curtas</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " aria-current="page"
-                                href="http://127.0.0.1:8000/scservicos/v1/#sobre">Entrar</a>
+                            <a class="nav-link" aria-current="page" target="_blank"
+                                href="https://solomon.scservicos.com.br">Entrar</a>
                         </li>
                     </ul>
                 </div>
@@ -292,6 +309,29 @@
                     alt="">
                 <div class="h4 text-banner label-sc">
                     Escuta ativa com consumidores
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn-images.scservicos.com.br/view/0/sc-institucional%7Cbanners%7CBanners_ST_estrategia.jpg"
+                    alt="">
+                <div class="h4 text-banner label-sc">
+                    Estratégia de conteúdo e mídia digital
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_receitas.jpg"
+                    alt="">
+                <div class="h4 text-banner label-sc">
+                    Desenvolvimento, fotos e vídeos de
+                        receitas
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn-images.scservicos.com.br/view/0/sc-institucional%7Cbanners%7CBanners_ST_sacgestao.jpg"
+                    alt="">
+                <div class="h4 text-banner label-sc">
+                    SAC 2.0, CRM digital, gestão e monitoramento de
+                    redes sociais
                 </div>
             </div>
         </div>
@@ -405,7 +445,18 @@
                 <div class="carousel-item">
                     <img src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_3.png"
                         style="width:100%; height: 40%" alt="">
-
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_4.png"
+                        style="width:100%; height: 40%" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_5.png"
+                        style="width:100%; height: 40%" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_6.png"
+                        style="width:100%; height: 40%" alt="">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#CarouselClientes" data-bs-slide="prev">
@@ -431,7 +482,7 @@
     <!-- formulario de contato -->
     <div id="contatos" class="py-5">
         <div class="container">
-            <h1 class="text-center">Quer conhecer mais de perto o seu consumidor? Vem falar com a gente!</h1>
+            <h1 class="text-center mb-5">Quer conhecer mais de perto o seu consumidor? Vem falar com a gente!</h1>
 
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-sm-12 mb-2 " id="formulario">
@@ -623,6 +674,8 @@
                 });
 
 
+                $(button).removeClass('disabled').html(button.text());
+
                 // $.post(action, form_data, 'json')
                 //     .done(function(response) {
 
@@ -667,54 +720,6 @@
                 //     });
             });
         });
-
-        function message(tipo, assunto, message) {
-
-            alert(tipo, assunto)
-
-            let icon;
-            switch (tipo) {
-                case 'success':
-                    icon = 'check'
-                    break;
-                case 'warning':
-                    icon = 'exclamation'
-                    break;
-                case 'danger':
-                    icon = 'exclamation'
-            }
-
-            var toast = "";
-            toast +=
-                '<div id="liveToast" class="position-fixed bottom-0 end-0 p-3" role="alert" aria-live="assertive" aria-atomic="true" style="top: 20px; right: 20px; z-index: 1000;" data-bs-delay="10000">';
-            toast += '<div class="toast-header">';
-            toast += '<div class="d-flex align-items-center flex-grow-1">';
-            toast += '<div class="flex-shrink-0">';
-            toast += '<span class="avatar avatar-sm avatar-' + tipo + ' avatar-circle">';
-            toast += '<span class="avatar-initials"><i class="bi bi-' + icon +
-                '-circle text-white" style="font-size: 45px"></i></span>';
-            toast += '</span>';
-            toast += '</div>';
-            toast += '<div class="flex-grow-1 ms-3">';
-            toast += '<h5 class="mb-0">' + assunto + '</h5>';
-            toast += '</div>';
-            toast += '<div class="text-end">';
-            toast +=
-                '<button type="button" class="btn-close text-white avatar avatar-sm rounded-circle shadow-sm p-0" data-bs-dismiss="toast" aria-label="Close"></button>';
-            toast += '</div>';
-            toast += '</div>';
-            toast += '</div>';
-            if (message != "" || message != null) {
-                toast += '<div class="toast-body text-white-70">' + message + '</div>';
-            }
-            toast += '</div>';
-
-            $(".message-toast").html(toast);
-
-            const liveToast = new bootstrap.Toast(document.querySelector('#liveToast'));
-
-            liveToast.show();
-        }
     </script>
 
 </body>

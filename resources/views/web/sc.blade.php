@@ -6,24 +6,20 @@
 <head>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TKSRHG8');
     </script>
     <!-- End Google Tag Manager -->
 
     <title>SC Serviços ao Consumidor</title>
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,10 +28,7 @@
     <meta name="description"
         content="A SC surgiu como uma empresa na contramão de sua época, buscando as soluções tecnológicas como apoio para uma comunicação única, efetiva e direta. Seu foco estava no conhecimento do consumidor, no entendimento de suas contradições e nas razões que o levavam a fazer suas escolhas.">
     <meta name="author" content="Scservicos" />
-    <meta name="robots" content="index, follow" />
-    <!-- SEO -->
-    <link rel="icon" href="favicon.png" />
-    <link rel="canonical" href="https://www.scservicos.com.br" />
+    <link rel="canonical" href="https://www.scservicos.com.br"/>
 
     <meta property="og:site_name" content="Scservicos" />
     <meta property="og:type" content="article" />
@@ -43,20 +36,27 @@
     <meta property="og:title" content="Scservicos" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://www.scservicos.com.br" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="{{ asset('assets/img/web/site/og_unitbox.jpg') }}" />
     <meta property="og:description"
-        content="A SC surgiu como uma empresa na contramão de sua época, buscando as soluções tecnológicas como apoio para uma comunicação única, efetiva e direta. Seu foco estava no conhecimento do consumidor, no entendimento de suas contradições e nas razões que o levavam a fazer suas escolhas." />
- 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet" />
-    
+        content="Acesse o site da Unitbox e conheça as nossas soluções em tecnologia. Oferecemos consultorias e produtos que geram otimização e performance para o seu negócio!" />
+
+    <!-- SEO -->
+
+    <meta http-equiv="Content-Language" content="pt-br" />
+    <meta name="googlebot" content="noodp" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="" />
+    <link rel="icon" href="favicon.png" />
+
     <link href="https://cdn.scservicos.com.br/css/solomon/tema.css?v.02" rel="stylesheet" />
     <link href="https://cdn.scservicos.com.br/css/bootstrap.min.css?v.02" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
     <link href="https://cdn.scservicos.com.br/css/animate.css?v.02" rel="stylesheet" />
     <link href="https://cdn.scservicos.com.br/css/switch.css?v.02" rel="stylesheet" />
+    <link href="https://cdn.scservicos.com.br/css/datatables.bootstrap4.min.css" rel="stylesheet" />
     <link href="https://cdn.scservicos.com.br/css/carousel.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet" />
 
     <!--[if lt IE 9]>
       <script src="https://cdn.scservicos.com.br/js/html5shiv.js"></script>
@@ -89,9 +89,7 @@
             margin-right: 1%;
         }
 
-        h1,
-        h3,
-        h4 {
+        h1, h3, h4 {
             font-family: 'Neucha', cursive;
             /* font-size: 35px; */
             color: #F15B22;
@@ -109,9 +107,9 @@
             height: 10rem;
         }
 
-        #clientesCarousel .carousel-item>img {
-            height: 10rem;
-        }
+            #clientesCarousel .carousel-item > img {
+                height: 10rem;
+            }
 
         .asterisco {
             color: #ff0000;
@@ -150,64 +148,64 @@
             border-color: #f76531;
         }
 
-        .btn-sc:focus,
-        .btn-sc.focus {
-            color: #fff;
-            background-color: #e24912;
-            border-color: #e24912;
-        }
+            .btn-sc:focus,
+            .btn-sc.focus {
+                color: #fff;
+                background-color: #e24912;
+                border-color: #e24912;
+            }
 
-        .btn-sc:hover {
-            color: #fff;
-            background-color: #e24912;
-            border-color: #e24912;
-        }
+            .btn-sc:hover {
+                color: #fff;
+                background-color: #e24912;
+                border-color: #e24912;
+            }
 
-        .btn-sc:active,
-        .btn-sc.active,
-        .open>.dropdown-toggle.btn-sc {
-            color: #fff;
-            background-color: #f76531;
-            border-color: #f76531;
-        }
+            .btn-sc:active,
+            .btn-sc.active,
+            .open > .dropdown-toggle.btn-sc {
+                color: #fff;
+                background-color: #f76531;
+                border-color: #f76531;
+            }
 
-        .btn-sc:active:hover,
-        .btn-sc.active:hover,
-        .open>.dropdown-toggle.btn-sc:hover,
-        .btn-sc:active:focus,
-        .btn-sc.active:focus,
-        .open>.dropdown-toggle.btn-sc:focus,
-        .btn-sc:active.focus,
-        .btn-sc.active.focus,
-        .open>.dropdown-toggle.btn-sc.focus {
-            color: #fff;
-            background-color: #e24912;
-            border-color: #e24912;
-        }
+                .btn-sc:active:hover,
+                .btn-sc.active:hover,
+                .open > .dropdown-toggle.btn-sc:hover,
+                .btn-sc:active:focus,
+                .btn-sc.active:focus,
+                .open > .dropdown-toggle.btn-sc:focus,
+                .btn-sc:active.focus,
+                .btn-sc.active.focus,
+                .open > .dropdown-toggle.btn-sc.focus {
+                    color: #fff;
+                    background-color: #e24912;
+                    border-color: #e24912;
+                }
 
-        .btn-sc:active,
-        .btn-sc.active,
-        .open>.dropdown-toggle.btn-sc {
-            background-image: none;
-        }
+            .btn-sc:active,
+            .btn-sc.active,
+            .open > .dropdown-toggle.btn-sc {
+                background-image: none;
+            }
 
-        .btn-sc.disabled:hover,
-        .btn-sc[disabled]:hover,
-        fieldset[disabled] .btn-sc:hover,
-        .btn-sc.disabled:focus,
-        .btn-sc[disabled]:focus,
-        fieldset[disabled] .btn-sc:focus,
-        .btn-sc.disabled.focus,
-        .btn-sc[disabled].focus,
-        fieldset[disabled] .btn-sc.focus {
-            background-color: #e24912;
-            border-color: #e24912;
-        }
+            .btn-sc.disabled:hover,
+            .btn-sc[disabled]:hover,
+            fieldset[disabled] .btn-sc:hover,
+            .btn-sc.disabled:focus,
+            .btn-sc[disabled]:focus,
+            fieldset[disabled] .btn-sc:focus,
+            .btn-sc.disabled.focus,
+            .btn-sc[disabled].focus,
+            fieldset[disabled] .btn-sc.focus {
+                background-color: #e24912;
+                border-color: #e24912;
+            }
 
-        .btn-sc .badge {
-            color: #f76531;
-            background-color: #fff;
-        }
+            .btn-sc .badge {
+                color: #f76531;
+                background-color: #fff;
+            }
 
         .btn-outline-sc {
             color: #f76531;
@@ -215,18 +213,18 @@
             border-color: #f76531;
         }
 
-        .btn-outline-sc:focus,
-        .btn-outline-sc.focus {
-            color: #fff;
-            background-color: #e24912;
-            border-color: #e24912;
-        }
+            .btn-outline-sc:focus,
+            .btn-outline-sc.focus {
+                color: #fff;
+                background-color: #e24912;
+                border-color: #e24912;
+            }
 
-        .btn-outline-sc:hover {
-            color: #fff;
-            background-color: #e24912;
-            border-color: #e24912;
-        }
+            .btn-outline-sc:hover {
+                color: #fff;
+                background-color: #e24912;
+                border-color: #e24912;
+            }
 
         .border-sc {
             border-color: #f15b22;
@@ -244,13 +242,12 @@
 
 
         /* CUSTOMIZE THE CAROUSEL
-
+-------------------------------------------------- */
 
         /* Carousel base class */
         .carousel {
             margin-bottom: 4rem;
         }
-
         /* Since positioning the image, we need to help out the caption */
         .carousel-caption {
             bottom: 3rem;
@@ -262,12 +259,12 @@
             background-color: #777;
         }
 
-        .carousel-items>img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-        }
+            .carousel-items > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+            }
 
         .list-group-item-sc {
             position: relative;
@@ -333,7 +330,7 @@
                 height: 105px;
             }
 
-            .carousel-item>img {
+            .carousel-item > img {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -342,7 +339,7 @@
                 margin-bottom: 15px;
             }
 
-            #clientesCarousel .carousel-item>img {
+            #clientesCarousel .carousel-item > img {
                 width: 360px;
                 height: auto;
             }
@@ -375,7 +372,6 @@
                 width: 40px;
             }
         }
-
     </style>
 
 
@@ -392,16 +388,49 @@
             transition: 0.1s;
             padding-top: 60px;
         }
-
     </style>
 </head>
-
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKSRHG8" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKSRHG8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+
+
+    <!-- navbar -->
+<%--            <nav class="navbar navbar-expand-md navbar-light" style="margin-top: -50px; background-color: #fff;">
+        <a class="navbar-brand" href="#">
+            <img class="mb-1 mt-1 rounded-circle" src="https://cdn-images.scservicos.com.br/view/0/solomon|sc|logo.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto font-weight-bold px-2 mb-0 menu">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#sobre">Sobre <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clientes">Clientes</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://medium.com/scservicos">Acontece aqui<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.scservicos.com.br/scweb" target="_blank">SCWeb</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>--%>
+    <!-- conteudo -->
 
     <!-- menu -->
     <div id="mySidenav" class="sidenav" style="z-index: 999999;">
@@ -409,16 +438,14 @@
         <div class="container">
             <!-- <a href="home-logged.html"><img src="https://placehold.it/200x200" alt="" class="rounded-circle pull-left" style="width: 60px; margin-top: -60px;"></a> -->
             <a href="/home.aspx">
-                <img src="https://cdn-images.scservicos.com.br/view/0/solomon|sc|logo.png" alt=""
-                    class="pull-left rounded-circle img-logo-sc" style="margin-top: -60px;" /></a>
+                <img src="https://cdn-images.scservicos.com.br/view/0/solomon|sc|logo.png" alt="" class="pull-left rounded-circle img-logo-sc" style="margin-top: -60px;" /></a>
 
             <div>&nbsp;</div>
             <div class="container profile">
                 <strong>Sc Serviços</strong>
             </div>
         </div>
-        <a href="javascript:void(0)" class="closebtn" style="text-decoration: none;"
-            onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" style="text-decoration: none;" onclick="closeNav()">&times;</a>
         <hr />
 
         <div class="a-sidenav">
@@ -438,14 +465,12 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom fixed-top">
 
         <a class="navbar-brand" href="home.aspx">
-            <img src="https://cdn-images.scservicos.com.br/view/0/solomon|sc|logo.png"
-                class="mb-1 mt-1 rounded-circle img-logo-sc" /></a>
+            <img src="https://cdn-images.scservicos.com.br/view/0/solomon|sc|logo.png" class="mb-1 mt-1 rounded-circle img-logo-sc" /></a>
 
 
 
         <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarx"
-            onclick="openNav();">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbarx" onclick="openNav();">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -460,8 +485,7 @@
                     <a class="nav-link" href="#clientes">Clientes</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="https://medium.com/scservicos">Acontece aqui<span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://medium.com/scservicos">Acontece aqui<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contato">Contato</a>
@@ -482,8 +506,7 @@
 
     <!-- carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <%--        
-        <ol class="carousel-indicators mb-0">
+        <%--        <ol class="carousel-indicators mb-0">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -493,46 +516,33 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="first-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_analiseatendimento.jpg"
-                    alt="First slide" />
+                <img class="first-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_analiseatendimento.jpg" alt="First slide" />
                 <div class="carousel-caption">
-                    <label class="label-sc" style="color: #FFF;">Atendimento especializado, logística e análise de
-                        amostra de consumidor</label>
+                    <label class="label-sc" style="color: #FFF;">Atendimento especializado, logística e análise de amostra de consumidor</label>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="second-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_escuta.jpg"
-                    alt="Second slide" />
+                <img class="second-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_escuta.jpg" alt="Second slide" />
                 <div class="carousel-caption">
                     <label class="label-sc" style="color: #FFF;">Escuta ativa com consumidores</label>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="third-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_estrategia.jpg"
-                    alt="Third slide" />
+                <img class="third-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_estrategia.jpg" alt="Third slide" />
                 <div class="carousel-caption ">
                     <label class="label-sc" style="color: #FFF;">Estratégia de conteúdo e mídia digital</label>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="fourth-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_receitas.jpg"
-                    alt="Fourth slide" />
+                <img class="fourth-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_receitas.jpg" alt="Fourth slide" />
                 <div class="carousel-caption">
-                    <label class="label-sc" style="color: #FFF;">Desenvolvimento, fotos e vídeos de
-                        receitas</label>
+                    <label class="label-sc" style="color: #FFF;">Desenvolvimento, fotos e vídeos de receitas</label>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="fifth-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_sacgestao.jpg"
-                    alt="Fifth slide" />
+                <img class="fifth-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|banners|Banners_ST_sacgestao.jpg" alt="Fifth slide" />
                 <div class="carousel-caption ">
-                    <label class="label-sc" style="color: #FFF;">SAC 2.0, CRM digital, gestão e monitoramento de
-                        redes sociais</label>
+                    <label class="label-sc" style="color: #FFF;">SAC 2.0, CRM digital, gestão e monitoramento de redes sociais</label>
                 </div>
             </div>
         </div>
@@ -556,24 +566,16 @@
                 <div class="col-md-6">
                     <h1>Sobre</h1>
                     <div>&nbsp;</div>
-                    <p>SC – Serviços ao Consumidor é uma agência especializada em comunicação e relacionamento um a um.
-                        No mercado há mais de 25 anos, nasceu para a era do diálogo, abrindo canais de comunicação e
-                        criando estruturas para que “a voz do consumidor seja ouvida”. Está ao lado das grandes
-                        empresas, acompanhando a transformação nas relações de consumo, nesse universo rico em
-                        oportunidades para aqueles que se dispõem a ouvir, entender e falar com seu público.</p>
+                    <p>SC – Serviços ao Consumidor é uma agência especializada em comunicação e relacionamento um a um. No mercado há mais de 25 anos, nasceu para a era do diálogo, abrindo canais de comunicação e criando estruturas para que “a voz do consumidor seja ouvida”. Está ao lado das grandes empresas, acompanhando a transformação nas relações de consumo, nesse universo rico em oportunidades para aqueles que se dispõem a ouvir, entender e falar com seu público.</p>
                     <div>&nbsp;</div>
-                    <a href="https://www.facebook.com/scservicos/" target="_blank"><i
-                            class="fab fa-3x fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/scservicos/" target="_blank"><i
-                            class="fab fa-3x fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/sc-servicos-ao-consumidor/" target="_blank"><i
-                            class="fab fa-3x fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/scservicos/" target="_blank"><i class="fab fa-3x fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/scservicos/" target="_blank"><i class="fab fa-3x fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/sc-servicos-ao-consumidor/" target="_blank"><i class="fab fa-3x fa-linkedin"></i></a>
                     <div>&nbsp;</div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end">
                     <div>&nbsp;</div>
-                    <img class="img-fluid"
-                        src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|sobre.png" alt="Sobre a SC" />
+                    <img class="img-fluid" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|sobre.png" alt="Sobre a SC" />
                     <div>&nbsp;</div>
                 </div>
             </div>
@@ -603,8 +605,7 @@
                         <li>Equipes especializadas com formação em nutrição.</li>
                         <li>Identificação de segmentos e relatórios estratégicos de escuta de consumidor.</li>
                         <li>Gestão de crises e de problemas emergentes.</li>
-                        <li>Coleta e tratamento de amostras do consumidor, com avaliação das ocorrências e análise das
-                            situações de consumo.</li>
+                        <li>Coleta e tratamento de amostras do consumidor, com avaliação das ocorrências e análise das situações de consumo.</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -614,8 +615,7 @@
                         <li>Monitoramento de produtos, marcas e consumidores.</li>
                         <li>Estratégia para mídias digitais.</li>
                         <li>Gestão de redes sociais e criação de pautas a partir da escuta do consumidor.</li>
-                        <li>Criação de conteúdos multimídia para relacionamento com consumidor e divulgação da marca.
-                        </li>
+                        <li>Criação de conteúdos multimídia para relacionamento com consumidor e divulgação da marca.</li>
                         <li>SAC 2.0 e CRM digital: interação em redes sociais.</li>
                     </ul>
                 </div>
@@ -624,9 +624,7 @@
                     <div>&nbsp;</div>
                     <ul class="pl-3">
                         <li>Estudo de produtos: testes e análises de usos culinários</li>
-                        <li>Escuta ativa: encontro com segmentos de consumidores engajados com a marca para
-                            identificação de oportunidades de comunicação, melhorias e desenvolvimento de novos
-                            produtos.</li>
+                        <li>Escuta ativa: encontro com segmentos de consumidores engajados com a marca para identificação de oportunidades de comunicação, melhorias e desenvolvimento de novos produtos.</li>
                         <li>Desenvolvimento de protótipos.</li>
                         <li>Criação e desenvolvimento de receitas.</li>
                         <li>Fotos e vídeos de receitas.</li>
@@ -654,34 +652,22 @@
     <div id="clientesCarousel" class="mb-0 carousel slide" data-ride="carousel">
         <div class="carousel-inners">
             <div class="carousel-item active">
-                <img class="first-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_.png"
-                    alt="First slide" />
+                <img class="first-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_.png" alt="First slide" />
             </div>
             <div class="carousel-item">
-                <img class="first-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_2.png"
-                    alt="First slide" />
+                <img class="first-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_2.png" alt="First slide" />
             </div>
             <div class="carousel-item">
-                <img class="first-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_3.png"
-                    alt="First slide" />
+                <img class="first-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_3.png" alt="First slide" />
             </div>
             <div class="carousel-item">
-                <img class="first-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_4.png"
-                    alt="First slide" />
+                <img class="first-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_4.png" alt="First slide" />
             </div>
             <div class="carousel-item">
-                <img class="first-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_5.png"
-                    alt="First slide" />
+                <img class="first-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_5.png" alt="First slide" />
             </div>
             <div class="carousel-item">
-                <img class="first-slide img-fluids"
-                    src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_6.png"
-                    alt="First slide" />
+                <img class="first-slide img-fluids" src="https://cdn-images.scservicos.com.br/view/0/sc-institucional|clientes|Banner_clientes_6.png" alt="First slide" />
             </div>
             <a class="carousel-control-prev" href="#clientesCarousel" role="button" data-slide="prev">
                 <i class="fas fa-angle-left icones-mobile-sc" id="teste" style="color: black; font-size: 40px;"></i>
@@ -694,8 +680,7 @@
         </div>
     </div>
     <!-- banner midias sociais -->
-    <section class="mt-3 py-1 bg-image-full img-fluid"
-        style="background-image: url('https://cdn-images.scservicos.com.br/view/0/sc-institucional|midiassociais.png'); margin-top: 1px;">
+    <section class="mt-3 py-1 bg-image-full img-fluid" style="background-image: url('https://cdn-images.scservicos.com.br/view/0/sc-institucional|midiassociais.png'); margin-top: 1px;">
         <div style="height: 300px;">
         </div>
     </section>
@@ -716,8 +701,7 @@
                 <%--Essa classe começa escondida--%>
                 <div class="col-md-6" id="incluirformulario">
                     <div class="col-lg-5 ">
-                        <button type="button" class="form-control  btn btn-outline-primary" onclick="mostrar();">Novo
-                            envio </button>
+                        <button type="button" class="form-control  btn btn-outline-primary" onclick="mostrar();">Novo envio </button>
                     </div>
                 </div>
                 <div class="col-md-6 mb-2" id="formulario">
@@ -748,8 +732,7 @@
                         <div>&nbsp;</div>
                         <div class="col-lg-10">
                             <label class="labels">Empresa:<span class="asterisco">*</span></label>
-                            <input class="form-control" placeholder="Digite aqui o nome da empresa" id="empresa"
-                                required />
+                            <input class="form-control" placeholder="Digite aqui o nome da empresa" id="empresa" required />
                             <div class="invalid-feedback">
                                 Por favor insira o nome da empresa
                             </div>
@@ -757,16 +740,14 @@
                         <div>&nbsp;</div>
                         <div class="col-lg-10">
                             <label class="labels">Mensagem:<span class="asterisco">*</span></label>
-                            <textarea class="form-control" rows="6" placeholder="Digite aqui seu nome" id="mensagem"
-                                required></textarea>
+                            <textarea class="form-control" rows="6" placeholder="Digite aqui seu nome" id="mensagem" required></textarea>
                             <div class="invalid-feedback">
                                 Por favor insira uma mensagem
                             </div>
                         </div>
                         <div>&nbsp;</div>
                         <div class="col-lg-3 ">
-                            <button type="submit" class="form-control  btn btn-outline-sc"
-                                onclick="Enviar();">Enviar</button>
+                            <button type="submit" class="form-control  btn btn-outline-sc" onclick="Enviar();">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -777,19 +758,14 @@
                         São Paulo - SP<br />
                         CEP: 05509-005<br />
                         +55 11 3095-8460
-
+                       
                     </p>
-                    <iframe width="440" height="350" frameborder="0" style="border: 0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2ijhS1lu0hLHxA_jQYtKIA6TiPJu6F9Q &q=SC Serviços ao Consumidor"
-                        allowfullscreen></iframe>
+                    <iframe width="440" height="350" frameborder="0" style="border: 0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2ijhS1lu0hLHxA_jQYtKIA6TiPJu6F9Q &q=SC Serviços ao Consumidor" allowfullscreen></iframe>
                     <div>&nbsp;</div>
 
-                    <a href="https://www.facebook.com/scservicos/" target="_blank"><i
-                            class="fab fa-3x fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/scservicos/" target="_blank"><i
-                            class="fab fa-3x fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/sc-servicos-ao-consumidor/" target="_blank"><i
-                            class="fab fa-3x fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/scservicos/" target="_blank"><i class="fab fa-3x fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/scservicos/" target="_blank"><i class="fab fa-3x fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/sc-servicos-ao-consumidor/" target="_blank"><i class="fab fa-3x fa-linkedin"></i></a>
 
                 </div>
             </div>
@@ -802,14 +778,14 @@
     <!-- // fim conteudo -->
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
+        (function () {
             'use strict';
-            window.addEventListener('load', function() {
+            window.addEventListener('load', function () {
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
                 var forms = document.getElementsByClassName('needs-validation');
                 // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
                         if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();
@@ -846,5 +822,4 @@
 
 
 </body>
-
 </html>
